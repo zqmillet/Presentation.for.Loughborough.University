@@ -9,17 +9,12 @@
 \justifying
 \let\raggedright\justifying
 \usepackage{tikz}
+\usepackage{tkz-euclide, pgfplots}
 \usetikzlibrary{decorations.text}
 \usetikzlibrary{shadows}
-\usepackage{tkz-euclide,pgfplots}
 \usepackage{tabu}
 \usepackage{graphicx}
-\usepackage{contour}
-\contourlength{0.8pt}
-\newcommand{\border}[1]{
-	\contour[120]{white}{#1}
-}
-
+\usepackage{unicode-math}
 \usetkzobj{all}
 
 \definecolor{black}{rgb}{0.13333, 0.21569, 0.22745}
@@ -39,6 +34,8 @@
 \pgfdeclareimage[width=1.5cm]{HUSTLogo}{Logo/HUSTLogoWithoutSubline}
 \logo{\pgfuseimage{HUSTLogo}}
 
+\newcommand{\risk}{\mathscr{R}}
+
 \begin{document}
 
 \maketitle
@@ -48,6 +45,7 @@
 \end{frame}
 
 \section{Introduction}
+\iffalse
 \begin{frame}{Background}
     Driven by computer technology, communication technology and intellectual technology, Industrial Control Systems (ICSs) develop towards the direction of intellectualization and network.
     \begin{center}
@@ -60,14 +58,14 @@
       \item ICSs have been widely applied in various industry of the national economy and people's livelihood, and gradually become the brain and central nervous of critical infrastructure and all kinds of industrial production.
       \item Once abnormal situation appears in ICSs , serious accidents may be happen, which may cause damage to property, people or a wide range of environment.
     \end{itemize}
-    
+
     \begin{center}
       \begin{minipage}[m]{0.9\textwidth}
         \includegraphics[height=1.5cm]{Figures/Introduction/Fig1.png} \hfill
         \includegraphics[height=1.5cm]{Figures/Introduction/Fig2.png} \hfill
         \includegraphics[height=1.5cm]{Figures/Introduction/Fig3.png} \hfill
         \includegraphics[height=1.5cm]{Figures/Introduction/Fig4.png} \hfill
-        \includegraphics[height=1.5cm]{Figures/Introduction/Fig5.png} \vspace{1pt}\\        
+        \includegraphics[height=1.5cm]{Figures/Introduction/Fig5.png} \vspace{1pt}\\
         \includegraphics[height=1.5cm, width = 2.2cm]{Figures/Introduction/Fig6.png} \hfill
         \includegraphics[height=1.5cm]{Figures/Introduction/Fig7.png} \hfill
         \includegraphics[height=1.5cm]{Figures/Introduction/Fig8.png} \hfill
@@ -82,10 +80,10 @@
       \item In 2013, Israel Haifa highway control system  was attacked by hackers, which caused massive traffic congestion in the city which lead great loss and serious subsequent problems.
       \item In 2014, Havex malware infects many industrial control system in European  and caused the leakage of large amounts of data.
     \end{itemize}
-    
+
     \begin{minipage}[c][][t]{0.6\textwidth}
       \input{Figures/Introduction/Industrial.Control.Systems.Event.Statistic.tex}
-    \end{minipage}    
+    \end{minipage}
     \begin{minipage}[c][][t]{0.35\textwidth}
     \begin{tikzpicture}
       \node (A) at (0,1.5) {\includegraphics[height=2.2cm]{Figures/Introduction/Fig10.png}};
@@ -94,12 +92,45 @@
     \end{minipage}
 \end{frame}
 
-\begin{frame}{Problems}
-    \begin{itemize}
-      \item Timeliness and availability
-      \item Overlapping
-      \item Unknown Attacks
-    \end{itemize}
+\begin{frame}{Problems -- Timeliness and Availability}
+    ICSs have rigorous requirements on timeliness and availability. The cybersecurity risks of ICSs are primarily from the potential loss caused by the cyber-attacks which demolish the timeliness and availability of the control system.
+    
+    In order to achieve the destructive purpose, attackers generally need to follow part or all of these three steps: 
+    \begin{enumerate}
+      \item infiltrate into the field network,
+      \item invalidate the system functions,
+      \item cause the hazardous incidents.
+    \end{enumerate}
+    
+    Therefore, the cybersecurity risk assessment of ICSs needs  a novel and targeted risk model to analyze the risk propagation.
+\end{frame}
+
+\begin{frame}{Problems -- Overlapping amongst Consequences}
+    The majority of existing quantitative risk assessment approaches used the following definition to calculate the risk $\risk$.
+    \[
+        \risk = \sum_i S(e_i)P(e_i)
+    \]    
+    However, the overlapping amongst difference consequences may cause the error of risk value. For example,
+    \vspace{10pt}\\
+    \begin{minipage}[l]{0.2\textwidth}
+      \input{Figures/Introduction/Example.of.Overlapping.tex}
+    \end{minipage}
+    \begin{minipage}[l]{0.8\textwidth}
+        incident $e_1$ is the temperature anomaly of reactor, incident $e_2$ is the explosion of reactor, when $e_1$ or $e_2$ happens, the product will be damaged.
+    \end{minipage}
+    \vspace{10pt}\\
+    Assume that $P(e_1) = 1$, so $P(e_2) = p_1$, then 
+    \[
+        \risk = S(e_1) + p_1S(e_2) = S(e_1) + p_1S(e_1) = (1+p_1)S(e_1) \geq S(e_1)\text{.}
+    \]    
+\end{frame}
+
+\begin{frame}{Problems -- Unknown Attacks}
+    Many ICSs run 24/7/365, and therefore the updates must be planned and scheduled days or weeks in advance. After the updates, exhaustive testing is necessary to ensure the high availability of the ICS.
+    
+    This leads to inability of the attack knowledge of ICSs to be updated in time. Several attack knowledge-based risk assessments cannot work well on ICSs.
+    
+    Therefore, the risk assessment should have the ability of assessing the risk caused by unknown attacks without the corresponding attack knowledge.
 \end{frame}
 
 \section{Architecture}
@@ -108,6 +139,7 @@
         \input{Figures/Architecture/Architecture.of.Risk.Assessment.tex}
     \end{center}
 \end{frame}
+\fi
 
 \section{Hazardous Incident Prediction}
 \subsection{The Bayesian Network Based Knowledge Modeling}

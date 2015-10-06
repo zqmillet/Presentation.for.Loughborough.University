@@ -1,0 +1,13 @@
+\begin{tikzpicture}[line width = \pgfdefaultlinewidth,
+                    incident/.style = {draw, circle, inner sep = 0pt, align = center, minimum size = 0.6cm},
+                    tag/.style = {align = right, anchor = west}]
+
+    \node[incident] (e1) at (1.4,0.1) {$e_1$};
+    \node[incident] (e2) at (0,0.9) {$e_2$};
+
+    \draw[->] (e1) -- (e2) node[midway, above, sloped] {$p_1$};
+
+   % \node[tag] at (1.7,1)   {Incident $e_1$ is the temperature anomaly of reactor,};
+%    \node[tag] at (1.7,0.5) {incident $e_2$ is the explosion of reactor,};
+%    \node[tag] at (1.7,0)   {when $e_1$ or $e_2$ happens, the product will be damaged.};
+\end{tikzpicture} 

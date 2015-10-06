@@ -56,15 +56,33 @@
     \else%
     {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}%
     \fi%
-    \ifx\insertinstitut\@empty%
-    \else%
-    \vspace*{3mm}
-    {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}%
-    \fi%
+    \vspace*{0.5em}
+    \begin{minipage}[m]{1.8cm}
+        \ifx\insertlogo\@empty%
+        \else%
+        \insertlogo
+        \fi%
+    \end{minipage}
+    \begin{minipage}[m]{0.65\textwidth}
+        \ifx\insertinstitut\@empty%
+        \else%
+        {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}%
+        \fi%
+    \end{minipage}\hfill
     \vfill
     \vspace*{5mm}
+
+
   \end{minipage}
 }
+
+\setbeamertemplate{sidebar right}
+{%
+  \vfill%
+  \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+  \vskip2pt%
+}
+
 
 %}}}
 %{{{ --- Progressbar ------------------

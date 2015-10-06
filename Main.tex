@@ -17,14 +17,12 @@
 
 \usetkzobj{all}
 
-\setmonofont{Courier New}
-
 \definecolor{black}{rgb}{0.13333, 0.21569, 0.22745}
 \definecolor{white}{rgb}{0.98039, 0.98039, 0.98431}
 
 \newcommand{\pgfdefaultlinewidth}{0.75pt}
 
-\title{Multi-Model Based Incident Prediction and Risk Assessment in Dynamic Cybersecurity Protection for Industrial Control Systems (ICSs)}
+\title{Multi-Model Based Incident Prediction and Risk Assessment in Dynamic Cybersecurity Protection for Industrial Control Systems}
 \subtitle{}
 \date{\today}
 \author[Zhang Qi] % optional, use only with lots of authors
@@ -46,7 +44,7 @@
 
 \section{Introduction}
 \begin{frame}{Background}
-    Driven by computer technology, communication technology and intellectual technology, ICSs develop towards the direction of intelligentization and network.
+    Driven by computer technology, communication technology and intellectual technology, Industrial Control Systems (ICSs) develop towards the direction of intellectualization and network.
     \begin{center}
         \input{Figures/Introduction/Development.of.ICSs.tex}
     \end{center}
@@ -71,6 +69,27 @@
         \includegraphics[height=1.5cm]{Figures/Introduction/Fig9.png}
       \end{minipage}
     \end{center}
+\end{frame}
+
+\begin{frame}{Background}
+    \begin{itemize}
+      \item In 2010, Stuxnet attacked Iran's nuclear power plants and ruined almost one-fifth of Iran's nuclear centrifuges.
+      \item In 2013, Israel Haifa highway control system  was attacked by hackers, which caused massive traffic congestion in the city which lead great loss and serious subsequent problems.
+      \item In 2014, Havex malware infects many industrial control system in European  and caused the leakage of large amounts of data.
+    \end{itemize}
+    
+    \begin{minipage}[c][][t]{0.6\textwidth}
+      \input{Figures/Introduction/Industrial.Control.Systems.Event.Statistic.tex}
+    \end{minipage}    
+    \begin{minipage}[c][][t]{0.35\textwidth}
+    \begin{tikzpicture}
+      \node (A) at (0,1.5) {\includegraphics[height=2.2cm]{Figures/Introduction/Fig10.png}};
+      \node[line width = 3pt, draw = white, inner sep=0pt] (B) at (1,0) {\includegraphics[height=2.2cm]{Figures/Introduction/Fig11.png}};
+    \end{tikzpicture}
+    \end{minipage}
+    
+    
+
 \end{frame}
 
 \begin{frame}{Problems}

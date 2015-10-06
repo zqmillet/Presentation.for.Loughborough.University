@@ -1,0 +1,68 @@
+\tikzset{
+    text shadow/.code args={[#1]#2at#3(#4)#5}{
+        \pgfkeysalso{/tikz/.cd,#1}%
+        \foreach \angle in {0,5,...,359}{
+                \node[#1,text=white] at ([shift={(\angle:.8pt)}] #4){#5};
+        }
+    }
+}
+
+\begin{tikzpicture}[line width = \pgfdefaultlinewidth,
+                    x = 0.8cm,
+                    y = 0.8cm,
+                    layer/.style = {fill = white, draw, rectangle, minimum height = 0.8cm, minimum width = 2.4cm, align = center, inner sep = 0pt},
+	                model/.style = {fill = white, draw, rectangle, minimum height = 0.8cm, minimum width = 2.4cm, align = center, inner sep = 0pt, rounded corners},
+	                value/.style = {draw, dashed, rectangle, minimum height = 0.8cm, minimum width = 2.4cm, align = center, inner sep = 0pt}]
+
+\footnotesize
+
+\fill[lightgray, rounded corners] (7.3, 3.3) rectangle (10.7, 9.7);
+\node at (9,9.1) [text shadow={[align=center,text width=3cm] at (9,9.1) {Multiple Models}}] {Multiple Models};
+\node (AM) at (9,8) [model] {Attack Model};
+\node (FM) at (9,6) [model] {Function Model};
+\node (IM) at (9,4) [model] {Incident Model};
+\pause
+
+\fill[lightgray, rounded corners] (2.3, 3.3) rectangle (5.7, 9.7);
+\node at (4,9.1) [text shadow={[align=center,text width=3cm] at (4,9.1) {Multi-Level Bayesian Network}}] {Multi-Level Bayesian Network};
+\node (AL) at (4,8) [layer] {Attack Level};
+\node (FL) at (4,6) [layer] {Function Level};
+\node (IL) at (4,4) [layer] {Incident Level};
+
+\draw[dotted, ->] (AM) -- (AL);
+\draw[dotted, ->] (FM) -- (FL);
+\draw[dotted, ->] (IM) -- (IL);
+
+\draw[->] (AL) -- (FL);
+\draw[->] (FL) -- (IL);
+\pause
+
+\node (AT) at (0.5,8) [anchor = east, align = right] {Attack\\Evidence};
+\node (AN) at (0.5,5) [anchor = east, align = right] {Anomaly\\Evidence};
+\pause
+
+\draw[->] (AT) -- (AL);
+\pause
+
+\draw[->] (AN) -- (1.5,5) |- (FL);
+\draw[->] (1.5,5) |- (IL);
+\pause
+
+\node (IP) at (4,2) [value] {Probability\\of Incident};
+\draw[->] (IL) -- (IP);
+\node at (4,3) [fill = white] {Online Calculate};
+\pause
+
+\node (CQ) at (9,2) [value] {Quantification\\of Consequence};
+\draw[->] (IM) -- (CQ);
+\node at (9,3) [fill = white] {Offline Calculate};
+\pause
+
+\node (TI) at (6.5,2) [circle, draw] {$\times$};
+\draw[->] (CQ) -- (TI);
+\draw[->] (IP) -- (TI);
+\pause
+
+\draw[->] (TI) -- (6.5,1) node [anchor = north, align = center] {Dynamic Risk};
+  
+\end{tikzpicture} 

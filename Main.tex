@@ -10,10 +10,15 @@
 \let\raggedright\justifying
 \usepackage{tikz}
 \usetikzlibrary{decorations.text}
+\usetikzlibrary{shadows}
 \usepackage{tkz-euclide,pgfplots}
 \usepackage{tabu}
 \usepackage{graphicx}
-
+\usepackage{contour}
+\contourlength{0.8pt}
+\newcommand{\border}[1]{
+	\contour[120]{white}{#1}
+}
 
 \usetkzobj{all}
 
@@ -87,15 +92,22 @@
       \node[line width = 3pt, draw = white, inner sep=0pt] (B) at (1,0) {\includegraphics[height=2.2cm]{Figures/Introduction/Fig11.png}};
     \end{tikzpicture}
     \end{minipage}
-    
-    
-
 \end{frame}
 
 \begin{frame}{Problems}
+    \begin{itemize}
+      \item Timeliness and availability
+      \item Overlapping
+      \item Unknown Attacks
+    \end{itemize}
 \end{frame}
 
 \section{Architecture}
+\begin{frame}{Architecture of Cybersecurity Risk Assessment for ICSs}
+    \begin{center}
+        \input{Figures/Architecture/Architecture.of.Risk.Assessment.tex}
+    \end{center}
+\end{frame}
 
 \section{Hazardous Incident Prediction}
 \subsection{The Bayesian Network Based Knowledge Modeling}

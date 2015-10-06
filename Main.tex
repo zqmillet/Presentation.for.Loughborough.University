@@ -8,6 +8,7 @@
 \usepackage{tikz}
 \usepackage{tkz-euclide,pgfplots}
 \usepackage{tabu}
+\usepackage{graphicx}
 
 \usetkzobj{all}
 
@@ -30,10 +31,10 @@
 \pgfdeclareimage[width=1.5cm]{HUSTLogo}{Logo/HUSTLogoWithoutSubline}
 \logo{\pgfuseimage{HUSTLogo}}
 
-\renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
-\raggedright
-
-\let\raggedright\relax
+%\renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
+%\raggedright
+%
+%\let\raggedright\relax
 
 
 
@@ -51,6 +52,24 @@
     \begin{center}
         \input{Figures/Introduction/Development.of.ICSs.tex}
     \end{center}
+\end{frame}
+
+\begin{frame}{Background}
+    \begin{itemize}
+      \item ICSs have been widely applied in various industry of the national economy and people's livelihood, and gradually become the brain and central nervous of critical infrastructure and all kinds of industrial production.
+      \item Once abnormal situation appears in ICSs , serious accidents may be happen, which may cause damage to property, people or a wide range of environment.
+    \end{itemize}
+    
+    \begin{tabu}{*5{X[l,-1]}}
+      \includegraphics[height=1.5cm]{Figures/Introduction/Fig1.png} &
+      \includegraphics[height=1.5cm]{Figures/Introduction/Fig2.png} &
+      \includegraphics[height=1.5cm]{Figures/Introduction/Fig3.png} &
+      \includegraphics[height=1.5cm]{Figures/Introduction/Fig4.png} &
+      \includegraphics[height=1.5cm]{Figures/Introduction/Fig5.png}
+    \end{tabu}
+    
+    
+    
 \end{frame}
 
 \begin{frame}{Problems}

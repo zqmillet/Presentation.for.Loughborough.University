@@ -5,10 +5,15 @@
 
 \usepackage{booktabs}
 \usepackage{bm}
+\usepackage{ragged2e}
+\justifying
+\let\raggedright\justifying
 \usepackage{tikz}
+\usetikzlibrary{decorations.text}
 \usepackage{tkz-euclide,pgfplots}
 \usepackage{tabu}
 \usepackage{graphicx}
+
 
 \usetkzobj{all}
 
@@ -30,13 +35,6 @@
 \institute{Automation School,\\Huazhong University of Science and Technology,\\Wuhan.}
 \pgfdeclareimage[width=1.5cm]{HUSTLogo}{Logo/HUSTLogoWithoutSubline}
 \logo{\pgfuseimage{HUSTLogo}}
-
-%\renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
-%\raggedright
-%
-%\let\raggedright\relax
-
-
 
 \begin{document}
 
@@ -60,16 +58,19 @@
       \item Once abnormal situation appears in ICSs , serious accidents may be happen, which may cause damage to property, people or a wide range of environment.
     \end{itemize}
     
-    \begin{tabu}{*5{X[l,-1]}}
-      \includegraphics[height=1.5cm]{Figures/Introduction/Fig1.png} &
-      \includegraphics[height=1.5cm]{Figures/Introduction/Fig2.png} &
-      \includegraphics[height=1.5cm]{Figures/Introduction/Fig3.png} &
-      \includegraphics[height=1.5cm]{Figures/Introduction/Fig4.png} &
-      \includegraphics[height=1.5cm]{Figures/Introduction/Fig5.png}
-    \end{tabu}
-    
-    
-    
+    \begin{center}
+      \begin{minipage}[m]{0.9\textwidth}
+        \includegraphics[height=1.5cm]{Figures/Introduction/Fig1.png} \hfill
+        \includegraphics[height=1.5cm]{Figures/Introduction/Fig2.png} \hfill
+        \includegraphics[height=1.5cm]{Figures/Introduction/Fig3.png} \hfill
+        \includegraphics[height=1.5cm]{Figures/Introduction/Fig4.png} \hfill
+        \includegraphics[height=1.5cm]{Figures/Introduction/Fig5.png} \vspace{1pt}\\        
+        \includegraphics[height=1.5cm, width = 2.2cm]{Figures/Introduction/Fig6.png} \hfill
+        \includegraphics[height=1.5cm]{Figures/Introduction/Fig7.png} \hfill
+        \includegraphics[height=1.5cm]{Figures/Introduction/Fig8.png} \hfill
+        \includegraphics[height=1.5cm]{Figures/Introduction/Fig9.png}
+      \end{minipage}
+    \end{center}
 \end{frame}
 
 \begin{frame}{Problems}

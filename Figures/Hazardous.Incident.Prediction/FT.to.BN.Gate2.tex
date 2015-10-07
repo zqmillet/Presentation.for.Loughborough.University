@@ -16,7 +16,10 @@
     \draw (f7.north) -- ++ (up:1mm) -| (gate1.input 2);
     \draw (f8.north) -- ++ (up:1mm) -| (gate1.input 3);
     \draw (f9.north) -- ++ (up:2mm) -| (gate1.input 4);
+    \pause\pause\pause\pause
 
+    \path[draw=black!50,solid,line width=9mm,fill=black!50, preaction={-triangle 60,line width = 4mm,draw = black!50,shorten >=-10mm}] (4.3,3) -- (7,3);
+    \node[text shadow={[align=center,text width=3cm] at (5.7,3) {Convert}}] at (5.7,3) {Convert};
 
     \node[function] (f2') at (9.5,4) {$\bm{f_{2}}$};
 
@@ -25,12 +28,11 @@
     \node[function] (f8') at (10,2) {$\bm{f_8}$};
     \node[function] (f9') at (11,2) {$\bm{f_9}$};
 
-    \path[draw=black!50,solid,line width=9mm,fill=black!50, preaction={-triangle 60,line width = 4mm,draw = black!50,shorten >=-10mm}] (4.3,3) -- (7,3);
-
     \draw[->] (f6') -- (f2');
     \draw[->] (f7') -- (f2');
     \draw[->] (f8') -- (f2');
     \draw[->] (f9') -- (f2');
+    \pause
 
     \extrarowsep =1mm
     \node[anchor = north] (CPT) at (6,1.5) {\scriptsize
@@ -40,8 +42,8 @@
           $F(f_8)$ & T & T & F & F & T & T & F & F & T & T & F & F & T & T & F & F \\
           $F(f_9)$ & T & F & T & F & T & F & T & F & T & F & T & F & T & F & T & F \\
           \hline
-          $F(f_2)$ & $0$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\
-          $\overline{F}(f_2)$ & $1$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$
+          $F(f_1)$ & $1$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ \\
+          $\overline{F}(f_1)$ & $0$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$
         \end{tabu}
     };
 

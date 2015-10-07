@@ -16,8 +16,10 @@
     \draw (f11.north) -- ++ (up:1mm) -| (gate1.input 2);
     \draw (f12.north) -- ++ (up:1mm) -| (gate1.input 3);
     \draw (f13.north) -- ++ (up:2mm) -| (gate1.input 4);
-
-
+    \pause\pause\pause\pause\pause\pause\pause
+    
+    \path[draw=black!50,solid,line width=9mm,fill=black!50, preaction={-triangle 60,line width = 4mm,draw = black!50,shorten >=-10mm}] (4.3,3) -- (7,3);
+    \node[text shadow={[align=center,text width=3cm] at (5.7,3) {Convert}}] at (5.7,3) {Convert};
     \node[function] (f5') at (9.5,4) {$\bm{f_{5}}$};
 
     \node[function] (f10') at (8,2) {$\bm{f_{10}}$};
@@ -25,13 +27,12 @@
     \node[function] (f12') at (10,2) {$\bm{f_{12}}$};
     \node[function] (f13') at (11,2) {$\bm{f_{13}}$};
 
-    \path[draw=black!50,solid,line width=9mm,fill=black!50, preaction={-triangle 60,line width = 4mm,draw = black!50,shorten >=-10mm}] (4.3,3) -- (7,3);
-
     \draw[->] (f10') -- (f5');
     \draw[->] (f11') -- (f5');
     \draw[->] (f12') -- (f5');
     \draw[->] (f13') -- (f5');
-
+    \pause
+    
     \extrarowsep =1mm
     \node[anchor = north] (CPT) at (6,1.5) {\scriptsize
         \begin{tabu}{X[4,c]|*{16}{X[c]}}
@@ -40,10 +41,9 @@
           $F(f_{12})$ & T & T & F & F & T & T & F & F & T & T & F & F & T & T & F & F \\
           $F(f_{13})$ & T & F & T & F & T & F & T & F & T & F & T & F & T & F & T & F \\
           \hline
-          $F(f_5)$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $0$ \\
-          $\overline{F}(f_5)$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$
+          $F(f_5)$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\
+          $\overline{F}(f_5)$ & $0$  & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$& $1$ & $1$
         \end{tabu}
     };
-
     \onslide<1->
 \end{tikzpicture} 

@@ -6,6 +6,7 @@
 \usepackage{mathrsfs}
 \usepackage{amsmath}
 \usepackage{bm}
+\usepackage{mathtools}
 \usepackage{booktabs}
 \usepackage{ragged2e}
 \justifying
@@ -15,9 +16,18 @@
 \usepackage{tkz-euclide, pgfplots}
 \usetikzlibrary{decorations.text}
 \usetikzlibrary{shadows}
+\usetikzlibrary{shapes}
 \usetikzlibrary{circuits.logic.CDH}
+%\usetkzobj{all}
 
-\usetkzobj{all}
+\tikzset{
+    text shadow/.code args={[#1]#2at#3(#4)#5}{
+        \pgfkeysalso{/tikz/.cd,#1}%
+        \foreach \angle in {0,5,...,359}{
+                \node[#1,text=white] at ([shift={(\angle:.8pt)}] #4){#5};
+        }
+    }
+}
 
 
 \usepackage{tabu}
@@ -52,14 +62,13 @@
 \end{frame}
 
 % Main Body
-%\input{Sections/Introduction}
-%\input{Sections/Architecture}
+\input{Sections/Introduction}
+\input{Sections/Architecture}
 \input{Sections/Hazardous.Incident.Prediction}
-%\input{Sections/Dynamic.Risk.Assessment}
-%\input{Sections/Simulation}
+\input{Sections/Dynamic.Risk.Assessment}
+\input{Sections/Simulation}
+
 % Questions
-
-
 \setbeamercolor{background canvas}{bg=mDarkTeal}
 \begin{frame}{}
     \centering

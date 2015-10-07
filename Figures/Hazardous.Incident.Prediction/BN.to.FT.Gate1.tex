@@ -1,0 +1,56 @@
+\begin{tikzpicture}[line width = \pgfdefaultlinewidth,
+                    circuit logic US,
+                    function/.style = {draw = blue, fill = blue, text = white, circle, font = \scriptsize, minimum size = 0.6cm, inner sep = 0pt}]
+    \node[function] (f1) at (9.5,4) {$\bm{f_{1}}$};
+
+    \node[and gate,point up,logic gate inputs=1234,logic gate inverted radius=1pt] (gate1) at (9.5,3) {};
+    \draw (gate1.output) -- (f1);
+
+    \node[function] (f2) at (8,2) {$\bm{f_2}$};
+    \node[function] (f3) at (9,2) {$\bm{f_{3}}$};
+    \node[function] (f4) at (10,2) {$\bm{f_{4}}$};
+    \node[function] (f5) at (11,2) {$\bm{f_{5}}$};
+
+    \draw (f2.north) -- ++ (up:2mm) -| (gate1.input 1);
+    \draw (f3.north) -- ++ (up:1mm) -| (gate1.input 2);
+    \draw (f4.north) -- ++ (up:1mm) -| (gate1.input 3);
+    \draw (f5.north) -- ++ (up:2mm) -| (gate1.input 4);
+    
+    \path[draw=black!50,solid,line width=9mm,fill=black!50, preaction={-triangle 60,line width = 4mm,draw = black!50,shorten >=-10mm}] (4.3,3) -- (7,3);
+    \node[text shadow={[align=center,text width=3cm] at (5.7,3) {Convert}}] at (5.7,3) {Convert};
+    
+    \only<1-2>{
+        \node[text = red] at (5.7,3) {\scalebox{7}{\Black ?}};
+    }
+    \only<3->{
+        \node[forbidden sign,text width=1.5cm, text centered, draw = red, line width = 8pt] at (5.7,3) {};
+    }
+                    
+    \node[function] (f1') at (2.5,4) {$\bm{f_{1}}$};
+
+    \node[function] (f2') at (1,2) {$\bm{f_2}$};
+    \node[function] (f3') at (2,2) {$\bm{f_3}$};
+    \node[function] (f4') at (3,2) {$\bm{f_4}$};
+    \node[function] (f5') at (4,2) {$\bm{f_5}$};
+
+    \draw[->] (f2') -- (f1');
+    \draw[->] (f3') -- (f1');
+    \draw[->] (f4') -- (f1');
+    \draw[->] (f5') -- (f1');
+    \pause
+    
+    \extrarowsep =1mm
+    \node[anchor = north] (CPT) at (6,1.5) {\scriptsize
+        \begin{tabu}{X[4,c]|*{16}{X[c]}}
+          $F(f_2)$ & T & T & T & T & T & T & T & T & F & F & F & F & F & F & F & \textcolor{red}{\textbf{F}} \\
+          $F(f_3)$ & T & T & T & T & F & F & F & F & T & T & T & T & F & F & F & \textcolor{red}{\textbf{F}} \\
+          $F(f_4)$ & T & T & F & F & T & T & F & F & T & T & F & F & T & T & F & \textcolor{red}{\textbf{F}} \\
+          $F(f_5)$ & T & F & T & F & T & F & T & F & T & F & T & F & T & F & T & \textcolor{red}{\textbf{F}} \\
+          \hline
+          $F(f_1)$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & \textcolor{red}{$\mathclap{\bm{0.5}}$} \\
+          $\overline{F}(f_1)$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & \textcolor{red}{$\mathclap{\bm{0.5}}$}
+        \end{tabu}
+    };
+
+    \onslide<1->
+\end{tikzpicture} 

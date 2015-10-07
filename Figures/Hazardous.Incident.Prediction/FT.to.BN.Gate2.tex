@@ -1,0 +1,49 @@
+\begin{tikzpicture}[line width = \pgfdefaultlinewidth,
+                    circuit logic US,
+                    function/.style = {draw = blue, fill = blue, text = white, circle, font = \scriptsize, minimum size = 0.6cm, inner sep = 0pt}]
+
+    \node[function] (f2) at (2.5,4) {$\bm{f_{2}}$};
+
+    \node[and gate,point up,logic gate inputs=nnin,logic gate inverted radius=1pt] (gate1) at (2.5,3) {};
+    \draw (gate1.output) -- (f1);
+
+    \node[function] (f6) at (1,2) {$\bm{f_6}$};
+    \node[function] (f7) at (2,2) {$\bm{f_{7}}$};
+    \node[function] (f8) at (3,2) {$\bm{f_{8}}$};
+    \node[function] (f9) at (4,2) {$\bm{f_{9}}$};
+
+    \draw (f6.north) -- ++ (up:2mm) -| (gate1.input 1);
+    \draw (f7.north) -- ++ (up:1mm) -| (gate1.input 2);
+    \draw (f8.north) -- ++ (up:1mm) -| (gate1.input 3);
+    \draw (f9.north) -- ++ (up:2mm) -| (gate1.input 4);
+
+
+    \node[function] (f2') at (9.5,4) {$\bm{f_{2}}$};
+
+    \node[function] (f6') at (8,2) {$\bm{f_6}$};
+    \node[function] (f7') at (9,2) {$\bm{f_7}$};
+    \node[function] (f8') at (10,2) {$\bm{f_8}$};
+    \node[function] (f9') at (11,2) {$\bm{f_9}$};
+
+    \path[draw=black!50,solid,line width=9mm,fill=black!50, preaction={-triangle 60,line width = 4mm,draw = black!50,shorten >=-10mm}] (4.3,3) -- (7,3);
+
+    \draw[->] (f6') -- (f2');
+    \draw[->] (f7') -- (f2');
+    \draw[->] (f8') -- (f2');
+    \draw[->] (f9') -- (f2');
+
+    \extrarowsep =1mm
+    \node[anchor = north] (CPT) at (6,1.5) {\scriptsize
+        \begin{tabu}{X[4,c]|*{16}{X[c]}}
+          $F(f_6)$ & T & T & T & T & T & T & T & T & F & F & F & F & F & F & F & F \\
+          $F(f_7)$ & T & T & T & T & F & F & F & F & T & T & T & T & F & F & F & F \\
+          $F(f_8)$ & T & T & F & F & T & T & F & F & T & T & F & F & T & T & F & F \\
+          $F(f_9)$ & T & F & T & F & T & F & T & F & T & F & T & F & T & F & T & F \\
+          \hline
+          $F(f_2)$ & $0$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\
+          $\overline{F}(f_2)$ & $1$ & $1$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$ & $1$
+        \end{tabu}
+    };
+
+    \onslide<1->
+\end{tikzpicture} 

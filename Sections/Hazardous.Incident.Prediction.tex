@@ -1,9 +1,57 @@
 \section{Hazardous Incident Prediction}
 \subsection{The Bayesian Network Based Knowledge Modeling}
+\begin{frame}{An Example of Multi-Step Attacks}
+
+\end{frame}
+
 \begin{frame}{Attack Level}
+    In this paper, the Bayesian network is used to model the relationship between attacks and resources.
+    \begin{center}
+      \input{Figures/Hazardous.Incident.Prediction/Bayesian.Network.of.Attack.Level.tex}
+    \end{center}
+
 \end{frame}
 
 \begin{frame}{Function Level}
+    Function Tree Analysis is widely used to analyze the stability of control system, a typical function tree is shown in following figure.
+    \begin{center}
+      \input{Figures/Hazardous.Incident.Prediction/Example.of.Function.Tree.tex}
+    \end{center}
+    
+    \begin{overlayarea}{\textwidth}{1cm}
+    \only<3-4>{
+        \[
+            F_1 = F_2F_3F_4F_5
+        \]
+    }
+    \only<5-6>{
+        \[
+            F_2 = F_6F_7\overline{F_8}F_9
+        \]
+    }
+    \only<7-8>{
+        \[
+            F_5 = F_{10}+F_{11}+F_{12}+F_{13}
+        \]
+    }    
+    \end{overlayarea}
+\end{frame}
+
+\begin{frame}{Function Level}
+    To simplify the inference, the function tree is converted into Bayesian network, which is shown in following figure.\\
+    \begin{overlayarea}{\textwidth}{6cm}
+    \begin{center}
+      \only<1>{
+        \input{Figures/Hazardous.Incident.Prediction/FT.to.BN.Gate1.tex}
+      }
+      \only<2>{
+        \input{Figures/Hazardous.Incident.Prediction/FT.to.BN.Gate2.tex}
+      }
+      \only<3>{
+        \input{Figures/Hazardous.Incident.Prediction/FT.to.BN.Gate3.tex}
+      }
+    \end{center}
+    \end{overlayarea}
 \end{frame}
 
 \begin{frame}{Incident Level}
@@ -14,4 +62,4 @@
 \end{frame}
 
 \begin{frame}{Calculation of Incident Probability}
-\end{frame}
+\end{frame} 

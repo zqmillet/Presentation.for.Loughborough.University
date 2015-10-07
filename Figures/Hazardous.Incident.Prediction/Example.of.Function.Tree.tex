@@ -1,0 +1,55 @@
+\begin{tikzpicture}[line width = \pgfdefaultlinewidth,
+                    circuit logic US,
+                    function/.style = {draw = blue, fill = blue, text = white, circle, font = \scriptsize, minimum size = 0.6cm, inner sep = 0pt}]
+    \pause
+    \node[function] (f1)  at (3.5,4) {$\bm{f_{1}}$};
+    \pause
+    \pause
+
+    \node[and gate,point up,logic gate inputs=1234,logic gate inverted radius=1pt] (gate1) at (3.5,3) {};
+    \draw (gate1.output) -- (f1);
+
+    \node[function] (f2)  at (1.5,2) {$\bm{f_2}$};
+    \node[function] (f3) at (1.5+4/3,2) {$\bm{f_{3}}$};
+    \node[function] (f4) at (1.5+8/3,2) {$\bm{f_{4}}$};
+    \node[function] (f5) at (5.5,2) {$\bm{f_{5}}$};
+
+    \draw (f2.north) -- ++ (up:2mm) -| (gate1.input 1);
+    \draw (f3.north) -- ++ (up:1mm) -| (gate1.input 2);
+    \draw (f4.north) -- ++ (up:1mm) -| (gate1.input 3);
+    \draw (f5.north) -- ++ (up:2mm) -| (gate1.input 4);
+
+    \pause
+    \pause
+
+    \node[and gate,point up,logic gate inputs=nnin, logic gate inverted radius=1pt] (gate2) at (1.5,1) {};
+    \draw (gate2.output) -- (f2);
+
+    \node[function] (f6) at (0,0) {$\bm{f_6}$};
+    \node[function] (f7) at (1,0) {$\bm{f_7}$};
+    \node[function] (f8) at (2,0) {$\bm{f_8}$};
+    \node[function] (f9) at (3,0) {$\bm{f_9}$};
+
+    \draw (f6.north) -- ++ (up:2mm) -| (gate2.input 1);
+    \draw (f7.north) -- ++ (up:1mm) -| (gate2.input 2);
+    \draw (f8.north) -- ++ (up:1mm) -| (gate2.input 3);
+    \draw (f9.north) -- ++ (up:2mm) -| (gate2.input 4);
+
+    \pause
+    \pause
+
+    \node[or gate,point up,logic gate inputs=1234,logic gate inverted radius=1pt] (gate3) at (5.5,1) {};
+    \draw (gate3.output) -- (f5);
+
+    \node[function] (f10) at (4,0) {$\bm{f_{10}}$};
+    \node[function] (f11) at (5,0) {$\bm{f_{11}}$};
+    \node[function] (f12) at (6,0) {$\bm{f_{12}}$};
+    \node[function] (f13) at (7,0) {$\bm{f_{13}}$};
+
+    \draw (f10.north) -- ++ (up:2mm) -| (gate3.input 1);
+    \draw (f11.north) -- ++ (up:1mm) -| (gate3.input 2);
+    \draw (f12.north) -- ++ (up:1mm) -| (gate3.input 3);
+    \draw (f13.north) -- ++ (up:2mm) -| (gate3.input 4);
+
+    \onslide<1->
+\end{tikzpicture} 

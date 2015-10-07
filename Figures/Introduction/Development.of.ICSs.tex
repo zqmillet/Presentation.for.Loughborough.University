@@ -13,17 +13,20 @@
     \fill (A) circle (2pt) node [revolution] {The 1\textsuperscript{st} industrial revolution\\Machine Age};
     \pause
     \fill (B) circle (2pt) node [revolution] {The 2\textsuperscript{nd} industrial revolution\\Semi-automatic Age};
+    
     \pause
     \fill (C) circle (2pt) node [revolution] {The 3\textsuperscript{rd} industrial revolution\\Automatic Age};
+    
     \pause
     \fill (D) circle (2pt) node [revolution] {The 4\textsuperscript{th} industrial revolution\\Intelligent Age};
-
+    
     \pause
     \draw[postaction={decoration={text along path, transform={yshift=5pt}, text color=red, text={The Development of Industrial Control Systems},
 text align=center}, decorate}]
     [domain=0.25:7, variable=\x, samples=200, ->, red, line width = 2pt] plot({\x},{(0.0625*\x^2 + 0.3125*\x + 0.3281)});
     
-    
-    
-    
+    \onslide<1->
+
+
+
 \end{tikzpicture} 

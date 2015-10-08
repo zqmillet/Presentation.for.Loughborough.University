@@ -1,0 +1,67 @@
+\begin{tikzpicture}[line width = \pgfdefaultlinewidth,
+                    incident/.style = {draw = black, fill = black, text = white, circle, font = \scriptsize, minimum size = 0.6cm, inner sep = 0pt}]
+
+    \pgfmathsetmacro{\interval}{1.73}
+
+    \node[incident] (e1)  at (0.0, 0*\interval) {$\bm{e_{1 }}$};
+    \node[incident] (e2)  at (1.0, 0*\interval) {$\bm{e_{2 }}$};
+    \node[incident] (e3)  at (2.0, 0*\interval) {$\bm{e_{3 }}$};
+    \node[incident] (e4)  at (3.0, 0*\interval) {$\bm{e_{4 }}$};
+    \pause
+    
+    \node[incident] (e5)  at (0.0, 1*\interval) {$\bm{e_{5 }}$};
+    \node[incident] (e6)  at (1.5, 1*\interval) {$\bm{e_{6 }}$};
+    \node[incident] (e7)  at (3.0, 1*\interval) {$\bm{e_{7 }}$};
+
+    \foreach \i/\j in {1/5,
+                       1/7,
+                       2/6,
+                       2/7,
+                       3/5,
+                       4/6,
+                       4/7}
+    {
+        \draw[->] (e\i) -- (e\j);
+    }
+    \pause
+    
+    \node[incident] (e8)  at (0.0, 2*\interval) {$\bm{e_{8 }}$};
+    \node[incident] (e9)  at (1.0, 2*\interval) {$\bm{e_{9 }}$};
+    \node[incident] (e10) at (2.0, 2*\interval) {$\bm{e_{10}}$};
+    \node[incident] (e11) at (3.0, 2*\interval) {$\bm{e_{11}}$};
+        
+    \foreach \i/\j in {5/9,
+                       6/8,
+                       6/9,
+                       6/11,
+                       7/10,
+                       7/11}
+    {
+        \draw[->] (e\i) -- (e\j);
+    }    
+    \pause
+    
+    \extrarowsep =1mm
+    \node[anchor = north west] (CPTE10) at (3.5,2.2*\interval) {\scriptsize
+        \begin{tabu}to 4.2cm{X[-1,c]|X[c]X[c]}
+            $H(e_7)$    & T & F\\
+            \hline
+            $\mathclap{H(e_{10})}$ & $h_{e_{10},1}$ & $h_{e_{10},2}$\\
+            $\mathclap{\overline{H}(e_{10})}$ & $1-h_{e_{10},1}$ & $1-h_{e_{10},2}$
+        \end{tabu}
+    };
+    \draw[->, dotted] (e10) to[out=-45, in=180] (CPTE10);
+    \pause
+    
+    \node[anchor = north west] (CPTE6) at (3.5,1.1*\interval) {\scriptsize
+        \begin{tabu}to 7cm{X[-1,c]|*4{X[c]}}
+            $H(e_2)$    & T & T & F & F\\
+            $H(e_4)$    & T & F & T & F\\
+            \hline
+            $H(e_{6})$ & $h_{e_{6},1}$ & $h_{e_{6},2}$ & $h_{e_{6},3}$ & $h_{e_{6},4}$ \\
+            $\overline{H}(e_{6})$ & $1-h_{e_{6},1}$ & $1-h_{e_{6},2}$ & $1-h_{e_{6},3}$ & $1-h_{e_{6},4}$
+        \end{tabu}
+    };       
+    \draw[->, dotted] (e6) to[out=-40, in=180] (CPTE6);
+    \onslide<1->
+\end{tikzpicture} 

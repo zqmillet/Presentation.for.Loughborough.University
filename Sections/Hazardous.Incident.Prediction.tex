@@ -60,11 +60,42 @@
 \end{frame}
 
 \begin{frame}{Incident Level}
+    The occurrence of one incident may cause another incidents, in this paper, the Bayesian network is also used to model the causal relationship amongst the potential incidents.
+    
+    A typical Bayesian network of incident is shown in following figure.
+    
+    \begin{center}
+      \input{Figures/Hazardous.Incident.Prediction/Bayesian.Network.of.Incident.Level.tex}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Information Transfer between Levels}
+    The cyber attacks can lead to system function failures, and the function failures may cause the industrial incidents. To analyze the risk propagation, an information transfer is necessary between the three aforementioned layers.
+    
+    The following figures show two kind of information transfer.        
+
+    \begin{center}
+      \only<1>{
+        \input{Figures/Hazardous.Incident.Prediction/Information.Transfer.from.Attack.to.Function.tex}
+      }
+      \only<2>{
+        \input{Figures/Hazardous.Incident.Prediction/Information.Transfer.from.Function.to.Incident.tex}
+      }
+    \end{center}
 \end{frame}
 
 \subsection{Incident Prediction}
 \begin{frame}{Collection of Evidence}
+    There are two kind of evidence need to be collected:
+    \begin{itemize}
+      \item \textbf{Attack Evidence}, contains the attack information, such as attack time, attack type, attack object, etc.
+      \item \textbf{Anomaly Evidence}, contains the information about the anomaly, such as function failure, function restoration, incident occurrence, etc.
+    \end{itemize}
+    \pause
+    
+    For each evidence, there exists a corresponding node in the multi-level Bayesian network. When the intrusion detection system or the monitoring system find an evidence, the corresponding node will be marked in the multi-level Bayesian network.
 \end{frame}
 
 \begin{frame}{Calculation of Incident Probability}
+    Finally, the algorithm named Probability Propagation in Trees of Clusters (PPTC) can calculate the probabilities of all the hazardous incident.
 \end{frame} 

@@ -1,4 +1,64 @@
 \section{Dynamic Risk Assessment}
+\subsection{Decouple of Incident Consequences}
+\begin{frame}{Decouple of Incident Consequences -- Step 1}
+     for each incident $e_i$, analyze its consequence and generate a consequence set
+     \[
+        \bm{c}_i = (c_1, c_2, \cdots, c_n) \text{.}
+     \]
+
+     The meaning of $\bm{c}_i$ is that the occurring of the incident $e_i$ will threaten the elements in consequence set $\bm{c}_i$.\\[10pt]
+
+     For example, the incident $e_i$ is an explosion of a reactor, which may cause worker casualties, air pollution, facilities damages, and products loss. The consequence set of $e_i$ is
+     \[
+        \bm{c}_i = (\text{workers}, \text{air}, \text{facilities}, \text{products})\text{.}
+     \]
+\end{frame}
+
+%\begin{frame}{Decouple of Incident Consequences -- Step 2}
+%    Generate $\bm{C}' = (\bm{c}'_1, \bm{c}'_2, \cdots, \bm{c}'_{m'})$ based on $\bm{C} = (\bm{c}_1, \bm{c}_2, \cdots, \bm{c}_m)$. The following conditions must be met:\vspace{-10pt}
+%
+%    \[
+%        \begin{array}{rl}
+%            \text{\bf Completeness: } & \bigcup_{i=1}^m \bm{c}_i = \bigcup_{i=1}^{m'}\bm{c}'_i\\[5pt]
+%            \text{\bf Independence: } & \forall \bm{c}'_i, \bm{c}'_j \in \bm{C}', \bm{c}'_i \cap \bm{c}'_j = \varnothing\\[5pt]
+%            \text{\bf Traceability: } & \forall \bm{c}' \in \bm{C}', \exists \bm{c} \in \bm{C}, \bm{c}' \subseteq \bm{c}
+%        \end{array}
+%    \]
+%
+%    \pause
+%    \vspace{-10pt}
+%    \begin{center}
+%      \input{Figures/Dynamic.Risk.Assessment/Example.of.Decouple.of.Incident.Consequences}
+%    \end{center}
+%\end{frame}
+
+\begin{frame}{Decouple of Incident Consequences -- Step 3}
+     For each $\bm{c}'_j \in \bm{C}'$, generate a corresponding auxiliary node $x_j$. According to the \textbf{traceability} of $\bm{C}'$
+     \[
+        \forall \bm{c}' \in \bm{C}', \exists \bm{c} \in \bm{C}, \bm{c}' \subseteq \bm{c}\text{,}
+     \]
+     \vspace{-15pt}\\
+     there must be a consequence set $\bm{c}_i \in \bm{C}$ , where $\bm{c}'_j \subseteq \bm{c}_i$. \pause So, for each $\bm{c}'_j \in \bm{C}'$, we can find the incident set
+     \[
+        \bm{e}_j = (e_{i_1},e_{i_2},\cdots,e_{i_n})\text{.}
+     \]
+     \vspace{-15pt}\\\pause
+     For each incident $e_k$ of the incident set $\bm{e}_j$, the corresponding consequence set $\bm{c}_k$ satisfies the following condition:
+     \[
+        \bm{c}'_j \subseteq \bm{c}_k\text{.}
+     \]
+     \vspace{-15pt}\\\pause
+     Therefore, the parent nodes of the auxiliary node $x_j$ are incident nodes $e_{i_1},e_{i_2},\cdots,e_{i_n}$.
+\end{frame}
+
+\begin{frame}{Decouple of Incident Consequences -- Step 4}
+    For each auxiliary node $x_j$, generate a conditional probability table.
+    
+    
+    
+    
+\end{frame}
+
 \subsection{Classification of Incident Consequences}
 \begin{frame}{Harm to Humans}
 \end{frame}
@@ -21,4 +81,4 @@
 
 \subsection{Calculation of Dynamic Risk}
 \begin{frame}{Calculation of Dynamic Risk}
-\end{frame}
+\end{frame} 

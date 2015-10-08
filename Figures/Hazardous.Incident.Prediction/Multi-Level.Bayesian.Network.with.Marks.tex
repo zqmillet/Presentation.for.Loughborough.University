@@ -1,0 +1,76 @@
+\begin{tikzpicture}[line width = \pgfdefaultlinewidth,
+                    attack/.style = {draw = red, fill = red, text = white, circle, font = \scriptsize, minimum size = 0.6cm, inner sep = 0pt},
+                    resource/.style = {draw = green, fill = green, text = white, circle, font = \scriptsize, minimum size = 0.6cm, inner sep = 0pt},
+                    function/.style = {draw = blue, fill = blue, text = white, circle, font = \scriptsize, minimum size = 0.6cm, inner sep = 0pt},
+                    incident/.style = {draw = black, fill = black, text = white, circle, font = \scriptsize, minimum size = 0.6cm, inner sep = 0pt},
+                    dots/.style = {circle, inner sep = 0pt, minimum size = 0.6cm}]
+
+    \pgfmathsetmacro{\interval}{1.2}
+    
+    \node[attack]   (a1) at (0, 0*\interval) {$\bm{a_1}$};
+    \node[attack]   (a2) at (2, 0*\interval) {$\bm{a_2}$};
+    \node[attack]   (a3) at (4, 0*\interval) {$\bm{a_3}$};
+    \node[attack]   (a4) at (6, 0*\interval) {$\bm{a_4}$};
+    
+    \node[resource] (r1) at (0, 1*\interval) {$\bm{r_1}$};
+    \node[resource] (r2) at (3, 1*\interval) {$\bm{r_2}$};
+    \node[resource] (r3) at (6, 1*\interval) {$\bm{r_3}$};
+    
+    \foreach \i/\j in {1/1,
+                       1/2,
+                       2/1,
+                       2/3,
+                       3/1,
+                       3/2,
+                       4/3}
+    {
+        \draw[->] (a\i) -- (r\j);
+    }
+    
+    \node[attack]   (a5) at (0, 2*\interval) {$\bm{a_5}$};
+    \node[attack]   (a6) at (2, 2*\interval) {$\bm{a_6}$};
+    \node[attack]   (a7) at (4, 2*\interval) {$\bm{a_7}$};
+    \node[attack]   (a8) at (6, 2*\interval) {$\bm{a_8}$};
+    
+    \foreach \i/\j in {1/5,
+                       1/6,
+                       2/6,
+                       2/6,
+                       3/7,
+                       3/8}
+    {
+        \draw[->] (r\i) -- (a\j);
+    }
+    
+    \node[function] (f1) at (0, 3*\interval) {$\bm{f_1}$};
+    \node[function] (f2) at (3, 3*\interval) {$\bm{f_2}$};
+    \node[function] (f3) at (6, 3*\interval) {$\bm{f_3}$};
+    
+    \foreach \i/\j in {5/2,
+                       5/3,
+                       6/1,
+                       7/1,
+                       7/2,
+                       7/3,
+                       8/2,
+                       8/3}
+    {
+        \draw[->] (a\i) -- (f\j);
+    }
+    
+    \node[incident] (e1) at (0, 4*\interval) {$\bm{e_1}$};
+    \node[incident] (e2) at (2, 4*\interval) {$\bm{e_2}$};
+    \node[incident] (e3) at (4, 4*\interval) {$\bm{e_3}$};
+    \node[incident] (e4) at (6, 4*\interval) {$\bm{e_4}$};
+    
+    \foreach \i/\j in {1/1,
+                       1/3,
+                       2/1,
+                       2/2,
+                       3/3,
+                       3/4}
+    {
+        \draw[->] (f\i) -- (e\j);
+    }
+    
+\end{tikzpicture} 

@@ -61,9 +61,9 @@
 
 \begin{frame}{Incident Level}
     The occurrence of one incident may cause another incidents, in this paper, the Bayesian network is also used to model the causal relationship amongst the potential incidents.
-    
+
     A typical Bayesian network of incident is shown in following figure.
-    
+
     \begin{center}
       \input{Figures/Hazardous.Incident.Prediction/Bayesian.Network.of.Incident.Level.tex}
     \end{center}
@@ -71,8 +71,8 @@
 
 \begin{frame}{Information Transfer between Levels}
     The cyber attacks can lead to system function failures, and the function failures may cause the industrial incidents. To analyze the risk propagation, an information transfer is necessary between the three aforementioned layers.
-    
-    The following figures show two kind of information transfer.        
+
+    The following figures show two kind of information transfer.
 
     \begin{center}
       \only<1>{
@@ -92,13 +92,29 @@
       \item \textbf{Anomaly Evidence}, contains the information about the anomaly, such as function failure, function restoration, incident occurrence, etc.
     \end{itemize}
     \pause
-    
-    For each evidence, there exists a corresponding node in the multi-level Bayesian network. When the intrusion detection system or the monitoring system find an evidence, the corresponding node will be marked in the multi-level Bayesian network.
+
+    For each evidence, there exists a corresponding node in the multi-level Bayesian network. When the intrusion detection system or the monitoring system finds an evidence, the corresponding node will be marked in the multi-level Bayesian network.
 \end{frame}
 
 \begin{frame}{Calculation of Incident Probability}
-    \begin{center}
+    \begin{minipage}[][6cm][t]{0.4\textwidth}
       \input{Figures/Hazardous.Incident.Prediction/Multi-Level.Bayesian.Network.with.Marks.tex}
-    \end{center}
-    Finally, the algorithm named Probability Propagation in Trees of Clusters (PPTC) can calculate the probabilities of all the hazardous incident.
-\end{frame}
+    \end{minipage}    
+    \begin{minipage}[][6cm][t]{0.6\textwidth}
+        \vspace{5pt}The left figure shows a typical multi-level Bayesian network.\\[0pt]
+        
+        \pause
+        Assuming that the evidence list is
+        \[
+            a_1, a_6, f_1
+        \]
+        \pause
+        
+        \vspace{-10pt}Then the nodes $a_1$, $a_6$, and $f_1$ are marked with \textcolor{red}{\textbf{red}} dashed circles.\\[0pt]
+        \pause
+        
+        Finally, the algorithm named Probability Propagation in Trees of Clusters (PPTC) can calculate the probabilities of all the hazardous incidents.
+    \end{minipage}
+    
+    
+\end{frame} 

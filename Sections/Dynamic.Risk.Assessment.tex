@@ -52,11 +52,27 @@
 \end{frame}
 
 \begin{frame}{Decouple of Incident Consequences -- Step 4}
-    For each auxiliary node $x_j$, generate a conditional probability table.
-    
-    
-    
-    
+    For each auxiliary node $x_j$, generate a conditional probability table. A typical conditional probability table of auxiliary node $x_j$ is shown as following table.
+
+    \extrarowsep = 0.7mm
+    \begin{center}
+      \begin{tabu}to \textwidth{@{}X[c,2]@{}|*7{X[c]}@{}}
+        $H(e_{i_1})$        & T & T & T & $\cdots$ & F & F & F\\
+        $H(e_{i_2})$        & T & T & T & $\cdots$ & F & F & F\\
+        $H(e_{i_3})$        & T & T & T & $\cdots$ & F & F & F\\
+        $\vdots$            & $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$ & $\vdots$ & $\vdots$ & $\vdots$\\
+        $H(e_{i_{n-2}})$    & T & T & T & $\cdots$ & F & F & F\\
+        $H(e_{i_{n-1}})$    & T & T & F & $\cdots$ & T & F & F\\
+        $H(e_{i_n})$        & T & F & F & $\cdots$ & F & T & F\\
+        \hline
+        $H(x_j)$            & $1$ & $1$ & $1$ & $\cdots$ & $1$ & $1$ & $0$ \\
+        $\overline{H}(x_j)$ & $0$ & $0$ & $0$ & $\cdots$ & $0$ & $0$ & $1$
+      \end{tabu}
+    \end{center}
+
+
+
+
 \end{frame}
 
 \subsection{Classification of Incident Consequences}

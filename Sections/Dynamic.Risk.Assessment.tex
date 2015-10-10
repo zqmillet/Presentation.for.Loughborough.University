@@ -111,16 +111,25 @@
       \item \textbf{Property Loss $Q_P$:}\\
       The cost of replacement is used to quantify the loss of property $Q_P$, such as the loss of  materials, products, and equipment.
     \end{itemize}
-
-
-\end{frame}
-
-\begin{frame}{Quantification of Environmental Pollution}
-\end{frame}
-
-\begin{frame}{Quantification of Property Loss}
 \end{frame}
 
 \subsection{Calculation of Dynamic Risk}
 \begin{frame}{Calculation of Dynamic Risk}
+    Due to the following two reasons:
+    \begin{itemize}
+      \item there is no overlapping between the consequences of any two auxiliary nodes $x_i$ and $x_j$, $i\neq j$,
+      \item the auxiliary nodes contain all the consequences of incidents,
+    \end{itemize}
+    
+    the dynamic cybersecurity risk can be defined as 
+    \[
+        \risk = \sum_{i=1}^{m'}p(x_i)q(x_i)\text{,}
+    \]
+    
+    where
+    \begin{itemize}
+      \item $p(x_i)$ is the occurrence probability of the auxiliary node $x_i$,
+      \item $q(x_i)$ is the monetary loss of the auxiliary node $x_i$.
+    \end{itemize}
+     
 \end{frame} 

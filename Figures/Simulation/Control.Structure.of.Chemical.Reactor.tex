@@ -1,0 +1,155 @@
+\newcommand{\computer}{\includegraphics[width=0.7cm]{Figures/Materials/Computer.pdf}}
+\newcommand{\router}{\includegraphics[width=0.7cm]{Figures/Materials/Router.pdf}}
+\newcommand{\plc}{\includegraphics[width=0.65cm]{Figures/Materials/PLC.pdf}}
+\newcommand{\server}{\includegraphics[width=0.52cm]{Figures/Materials/Server.pdf}}
+
+\newcommand{\mydot}{,}
+
+
+\newcommand{\bus}[3]{
+	\draw[fill = white] (#1, #2 + 0.15) to[out = 180, in = 180] (#1, #2 - 0.15) -- (#1 + #3, #2 - 0.15) to[in = 0, out = 0] (#1 + #3, #2 + 0.15) -- cycle;
+	\draw (#1 + #3, #2 + 0.1) to[out = 180, in = 180] (#1 + #3, #2 - 0.1) to[in = 0, out = 0] cycle;
+}
+
+\newcommand{\valve}[3]{
+	\draw[fill = white] (#1,#2) -- (#1 - 0.25, #2 + 0.15) -- (#1 - 0.25, #2 - 0.15) -- (#1 + 0.25, #2 + 0.15) -- (#1 + 0.25, #2 - 0.15) -- (#1 ,#2) -- (#1, #2 + 0.2) -- (#1 - 0.2, #2 + 0.2) to[out = 45, in = 135] (#1 + 0.2, #2 + 0.2) -- (#1, #2 + 0.2);
+	\node (v#3) at (#1,#2) [rectangle, minimum width = 0.3cm] {};
+}
+
+\begin{tikzpicture}[line width = \pgfdefaultlinewidth,
+                    x = 0.6cm,
+                    y = 0.6cm,
+                    tag/.style = {pos = 0.7}]
+\scriptsize
+
+% Networks
+\draw (2,9) node {\server} -- (2,8);
+\draw (5,9) node {\computer} -- (5,8);
+\draw (8,9.5) -- (8,9) node {\router} -- (8,8);
+\draw (3.5,8) -- (3.5,7) node {\router} -- (3.5,6);
+\draw (8,8) -- (8,7) node {\router} -- (8,6);
+
+\foreach \i in {1,...,6}{
+    \draw (1.5*\i + 0.5,6) -- (1.5*\i + 0.5,5) node {\plc} -- (1.5*\i + 0.5,4);
+    \node [below = -8pt, text shadow={[align=center, below = -8pt] at (1.5*\i + 0.5,4) {PLC\i}}] at (1.5*\i + 0.5,4) {PLC\i};
+}
+
+% Water Level
+\fill[blue!50] (4,-1) to[out = -90, in = -90] (7.5,-1) -- (7.5, 1) decorate [decoration={snake, segment length = 4mm, amplitude = 0.5mm}] { -- (4, 1)};
+
+% Tank
+\draw (4,2) -- (4,-1) to[out = -90, in = -90] (7.5,-1) -- (7.5,2) to [in = 90, out = 90] cycle;
+
+% Sensor
+\draw[line width = 3pt] (4.4, 0.3) -- (4.4, 0.7);
+\draw[line width = 3pt] (4.85, 0.3) -- (4.85, 0.7);
+\draw[line width = 3pt] (5.3, 0.3) -- (5.3, 0.7);
+
+\foreach \i in {4.4, 4.85, 5.3, 5.75}{
+	\draw[line width = 2pt, white] (\i,3.1) -- (\i,2);
+}
+
+\draw(4.4,0.7) -- (4.4, 3.2);
+\draw(4.85,0.7) -- (4.85, 3.2);
+\draw(5.3,0.7) -- (5.3, 3.2);
+
+% Link
+\node (M) at (5.75, 3.5) [circle, draw, inner sep = 1pt] {M};
+\draw (2,4) -- (2,1) -- (2.75,1) -- (2.75,0.5);
+\draw (2,2) -- (2.75,2) -- (2.75,1.5);
+\draw (3.5,4) -- (3.5, 3.2) -- (5.3, 3.2);
+\draw (5,4) -- (5,3.5) -- (M);
+\draw (6.5,4) -- (6.5,3.2) -- (8,3.2) -- (8,-0.45);
+\draw (8,4) -- (8,3.5) -- (8.75, 3.5) -- (8.75,1.5);
+\draw (9.5,4) -- (9.5,1) -- (8.75,1) -- (8.75,0.5);
+
+\draw[fill = black] (4.4,3.2) circle (0.2mm);
+\draw[fill = black] (4.85,3.2) circle (0.2mm);
+\draw[fill = black] (5.3,3.2) circle (0.2mm);
+\draw[fill = black] (2,2) circle (0.2mm);
+
+% Valve
+\valve{2.75}{1.5}{1}
+\valve{2.75}{0.5}{2}
+\valve{8.75}{0.5}{3}
+\valve{8.75}{1.5}{4}
+
+\draw[line width = 4pt, white] (1.5, 1.5) -- (v1);
+\draw[line width = 4pt, white] (7.6, 0.5) -- (v3);
+\draw[line width = 4pt, white] (7.6,1.5) -- (v4) -- (10, 1.5);
+\draw[line width = 2pt, ->] (1.5, 1.5) -- (v1) -- (  4, 1.5);
+\draw[line width = 2pt, ->] (1.5, 0.5) -- (v2) -- (  4, 0.5);
+\draw[line width = 2pt, ->] (7.5, 0.5) -- (v3) -- ( 10, 0.5);
+\draw[line width = 2pt, ->] (7.5, 1.5) -- (v4) -- ( 10, 1.5);
+
+% Blender
+\draw[fill = black] (M) -- (5.75, 0) to[out = 10, in = 90] (6.75, 0) to[out = -90, in = -10] (5.75, 0) to[out = 170, in = 90] (4.75,0) to[out = -90, in = 190] (5.75, 0);
+
+% Heater
+\node (AC) at (9.5, -1) [draw, circle, inner sep = 1pt]{$\sim$};
+\node (SW) at (  8, -0.5) [rectangle, minimum size = 0.3cm]{};
+
+% Switch
+\draw (AC) -- (9.5, -0.5) -- (SW) -- (5.75 ,-0.5) decorate [decoration={bumps, segment length = 1.5mm, amplitude = 1.5mm, post length = 0.5mm, pre length = 0.5mm}] { -- (5.75, -1.5)} -- (9.5, -1.5) -- (AC);
+\draw[fill = white] (8.25, -0.4) -- (7.75, -0.5) circle (0.3mm);
+
+% Bus
+\bus{1.5}{8}{8.5}
+\bus{1.5}{6}{4}
+\bus{6}{6}{4}
+
+\node at (5.75,8) {\tiny Ethernet};
+\node at ( 3.5,6) {\tiny CANBUS};
+\node at (   8,6) {\tiny CANBUS};
+
+% Tag
+\node at (v1) [below right=-10pt and 1pt]{V1};
+\node at (v2) [below right=-10pt and 1pt]{V2};
+\node at (v3) [below right=-10pt and 1pt]{V3};
+\node at (v4) [below right=-10pt and 1pt]{V4};
+\node at (5.75,0)[anchor = north, text shadow={[align=center, anchor = north] at (5.75,0) {B}}]{B};
+\node at (5.75,-1)[anchor = east, text shadow={[align=center, anchor = east] at (5.75,-1) {H}}]{H};
+\node at (SW) [anchor = north]{SW};
+\node at (4.4,1) [text shadow={[align=center,text width=3cm] at (4.4,1) {T}}] {T};
+\node at (4.85,1) [text shadow={[align=center,text width=3cm] at (4.85,1) {P}}] {P};
+\node at (5.3,1) [text shadow={[align=center,text width=3cm] at (5.3,1) {L}}] {L};
+\node at (2.3,9) [right = 2pt] {HDS};
+\node at (5.4,9) [right = 2pt] {ES};
+\node at (8.4,9) [right = 2pt] {G1};
+\node at (3.9,7) [right = 2pt] {G2};
+\node at (8.4,7) [right = 2pt] {G3};
+
+% Legend
+\fill[black] (10.3 + 0.5, -2) rectangle (17.8 + 0.5,9.3);
+\draw[fill = white] (10.2 + 0.5,-1.9) rectangle (17.7 + 0.5,9.4);
+
+\foreach \i/\s/\t in {1/HDS/Historical data server,
+                      2/ES/Engineer station,
+                      3/G1/Gateway of Ethernet,
+                      4/G2/Gateway of CANBUS,
+                      5/G3/Gateway of CANBUS,
+                      6/PLC1/Controller of V1 and V2,
+                      7/PLC2/Data collection of P\mydot{} T and L,
+                      8/PLC3/Controller of M,
+                      9/PLC4/Controller of SW,
+                      10/PLC5/Controller of V4,
+                      11/PLC6/Controller of V3,
+                      12/V1/Valve of material,
+                      13/V2/Valve of another material,
+                      14/V3/Valve of product,
+                      15/V4/Valve of pressure reducing,
+                      16/M/Motor of B,
+                      17/SW/Switch of H,
+                      18/P/Pressure sensor,
+                      19/T/Temperature sensor,
+                      20/L/Liquid level sensor,
+                      21/B/Blender,
+                      22/H/Heater}
+{
+	\draw (10.5 + 0.5, 9.4 - 0.5*\i) node [anchor = west] {\s};
+	\draw (11.9 + 0.5, 9.4 - 0.5*\i) node [anchor = west] {\t};
+}
+
+\node at (11,9.4) [fill = white, anchor = west] {Legend};
+
+\end{tikzpicture}

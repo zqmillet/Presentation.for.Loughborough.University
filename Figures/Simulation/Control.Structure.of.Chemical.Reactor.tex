@@ -8,7 +8,7 @@
 
 \newcommand{\bus}[3]{
 	\draw[fill = white] (#1, #2 + 0.15) to[out = 180, in = 180] (#1, #2 - 0.15) -- (#1 + #3, #2 - 0.15) to[in = 0, out = 0] (#1 + #3, #2 + 0.15) -- cycle;
-	\draw (#1 + #3, #2 + 0.1) to[out = 180, in = 180] (#1 + #3, #2 - 0.1) to[in = 0, out = 0] cycle;
+	\draw[line width = 0.5pt] (#1 + #3, #2 + 0.1) to[out = 180, in = 180] (#1 + #3, #2 - 0.1) to[in = 0, out = 0] cycle;
 }
 
 \newcommand{\valve}[3]{
@@ -152,4 +152,4 @@
 
 \node at (11,9.4) [fill = white, anchor = west] {Legend};
 
-\end{tikzpicture}
+\end{tikzpicture} 

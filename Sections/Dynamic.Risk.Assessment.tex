@@ -52,8 +52,7 @@
 \end{frame}
 
 \begin{frame}{Decouple of Incident Consequences -- Step 4}
-    For each auxiliary node $x_j$, generate a conditional probability table. A typical conditional probability table of auxiliary node $x_j$ is shown as following table.
-  
+    For each auxiliary node $x_j$, generate a conditional probability table. A typical conditional probability table of auxiliary node $x_j$ is shown as following table.\\[-15pt]
     \extrarowsep = 0.7mm
     \begin{center}
       \begin{tabu}to \textwidth{@{}X[c,2]@{}|*7{X[c]}@{}}
@@ -69,24 +68,51 @@
         $\overline{H}(x_j)$ & $0$ & $0$ & $0$ & $\cdots$ & $0$ & $0$ & $1$
       \end{tabu}
     \end{center}
-
-
-
-
 \end{frame}
 
 \subsection{Classification of Incident Consequences}
-\begin{frame}{Harm to Humans}
-\end{frame}
-
-\begin{frame}{Environmental Pollution}
-\end{frame}
-
-\begin{frame}{Property Loss}
+\begin{frame}{Classification of Incident Consequences}
+    In this paper, there are three main kinds of incident consequences to be considered:
+    \begin{itemize}
+      \item \textbf{Harm to Humans:}\\[-5pt]
+      \begin{itemize}
+        \item[-] temporary harm,
+        \item[-] permanent disability,
+        \item[-] fatality.
+      \end{itemize}
+      \item \textbf{Environmental Pollution:}\\[-5pt]
+      \begin{itemize}
+        \item[-] air pollution,
+        \item[-] soil contamination,
+        \item[-] water pollution.
+      \end{itemize}
+      \item \textbf{Property Loss:}\\[-5pt]
+      \begin{itemize}
+        \item[-] damage of materials,
+        \item[-] damage of products,
+        \item[-] damage of equipment.
+      \end{itemize}
+    \end{itemize}
 \end{frame}
 
 \subsection{Quantification of Incident Consequences}
-\begin{frame}{Quantification of Harm to Humans}
+\begin{frame}{Quantification of Incident Consequences}
+    \begin{itemize}
+      \item \textbf{Harm to Humans $Q_H$:}\\
+      If the decision-maker would like to increase the cost of an investment by $\Delta c$ to reduce the  probability of a fatality by $\Delta p$,
+      \[
+        Q_H = \Delta c/\Delta p\text{.}
+      \]
+      \item \textbf{Environmental Pollution $Q_E$:}\\
+      The monetary loss of environmental pollution is defined as
+      \[
+        Q_E = {\it Penalty} + {\it Compensation} + {\it HarnessCost}\text{.}
+      \]
+      \item \textbf{Property Loss $Q_P$:}\\
+      The cost of replacement is used to quantify the loss of property $Q_P$, such as the loss of  materials, products, and equipment.
+    \end{itemize}
+
+
 \end{frame}
 
 \begin{frame}{Quantification of Environmental Pollution}

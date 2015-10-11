@@ -1,0 +1,201 @@
+\begin{tikzpicture}[line width = \pgfdefaultlinewidth,
+					attack/.style =   {draw = red,       fill = red,       circle, minimum size = 0.25cm, inner sep=0pt},
+					resource/.style = {draw = green,     fill = green,     circle, minimum size = 0.25cm, inner sep=0pt},
+					function/.style = {draw = blue,      fill = blue,      circle, minimum size = 0.25cm, inner sep=0pt},
+					incident/.style = {draw = black,     fill = black,     circle, minimum size = 0.25cm, inner sep=0pt}]
+
+\pgfmathsetmacro{\interval}{1.2}
+
+\node[attack]    (a1) at (12,  1*\interval) {};
+\node[attack]    (a2) at ( 8,  1*\interval) {};
+\node[attack]    (a6) at (16,  1*\interval) {};
+
+\foreach \i/\x in {2/6,
+				   3/8,
+				   4/10,
+				   1/12,
+				   6/14,
+				   5/16,
+				   8/18}{
+	\node[resource] (r\i) at (\x, 2*\interval) {};
+}
+
+\foreach \i/\x in {3/7,
+				   4/9,
+				   5/11,
+				   8/13,
+				   7/15,
+				   9/17}{
+	\node[attack] (a\i) at (\x, 3*\interval) {};
+}
+
+\foreach \i/\x in {7/9,
+				   9/15}{
+	\node[resource] (r\i) at (\x, 4*\interval) {};
+}
+
+\foreach \i in {10,...,27}{
+	\node[attack] (a\i) at (\i - 6.5, 7*\interval) {};
+}
+
+\foreach \i in {1,...,9}{
+	\node[function] (f\i) at (2 + 2*\i, 10*\interval) {};
+}
+
+\foreach \i/\x in {10/7,
+				   11/12,
+				   12/17}{
+	\node[function] (f\i) at (\x, 11*\interval) {};
+}
+
+\foreach \i/\x in {1/6,
+				   2/9,
+				   3/12,
+				   4/15,
+				   8/18}{
+	\node[incident] (e\i) at (\x, 12*\interval) {};
+}
+
+\foreach \i/\x in {5/9,
+				   7/12,
+				   6/15}{
+	\node[incident] (e\i) at (\x, 13*\interval) {};
+}
+
+\foreach \i/\x in {11/5,
+				   15/7,
+				   14/9,
+				   12/11,
+				   16/13,
+				   13/15,
+				   9/17,
+				   10/19}{
+	\node[incident] (e\i) at (\x, 14*\interval) {};
+}
+
+
+\foreach \i/\j in{a1/r1,
+                  r1/a2,
+                  r1/a6,
+                  r1/a3,
+                  r1/a4,
+                  r1/a5,
+                  r1/a7,
+                  r1/a8,
+                  r1/a9,
+                  a2/r2,
+                  a2/r3,
+                  a2/r4,
+                  a2/r5,
+                  a2/r6,
+                  r2/a3,
+                  r3/a4,
+                  r4/a5,
+                  r5/a7,
+                  r6/a8,
+                  r6/a9,
+                  a6/r8,
+                  r8/a9,
+                  a3/r7,
+                  a4/r7,
+                  a5/r7,
+                  a7/r9,
+                  r7/a8,
+                  r7/a10,
+                  r7/a11,
+                  r7/a12,
+                  r7/a13,
+                  r7/a14,
+                  r7/a15,
+                  r7/a22,
+                  r7/a23,
+                  r7/a24,
+                  r7/a25,
+                  r7/a26,
+                  r7/a27,
+                  a8/r9,
+                  a9/r9,
+                  r9/a10,
+                  r9/a11,
+                  r9/a12,
+                  r9/a13,
+                  r9/a14,
+                  r9/a15,
+                  r9/a16,
+                  r9/a17,
+                  r9/a18,
+                  r9/a19,
+                  r9/a20,
+                  r9/a21,
+                  r9/a22,
+                  r9/a23,
+                  r9/a24,
+                  r9/a25,
+                  r9/a26,
+                  r9/a27,
+                  a10/f1,
+                  a10/f2,
+                  a11/f7,
+                  a11/f8,
+                  a11/f9,
+                  a12/f6,
+                  a13/f5,
+                  a14/f4,
+                  a15/f3,
+                  a16/f1,
+                  a16/f2,
+                  a17/f7,
+                  a17/f8,
+                  a17/f9,
+                  a18/f6,
+                  a19/f5,
+                  a20/f4,
+                  a21/f3,
+                  a22/f1,
+                  a22/f2,
+                  a23/f7,
+                  a23/f8,
+                  a23/f9,
+                  a24/f6,
+                  a25/f5,
+                  a26/f4,
+                  a27/f3,
+                  f1/f10,
+                  f1/f11,
+                  f2/f10,
+                  f2/f11,
+                  f3/f10,
+                  f3/f11,
+                  f4/f12,
+                  f5/f11,
+                  f6/e8,
+                  f7/f10,
+                  f8/f11,
+                  f9/f12,
+                  f10/e1,
+                  f10/e2,
+                  f11/e3,
+                  f12/e4,
+                  e1/e5,
+                  e2/e7,
+                  e3/e9,
+                  e4/e6,
+                  e4/e9,
+                  e4/e10,
+                  e5/e11,
+                  e6/e9,
+                  e6/e10,
+                  e6/e11,
+                  e6/e12,
+                  e6/e13,
+                  e6/e14,
+                  e6/e15,
+                  e6/e16,
+                  e7/e9,
+                  e7/e14,
+                  e7/e15,
+                  e8/e9}{
+	\draw[->] (\i) -- (\j);
+}
+
+\end{tikzpicture} 

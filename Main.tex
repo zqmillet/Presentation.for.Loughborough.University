@@ -12,12 +12,16 @@
 \justifying
 \let\raggedright\justifying
 \usepackage{tikz}
-\usepackage{tkz-euclide, pgfplots}
+\usepackage{tkz-euclide}
 \usetikzlibrary{decorations.text}
 \usetikzlibrary{shadows}
 \usetikzlibrary{shapes}
 \usetikzlibrary{circuits.logic.CDH}
 \usetikzlibrary{arrows.meta}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\usepgfplotslibrary{fillbetween}
 %\usetkzobj{all}
 
 \tikzset{
@@ -32,11 +36,14 @@
 \usepackage{graphicx}
 \usepackage{colortbl}
 
-\DeclareMathSizes{5}{5}{3}{3}
-\makeatletter
-\DeclareMathSizes{\@xipt}{20}{14}{10} 
-\makeatother
+\usepackage{siunitx}
+\ExplSyntaxOn
+\cs_new_eq:NN \siunitx_table_collect_begin:Nn \__siunitx_table_collect_begin:Nn
+\ExplSyntaxOff
 
+\usepackage{soul}
+
+\DeclareMathSizes{5}{5}{3}{3}
 
 \newcommand{\pgfdefaultlinewidth}{0.75pt}
 
@@ -71,6 +78,7 @@
 \input{Sections/Hazardous.Incident.Prediction}
 \input{Sections/Dynamic.Risk.Assessment}
 \input{Sections/Simulation}
+\input{Sections/Conclusion.and.Prospect}
 
 % Questions
 \setbeamercolor{background canvas}{bg=mDarkTeal}

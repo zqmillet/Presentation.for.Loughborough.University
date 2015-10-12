@@ -14,8 +14,111 @@
     \end{center}
 \end{frame}
 
+\begin{frame}{Simulation Platform}
+    The multi-level Bayesian network of the chemical reactor is shown as following figure.\vspace{-18pt}\\
+    \begin{center}
+      \input{Figures/Simulation/Multi-Level.Bayesian.Network.of.Reactor.tex}
+    \end{center}
+\end{frame}
 
+\begin{frame}{Simulation Platform}
+    The list of evidences is shown as following table.
+
+    \taburowcolors[2] 2{black!10 .. black!30}
+    \extrarowsep = 1mm
+    \begin{tabu} to \textwidth{*2{X[c,-1]|[1.5pt white]}X[l]|[1.5pt white]X[-1, c]}
+    \rowcolor{black!80}\rowfont\bfseries \textcolor{white}{Start}  & \textcolor{white}{End} & \textcolor{white}{Description} & \textcolor{white}{Symbol}\\\tabucline[1.5pt white]{-}
+    50            & 60        & IP sweep                         & $L(a_1)$ \\\tabucline[1.5pt white]{-}
+    75            & 110       & Vulnerability scanning           & $L(a_2)$ \\\tabucline[1.5pt white]{-}
+    120           & 180       & DoS attack to HDS                & $L(a_6)$ \\\tabucline[1.5pt white]{-}
+    157           & 171       & IP address spoofing              & $L(a_9)$ \\\tabucline[1.5pt white]{-}
+    259           & 261       & Reconfigure PLC5                 & $L(a_{20})$ \\\tabucline[1.5pt white]{-}
+    266           & 378       & Switch function of V4 failed     & $F(f_4)$ \\\tabucline[1.5pt white]{-}
+    286           & 390       & Pressure reduce function failed  & $F(f_{12})$ \\\tabucline[1.5pt white]{-}
+    310           & 400       & Pressure is excessive            & $H(e_4)$ \\
+
+    \end{tabu}
+\end{frame}
+
+\begin{frame}{Simulation Platform}
+    The quantification of consequences is shown as following table.
+
+    \newcolumntype Z{X[m, c, 1.8]{%
+    S[
+    %group-four-digits=true ,
+    round-mode = figures,
+    group-separator = {,},
+    add-decimal-zero = false,
+    round-integer-to-decimal=true ,
+    table-number-alignment = center,
+    table-space-text-pre = \hspace{30pt},
+    per-mode=symbol]}}
+    \tabucolumn Z
+    \taburowcolors[2] 2{black!10 .. black!30}
+    \tabulinesep = 1mm
+    \extrarowsep = 1mm
+    \begin{tabu}to \textwidth{X[c,1, m]|[1.5pt white]X[m, 3]|[1.5pt white]Z}
+
+    \rowcolor{black!80}\rowfont\bfseries
+        \textcolor{white}{Incident Symbol} &
+        \textcolor{white}{Description of Incident} &
+        \textcolor{white}{\bf Quantification of Consequence(\$)}\\
+    \tabucline[1.5pt white]{-}
+        $x_{1}$  & Product damaged              & 50000  \\\tabucline[1.5pt white]{-}
+        $x_{2}$  & Tank damaged                 & 500000 \\\tabucline[1.5pt white]{-}
+        $x_{3}$  & Heater damaged               & 10000  \\\tabucline[1.5pt white]{-}
+        $x_{4}$  & Sensors damaged              & 10000  \\\tabucline[1.5pt white]{-}
+        $x_{5}$  & Staff$_{\text{1-4}}$ injured & 800000 \\\tabucline[1.5pt white]{-}
+        $x_{6}$  & Staff$_{\text{5-9}}$ injured & 1000000\\\tabucline[1.5pt white]{-}
+        $x_{7}$  & Water pollution              & 200000 \\\tabucline[1.5pt white]{-}
+        $x_{8}$  & Air pollution                & 200000 \\
+    \end{tabu}
+\end{frame}
 
 \subsection{Simulation and Result Analysis}
 \begin{frame}{Simulation and Result Analysis}
-\end{frame} 
+    \begin{center}
+      \input{Figures/Simulation/Curver.of.Cybersecurity.Risk.tex}\\
+      \input{Figures/Simulation/Curvers.of.Incident.Probability.tex}\\
+    \end{center}
+\end{frame}
+
+\begin{frame}{Simulation and Result Analysis}
+    \vspace{10pt}
+    \begin{overlayarea}{\textwidth}{1cm}
+        \only<1>{In the previous simulation, the curve of the cybersecurity risk is shown as the \textcolor{red}{\bf red} line in the following figure.}
+        \only<2>{To validate the ability to deal with the unknown attacks, the attack knowledge about attack \textcolor{red}{\st{$a_6$}} and attack \textcolor{red}{\st{$a_9$}} is removed from the multi-level Bayesian network.}
+        \only<3>{Then an identical multi-step attack on the system is launched to the system. The new cybersecurity risk curve is shown the dashed line in the following figure.}
+    \end{overlayarea}\vspace{10pt}
+    \begin{center}
+      \input{Figures/Simulation/Curvers.of.Cybersecurity.Risk.tex}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Simulation and Result Analysis}
+    \vspace{10pt}
+    \begin{overlayarea}{\textwidth}{1.8cm}
+        \only<1>{We repeat the first simulation 5,000 times, and the execution time of 5,000 calculations is recorded. This simulation is run on a machine with Intel Pentium processor G3220 (3M Cache, 3.00GHz) and 4GB DDR3 memory. The following figure shows the distribution of the 5,000 execution times.}
+        \only<2->{Some parameters of the following figure: 
+        \begin{itemize}
+           \item<2-> The average execution time of a risk assessment is $94.1$ms.
+           \item<3-> The minimum execution time of a risk assessment is $89.9$ms.
+           \item<4-> The maximum execution time of a risk assessment is $131.6$ms.
+         \end{itemize}}
+    \end{overlayarea}\vspace{10pt}
+    \begin{center}
+      \input{Figures/Simulation/Curve.of.Execution.Time.Distribution.tex}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Simulation and Result Analysis}
+    \vspace{10pt}
+    \begin{overlayarea}{\textwidth}{1.8cm}
+    \only<1>{Finally, 25 multi-level Bayesian networks with different node sizes are adopted to show the possible upper/lower bounds and the scalability of our approach.}
+    \only<2>{In the following figure, the fitting line $$y = 0.0019x - 0.0175$$ matches well with the correlation coefficient $r = 0.9987$.}
+    \only<3>{This means that the execution time of the risk assessment scales linearly with the increase of the node size of the multi-level Bayesian network.}
+    \end{overlayarea}\vspace{10pt}
+    \begin{center}
+      \input{Figures/Simulation/Curves.of.Risk.Assessment.Algorithm.Scalability}
+    \end{center}
+\end{frame}

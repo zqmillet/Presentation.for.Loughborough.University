@@ -1,0 +1,272 @@
+\begin{tikzpicture}[line width = \pgfdefaultlinewidth,
+                    x = 0.25cm,
+                    y = 0.25cm,
+					attack/.style = {draw = red, fill = red, text = white, circle, minimum size = 0.2cm, inner sep=0pt},
+					resource/.style = {draw = green, fill = green, text = white, circle, minimum size = 0.2cm, inner sep=0pt},
+					function/.style = {draw = blue, fill = blue, text = white, circle, minimum size = 0.2cm, inner sep=0pt},
+					incident/.style = {draw = black, circle, fill = black, text = white, minimum size = 0.2cm, inner sep=0pt},
+					auxiliary/.style = {draw = black, circle, fill = black, text = white, minimum size = 0.2cm, inner sep=0pt},
+                    arrow/.style = {-{>[scale = 0.5, length=4, width = 6]}}]
+
+\fontsize{3pt}{3pt}\selectfont
+
+\node[attack]    (a1) at (12,  1) {$a_1$};
+\node[attack]    (a2) at ( 8,  1) {$a_2$};
+\node[attack]    (a6) at (16,  1) {$a_6$};
+
+\foreach \i/\x in {2/6,
+				   3/8,
+				   4/10,
+				   1/12,
+				   6/14,
+				   5/16,
+				   8/18}{
+	\node[resource] (r\i) at (\x, 3) {$r_{\i}$};
+}
+
+\foreach \i/\x in {3/7,
+				   4/9,
+				   5/11,
+				   8/13,
+				   7/15,
+				   9/17}{
+	\node[attack] (a\i) at (\x, 5) {$a_{\i}$};
+}
+
+\foreach \i/\x in {7/9,
+				   9/15}{
+	\node[resource] (r\i) at (\x, 7) {$r_{\i}$};
+}
+
+\foreach \i in {10,...,27}{
+	\node[attack] (a\i) at (\i - 6.5, 13) {$a_{\i}$};
+}
+
+\foreach \i in {1,...,9}{
+	\node[function] (f\i) at (2 + 2*\i, 19) {$f_{\i}$};
+}
+
+\foreach \i/\x in {10/7,
+				   11/12,
+				   12/17}{
+	\node[function] (f\i) at (\x, 22) {$f_{\i}$};
+}
+
+\foreach \i/\x in {1/6,
+				   2/9,
+				   3/12,
+				   4/15,
+				   8/18}{
+	\node[incident] (e\i) at (\x, 24) {$e_{\i}$};
+}
+
+\foreach \i/\x in {5/9,
+				   7/12,
+				   6/15}{
+	\node[incident] (e\i) at (\x, 26) {$e_{\i}$};
+}
+
+\foreach \i/\x in {3/5,
+				   7/7,
+				   6/9,
+				   4/11,
+				   8/13,
+				   5/15,
+				   1/17,
+				   2/19}{
+	\node[incident] (x\i) at (\x, 29) {$x_{\i}$};
+}
+
+
+\foreach \i/\j in{a1/r1,
+                  r1/a2,
+                  r1/a6,
+                  r1/a3,
+                  r1/a4,
+                  r1/a5,
+                  r1/a7,
+                  r1/a8,
+                  r1/a9,
+                  a2/r2,
+                  a2/r3,
+                  a2/r4,
+                  a2/r5,
+                  a2/r6,
+                  r2/a3,
+                  r3/a4,
+                  r4/a5,
+                  r5/a7,
+                  r6/a8,
+                  r6/a9,
+                  a6/r8,
+                  r8/a9,
+                  a3/r7,
+                  a4/r7,
+                  a5/r7,
+                  a7/r9,
+                  r7/a8,
+                  r7/a10,
+                  r7/a11,
+                  r7/a12,
+                  r7/a13,
+                  r7/a14,
+                  r7/a15,
+                  r7/a22,
+                  r7/a23,
+                  r7/a24,
+                  r7/a25,
+                  r7/a26,
+                  r7/a27,
+                  a8/r9,
+                  a9/r9,
+                  r9/a10,
+                  r9/a11,
+                  r9/a12,
+                  r9/a13,
+                  r9/a14,
+                  r9/a15,
+                  r9/a16,
+                  r9/a17,
+                  r9/a18,
+                  r9/a19,
+                  r9/a20,
+                  r9/a21,
+                  r9/a22,
+                  r9/a23,
+                  r9/a24,
+                  r9/a25,
+                  r9/a26,
+                  r9/a27,
+                  a10/f1,
+                  a10/f2,
+                  a11/f7,
+                  a11/f8,
+                  a11/f9,
+                  a12/f6,
+                  a13/f5,
+                  a14/f4,
+                  a15/f3,
+                  a16/f1,
+                  a16/f2,
+                  a17/f7,
+                  a17/f8,
+                  a17/f9,
+                  a18/f6,
+                  a19/f5,
+                  a20/f4,
+                  a21/f3,
+                  a22/f1,
+                  a22/f2,
+                  a23/f7,
+                  a23/f8,
+                  a23/f9,
+                  a24/f6,
+                  a25/f5,
+                  a26/f4,
+                  a27/f3,
+                  f1/f10,
+                  f1/f11,
+                  f2/f10,
+                  f2/f11,
+                  f3/f10,
+                  f3/f11,
+                  f4/f12,
+                  f5/f11,
+                  f6/e8,
+                  f7/f10,
+                  f8/f11,
+                  f9/f12,
+                  f10/e1,
+                  f10/e2,
+                  f11/e3,
+                  f12/e4,
+                  e1/e5,
+                  e2/e7,
+                  e3/x1,
+                  e4/e6,
+                  e4/x1,
+                  e4/x2,
+                  e5/x3,
+                  e6/x1,
+                  e6/x2,
+                  e6/x3,
+                  e6/x4,
+                  e6/x5,
+                  e6/x6,
+                  e6/x7,
+                  e6/x8,
+                  e7/x1,
+                  e7/x6,
+                  e7/x7,
+                  e8/x1}{
+	\draw[arrow] (\i) -- (\j);
+}
+
+\foreach \i/\c/\n/\e in { 1/1/a_{ 1}/Network Scanning,
+                          2/1/a_{ 2}/Vulnerability scanning,
+                          3/1/a_{ 3}/Buffer overflow attack on HDS,
+                          4/1/a_{ 4}/FTP attack on HDS,
+                          5/1/a_{ 5}/Brute force attack on HDS,
+                          6/1/a_{ 6}/DoS attack on HDS ,
+                          7/1/a_{ 7}/Buffer overflow attack on ES,
+                          8/1/a_{ 8}/Privilege escalation attack on ES,
+                          9/1/a_{ 9}/Spoofing attack on ES,
+                         10/1/a_{10}/DoS attack on PLC1,
+                         11/1/a_{11}/DoS attack on PLC2,
+                         12/1/a_{12}/DoS attack on PLC3,
+                         13/1/a_{13}/DoS attack on PLC4,
+                         14/1/a_{14}/DoS attack on PLC5,
+                         15/1/a_{15}/DoS attack on PLC6,
+                         16/1/a_{16}/Reconfigure PLC1,
+                         17/1/a_{17}/Reconfigure PLC2,
+                         18/1/a_{18}/Reconfigure PLC3,
+                         19/1/a_{19}/Reconfigure PLC4,
+                         20/1/a_{20}/Reconfigure PLC5,
+                         21/1/a_{21}/Reconfigure PLC6,
+                         22/1/a_{22}/Man-in-the-middle attack on PLC1,
+                         23/1/a_{23}/Man-in-the-middle attack on PLC2,
+                         24/1/a_{24}/Man-in-the-middle attack on PLC3,
+                         25/1/a_{25}/Man-in-the-middle attack on PLC4,
+                         26/1/a_{26}/Man-in-the-middle attack on PLC5,
+                         27/1/a_{27}/Man-in-the-middle attack on PLC6,
+                         28/1/r_{ 1}/IP addresses of HDS and ES,
+                         29/1/r_{ 2}/Buffer overflow vulnerability,
+                         30/1/r_{ 3}/FTP server vulnerability,
+                         31/1/r_{ 4}/Login vulnerability,
+                         32/1/r_{ 5}/Buffer overflow vulnerability,
+                         33/2/r_{ 6}/Authentication vulnerability,
+                         34/2/r_{ 7}/Administrator authority of HDS,
+                         35/2/r_{ 8}/Crash of HDS,
+                         36/2/r_{ 9}/Administrator authority of ES,
+                         37/2/f_{ 1}/Traffic control of V1,
+                         38/2/f_{ 2}/Traffic control of V2,
+                         39/2/f_{ 3}/Traffic control of V3,
+                         40/2/f_{ 4}/Pressure reducing,
+                         41/2/f_{ 5}/Heating function,
+                         42/2/f_{ 6}/Mixing function,
+                         43/2/f_{ 7}/Liquid level sensation,
+                         44/2/f_{ 8}/Temperature sensation,
+                         45/2/f_{ 9}/Pressure sensation,
+                         46/2/f_{10}/Liquid level control,
+                         47/2/f_{11}/Temperature control,
+                         48/2/f_{12}/Pressure control,
+                         49/2/e_{ 1}/Excessive liquid level,
+                         50/2/e_{ 2}/Low liquid level,
+                         51/2/e_{ 3}/Temperature anomaly,
+                         52/2/e_{ 4}/Excessive pressure,
+                         53/2/e_{ 5}/Heater dry fired,
+                         54/2/e_{ 6}/Reactor explosion,
+                         55/2/e_{ 7}/Liquid overflow,
+                         56/2/e_{ 8}/Blender stop,
+                         57/2/x_{ 1}/Production damaged,
+                         58/2/x_{ 2}/Tank damaged,
+                         59/2/x_{ 3}/Heater damaged,
+                         60/2/x_{ 4}/Sensors damaged,
+                         61/2/x_{ 5}/Staff$_{\text{1-4}}$ injured,
+                         62/2/x_{ 6}/Staff$_{\text{5-9}}$ injured,
+                         63/2/x_{ 7}/Water pollution,
+                         64/2/x_{ 8}/Air pollution}{
+	\node[anchor = east] at (9.2 + 14*\c, 1 - 0.9*\i + 28.8*\c) {\tiny $\n$ \ -- };
+	\node[anchor = west] at (9.2 + 14*\c, 1 - 0.9*\i + 28.8*\c) {\tiny \e};
+}
+\end{tikzpicture}

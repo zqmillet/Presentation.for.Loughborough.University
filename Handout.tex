@@ -11,9 +11,9 @@
 
 \setlength\parindent{0pt}
 
-\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt}
-\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt}
-\setdescription{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt,leftmargin=\parindent}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt,leftmargin=1em}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt,leftmargin=\parindent}
 
 \newcommand{\addnote}[2]{
     \begin{minipage}[t]{\textwidth}
@@ -37,15 +37,30 @@
 }
 
 \addnote{Outlines}{
-
+    My presentation is separated into six parts:
+    \begin{itemize}
+      \item Firstly, I will introduce the background and the problems of risk assessment for industrial control systems.
+      \item Secondly, I will give the architecture of our risk assessment solution for industrial control systems.
+      \item Thirdly, I will elaborate the detail of our method.
+      \item Then, I will show you the effectiveness of our approach by using a numerical simulation.
+      \item At last, I will discuss the problems of our approach and introduce the future works.
+    \end{itemize}
 }
 
 \addnote{Section: Introduction}{
-
+    In this part, I will introduce the development history and the cybersecurity issues of industrial control systems. And, I will compare the cybersecurity issues of industrial control systems and traditional IT systems.
 }
 
 \addnote{Introduction: Development of ICSs}{
-
+    There are four great changes in the development of industrial control systems:
+    \begin{itemize}
+      \item Machine Age
+      \item Semi-automatic Age
+      \item Automatic Age
+      \item Intelligent Age
+    \end{itemize}
+    
+    The figure shows that with the development of industrial control systems... 
 }
 
 \addnote{Introduction: ICSs are Important}{

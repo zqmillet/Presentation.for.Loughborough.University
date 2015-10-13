@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[noxcolor]{beamerarticle}
+\usepackage{tikz}
+\usepackage{pgfpages}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{geometry}
+
+\setjobnamebeamerversion{main}
+
+\setlength\parindent{0pt}
+
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt}
+
+\newcommand{\addnote}[2]{
+    \begin{minipage}[t]{\textwidth}
+        \begin{wrapfigure}{l}{0.5\textwidth}
+            \centering
+            \vspace{-14pt}
+            \includeslide[width = 0.5\textwidth]{#1}
+        \end{wrapfigure}\setlength{\parskip}{10pt}
+        #2
+    \end{minipage}\vfill 
+}
+
+\geometry{left=3.5cm,right=3.5cm, top= 3.5cm}
+\setlength{\parskip}{20pt}
+\begin{document}
+
+\addnote{Title}{
+    Hello everyone, my name is Zhang Qi, and I am the Ph.D student of Professor Zhou Chunjie. I am very glad to be invited by Professor Yang Shuanghuang to make a presentation about my recent research.
+    
+    The title of my presentation is ``Multi-Model Based Incident Prediction and Risk Assessment in Dynamic Cybersecurity Protection for Industrial Control Systems''.
+}
+
+\addnote{Outlines}{
+
+}
+
+\addnote{Introduction: Development of ICSs}{
+
+}
+
+\addnote{Introduction: ICSs are Important}{
+
+}
+
+\addnote{Introduction: ICSs are under Attacks}{
+
+}
+
+\addnote{Introduction: Problem of Timeliness and Availability}{
+
+}
+
+\addnote{Introduction: Problem of Overlapping amongst Consequences}{
+
+}
+
+\addnote{Introduction: Problem of Unknown Attacks}{
+
+}
+
+\end{document}

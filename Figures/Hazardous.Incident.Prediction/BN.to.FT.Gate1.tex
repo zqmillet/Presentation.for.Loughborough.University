@@ -15,17 +15,17 @@
     \draw (f3.north) -- ++ (up:1mm) -| (gate1.input 2);
     \draw (f4.north) -- ++ (up:1mm) -| (gate1.input 3);
     \draw (f5.north) -- ++ (up:2mm) -| (gate1.input 4);
-    
+
     \path[draw=black!50,solid,line width=9mm,fill=black!50, preaction={-triangle 60,line width = 4mm,draw = black!50,shorten >=-10mm}] (4.3,3) -- (7,3);
     \node[text shadow={[align=center,text width=3cm] at (5.7,3) {Convert}}] at (5.7,3) {Convert};
-    
-    \only<1-2>{
+
+    \only<1-2| trans:1>{
         \node[text = red] at (5.7,3) {\scalebox{7}{\Black ?}};
     }
-    \only<3->{
+    \only<3-| trans:2>{
         \node[forbidden sign,text width=1.5cm, text centered, draw = red, line width = 8pt] at (5.7,3) {};
     }
-                    
+
     \node[function] (f1') at (2.5,4) {$\bm{f_{1}}$};
 
     \node[function] (f2') at (1,2) {$\bm{f_2}$};
@@ -38,7 +38,7 @@
     \draw[->] (f4') -- (f1');
     \draw[->] (f5') -- (f1');
     \pause
-    
+
     \extrarowsep =1mm
     \node[anchor = north] (CPT) at (6,1.5) {\scriptsize
         \begin{tabu}{X[4,c]|*{16}{X[c]}}

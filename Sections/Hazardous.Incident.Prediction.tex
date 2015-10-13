@@ -15,17 +15,17 @@
     \end{center}
 
     \begin{overlayarea}{\textwidth}{1cm}
-    \only<3-4>{
+    \only<3-4| trans:1>{
         \[
             F_1 = F_2F_3F_4F_5
         \]
     }
-    \only<5-6>{
+    \only<5-6| trans:2>{
         \[
             F_2 = F_6F_7\overline{F_8}F_9
         \]
     }
-    \only<7-8>{
+    \only<7-8| trans:3>{
         \[
             F_5 = F_{10}+F_{11}+F_{12}+F_{13}
         \]
@@ -37,13 +37,13 @@
     To simplify the inference, the function tree is converted into Bayesian network, which is shown in following figure.\\
     \begin{overlayarea}{\textwidth}{6cm}
     \begin{center}
-      \only<1-3>{
+      \only<1-3| trans:1>{
         \input{Figures/Hazardous.Incident.Prediction/FT.to.BN.Gate1.tex}
       }
-      \only<4-6>{
+      \only<4-6| trans:2>{
         \input{Figures/Hazardous.Incident.Prediction/FT.to.BN.Gate2.tex}
       }
-      \only<7-9>{
+      \only<7-9| trans:3>{
         \input{Figures/Hazardous.Incident.Prediction/FT.to.BN.Gate3.tex}
       }
     \end{center}
@@ -51,7 +51,7 @@
 \end{frame}
 
 \begin{frame}{Function Level}
-    \uncover<4>{The conditional probability table of the Bayesian network contains more information than the logical gate of the fault tree.\\}
+    \uncover<4| trans:2>{The conditional probability table of the Bayesian network contains more information than the logical gate of the fault tree.\\}
     \begin{overlayarea}{\textwidth}{6cm}
     \begin{center}
       \input{Figures/Hazardous.Incident.Prediction/BN.to.FT.Gate1.tex}
@@ -75,10 +75,10 @@
     The following figures show two kind of information transfer.
 
     \begin{center}
-      \only<1>{
+      \only<1| trans:1>{
         \input{Figures/Hazardous.Incident.Prediction/Information.Transfer.from.Attack.to.Function.tex}
       }
-      \only<2>{
+      \only<2| trans:2>{
         \input{Figures/Hazardous.Incident.Prediction/Information.Transfer.from.Function.to.Incident.tex}
       }
     \end{center}
@@ -99,22 +99,22 @@
 \begin{frame}{Calculation of Incident Probability}
     \begin{minipage}[][6cm][t]{0.4\textwidth}
       \input{Figures/Hazardous.Incident.Prediction/Multi-Level.Bayesian.Network.with.Marks.tex}
-    \end{minipage}    
+    \end{minipage}
     \begin{minipage}[][6cm][t]{0.6\textwidth}
         \vspace{5pt}The left figure shows a typical multi-level Bayesian network.\\[0pt]
-        
+
         \pause
         Assuming that the evidence list is
         \[
             a_1, a_6, f_1
         \]
         \pause
-        
+
         \vspace{-10pt}Then the nodes $a_1$, $a_6$, and $f_1$ are marked with \textcolor{red}{\textbf{red}} dashed circles.\\[0pt]
         \pause
-        
+
         Finally, the algorithm named Probability Propagation in Trees of Clusters (PPTC) can calculate the probabilities of all the hazardous incidents.
     \end{minipage}
-    
-    
+
+
 \end{frame} 

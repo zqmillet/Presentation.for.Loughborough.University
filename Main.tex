@@ -1,7 +1,8 @@
-\documentclass[10pt, compress]{beamer}
+\documentclass[10pt, trans]{beamer}
+
+% \setbeameroption{show only notes}
 
 \usepackage{Theme/BeamerTheme}
-%\usepackage{beamerseminar}
 \usefonttheme[onlymath]{serif}
 \usepackage{mathrsfs}
 \usepackage{amsmath}
@@ -32,6 +33,7 @@
         }
     }
 }
+
 \usepackage{tabu}
 \usepackage{graphicx}
 \usepackage{colortbl}
@@ -68,18 +70,18 @@
 \maketitle
 
 % Outlines
-\begin{frame}[noframenumbering]{Outlines}
+\begin{frame}[noframenumbering]{Outlines}\label{Outlines}
     \scriptsize
     \tableofcontents % [pausesections]
 \end{frame}
 
 % Main Body
-%\input{Sections/Introduction}
-\input{Sections/Architecture}
-\input{Sections/Hazardous.Incident.Prediction}
-\input{Sections/Dynamic.Risk.Assessment}
-\input{Sections/Simulation}
-\input{Sections/Conclusion.and.Prospect}
+\input{Sections/Introduction}
+%\input{Sections/Architecture}
+%\input{Sections/Hazardous.Incident.Prediction}
+%\input{Sections/Dynamic.Risk.Assessment}
+%\input{Sections/Simulation}
+%\input{Sections/Conclusion.and.Prospect}
 
 % Thank You!
 \setbeamercolor{background canvas}{bg=mDarkTeal}

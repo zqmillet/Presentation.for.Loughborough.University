@@ -86,9 +86,9 @@
 \begin{frame}{Simulation and Result Analysis}
     \vspace{10pt}
     \begin{overlayarea}{\textwidth}{1cm}
-        \only<1>{In the previous simulation, the curve of the cybersecurity risk is shown as the \textcolor{red}{\bf red} line in the following figure.}
-        \only<2>{To validate the ability to deal with the unknown attacks, the attack knowledge about attack \textcolor{red}{\st{$a_6$}} and attack \textcolor{red}{\st{$a_9$}} is removed from the multi-level Bayesian network.}
-        \only<3>{Then an identical multi-step attack on the system is launched to the system. The new cybersecurity risk curve is shown the dashed line in the following figure.}
+        \only<1| trans:1>{In the previous simulation, the curve of the cybersecurity risk is shown as the \textcolor{red}{\bf red} line in the following figure.}
+        \only<2| trans:2>{To validate the ability to deal with the unknown attacks, the attack knowledge about attack \textcolor{red}{\st{$a_6$}} and attack \textcolor{red}{\st{$a_9$}} is removed from the multi-level Bayesian network.}
+        \only<3| trans:3>{Then an identical multi-step attack on the system is launched to the system. The new cybersecurity risk curve is shown the dashed line in the following figure.}
     \end{overlayarea}\vspace{10pt}
     \begin{center}
       \input{Figures/Simulation/Curvers.of.Cybersecurity.Risk.tex}
@@ -98,8 +98,8 @@
 \begin{frame}{Simulation and Result Analysis}
     \vspace{10pt}
     \begin{overlayarea}{\textwidth}{1.8cm}
-        \only<1>{We repeat the first simulation 5,000 times, and the execution time of 5,000 calculations is recorded. This simulation is run on a machine with Intel Pentium processor G3220 (3M Cache, 3.00GHz) and 4GB DDR3 memory. The following figure shows the distribution of the 5,000 execution times.}
-        \only<2->{Some parameters of the following figure: 
+        \only<1| trans:1>{We repeat the first simulation 5,000 times, and the execution time of 5,000 calculations is recorded. This simulation is run on a machine with Intel Pentium processor G3220 (3M Cache, 3.00GHz) and 4GB DDR3 memory. The following figure shows the distribution of the 5,000 execution times.}
+        \only<2-| trans:2>{Some parameters of the following figure:
         \begin{itemize}
            \item<2-> The average execution time of a risk assessment is $94.1$ms.
            \item<3-> The minimum execution time of a risk assessment is $89.9$ms.
@@ -114,11 +114,11 @@
 \begin{frame}{Simulation and Result Analysis}
     \vspace{10pt}
     \begin{overlayarea}{\textwidth}{1.8cm}
-    \only<1>{Finally, 25 multi-level Bayesian networks with different node sizes are adopted to show the possible upper/lower bounds and the scalability of our approach.}
-    \only<2>{In the following figure, the fitting line $$y = 0.0019x - 0.0175$$ matches well with the correlation coefficient $r = 0.9987$.}
-    \only<3>{This means that the execution time of the risk assessment scales linearly with the increase of the node size of the multi-level Bayesian network.}
+    \only<1| trans:1>{Finally, 25 multi-level Bayesian networks with different node sizes are adopted to show the possible upper/lower bounds and the scalability of our approach.}
+    \only<2| trans:2>{In the following figure, the fitting line $$y = 0.0019x - 0.0175$$ matches well with the correlation coefficient $r = 0.9987$.}
+    \only<3| trans:3>{This means that the execution time of the risk assessment scales linearly with the increase of the node size of the multi-level Bayesian network.}
     \end{overlayarea}\vspace{10pt}
     \begin{center}
       \input{Figures/Simulation/Curves.of.Risk.Assessment.Algorithm.Scalability}
     \end{center}
-\end{frame}
+\end{frame} 

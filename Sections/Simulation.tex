@@ -1,6 +1,8 @@
+\label{Section: Simulation}
 \section{Simulation}
 \subsection{Simulation Platform}
 \begin{frame}{Simulation Platform}
+    \label{Simulation: Control Structure of Chemical Reactor}
     The simulation object is a chemical reactor whose control structure is shown as the following figure.\\[-10pt]
     \begin{center}
       \input{Figures/Simulation/Control.Structure.of.Chemical.Reactor.tex}
@@ -8,6 +10,7 @@
 \end{frame}
 
 \begin{frame}{Simulation Platform}
+    \label{Simulation: Structure of Simulation Platform}
     The simulation platform is implemented in Matlab, which consists of three modules: an evidence generator, an incident prediction module, and a risk assessment module.
     \begin{center}
       \input{Figures/Simulation/Structure.of.Simulation.Platform.tex}
@@ -15,6 +18,7 @@
 \end{frame}
 
 \begin{frame}{Simulation Platform}
+    \label{Simulation: Multi-Level Bayesian Network of Reactor}
     The multi-level Bayesian network of the chemical reactor is shown as following figure.\vspace{-18pt}\\
     \begin{center}
       \input{Figures/Simulation/Multi-Level.Bayesian.Network.of.Reactor.tex}
@@ -22,6 +26,7 @@
 \end{frame}
 
 \begin{frame}{Simulation Platform}
+    \label{Simulation: Evidences List}
     The list of evidences is shown as following table.
 
     \taburowcolors[2] 2{black!10 .. black!30}
@@ -41,6 +46,7 @@
 \end{frame}
 
 \begin{frame}{Simulation Platform}
+    \label{Simulation: Quantification of Consequences}
     The quantification of consequences is shown as following table.
 
     \newcolumntype Z{X[m, c, 1.8]{%
@@ -77,6 +83,7 @@
 
 \subsection{Simulation and Result Analysis}
 \begin{frame}{Simulation and Result Analysis}
+    \label{Simulation: Curvers of Cybersecurity Risk and Incident Probability}
     \begin{center}
       \input{Figures/Simulation/Curver.of.Cybersecurity.Risk.tex}\\
       \input{Figures/Simulation/Curvers.of.Incident.Probability.tex}\\
@@ -84,6 +91,7 @@
 \end{frame}
 
 \begin{frame}{Simulation and Result Analysis}
+    \label{Simulation: Ability to Deal with the Unknown Attacks}
     \vspace{10pt}
     \begin{overlayarea}{\textwidth}{1cm}
         \only<1| trans:1>{In the previous simulation, the curve of the cybersecurity risk is shown as the \textcolor{red}{\bf red} line in the following figure.}
@@ -96,6 +104,7 @@
 \end{frame}
 
 \begin{frame}{Simulation and Result Analysis}
+    \label{Simulation: Curve of Execution Time Distribution}
     \vspace{10pt}
     \begin{overlayarea}{\textwidth}{1.8cm}
         \only<1| trans:1>{We repeat the first simulation 5,000 times, and the execution time of 5,000 calculations is recorded. This simulation is run on a machine with Intel Pentium processor G3220 (3M Cache, 3.00GHz) and 4GB DDR3 memory. The following figure shows the distribution of the 5,000 execution times.}
@@ -112,6 +121,7 @@
 \end{frame}
 
 \begin{frame}{Simulation and Result Analysis}
+    \label{Simulation: Curves of Risk Assessment Algorithm Scalability}
     \vspace{10pt}
     \begin{overlayarea}{\textwidth}{1.8cm}
     \only<1| trans:1>{Finally, 25 multi-level Bayesian networks with different node sizes are adopted to show the possible upper/lower bounds and the scalability of our approach.}

@@ -1,57 +1,47 @@
+\label{Section: Dynamic Risk Assessment}
 \section{Dynamic Risk Assessment}
 \subsection{Decouple of Incident Consequences}
 \begin{frame}{Decouple of Incident Consequences -- Step 1}
-     for each incident $e_i$, analyze its consequence and generate a consequence set
-     \[
-        \bm{c}_i = (c_1, c_2, \cdots, c_n) \text{.}
-     \]
+    \label{Dynamic Risk Assessment: Decouple of Incident Consequences Step 1}
+    for each incident $e_i$, analyze its consequence and generate a consequence set
+    \[
+    \bm{c}_i = (c_1, c_2, \cdots, c_n) \text{.}
+    \]
 
-     The meaning of $\bm{c}_i$ is that the occurring of the incident $e_i$ will threaten the elements in consequence set $\bm{c}_i$.\\[10pt]
+    The meaning of $\bm{c}_i$ is that the occurring of the incident $e_i$ will threaten the elements in consequence set $\bm{c}_i$.\\[10pt]
 
-     For example, the incident $e_i$ is an explosion of a reactor, which may cause worker casualties, air pollution, facilities damages, and products loss. The consequence set of $e_i$ is
-     \[
-        \bm{c}_i = (\text{workers}, \text{air}, \text{facilities}, \text{products})\text{.}
-     \]
+    For example, the incident $e_i$ is an explosion of a reactor, which may cause worker casualties, air pollution, facilities damages, and products loss. The consequence set of $e_i$ is
+    \[
+    \bm{c}_i = (\text{workers}, \text{air}, \text{facilities}, \text{products})\text{.}
+    \]
 \end{frame}
 
-%\begin{frame}{Decouple of Incident Consequences -- Step 2}
-%    Generate $\bm{C}' = (\bm{c}'_1, \bm{c}'_2, \cdots, \bm{c}'_{m'})$ based on $\bm{C} = (\bm{c}_1, \bm{c}_2, \cdots, \bm{c}_m)$. The following conditions must be met:\vspace{-10pt}
-%
-%    \[
-%        \begin{array}{rl}
-%            \text{\bf Completeness: } & \bigcup_{i=1}^m \bm{c}_i = \bigcup_{i=1}^{m'}\bm{c}'_i\\[5pt]
-%            \text{\bf Independence: } & \forall \bm{c}'_i, \bm{c}'_j \in \bm{C}', \bm{c}'_i \cap \bm{c}'_j = \varnothing\\[5pt]
-%            \text{\bf Traceability: } & \forall \bm{c}' \in \bm{C}', \exists \bm{c} \in \bm{C}, \bm{c}' \subseteq \bm{c}
-%        \end{array}
-%    \]
-%
-%    \pause
-%    \vspace{-10pt}
-%    \begin{center}
-%      \input{Figures/Dynamic.Risk.Assessment/Example.of.Decouple.of.Incident.Consequences}
-%    \end{center}
-%\end{frame}
+\begin{frame}{Decouple of Incident Consequences -- Step 2}
+    \label{Dynamic Risk Assessment: Decouple of Incident Consequences Step 2}
+\end{frame}
 
 \begin{frame}{Decouple of Incident Consequences -- Step 3}
-     For each $\bm{c}'_j \in \bm{C}'$, generate a corresponding auxiliary node $x_j$. According to the \textbf{traceability} of $\bm{C}'$
-     \[
-        \forall \bm{c}' \in \bm{C}', \exists \bm{c} \in \bm{C}, \bm{c}' \subseteq \bm{c}\text{,}
-     \]
-     \vspace{-15pt}\\
-     there must be a consequence set $\bm{c}_i \in \bm{C}$ , where $\bm{c}'_j \subseteq \bm{c}_i$. \pause So, for each $\bm{c}'_j \in \bm{C}'$, we can find the incident set
-     \[
-        \bm{e}_j = (e_{i_1},e_{i_2},\cdots,e_{i_n})\text{.}
-     \]
-     \vspace{-15pt}\\\pause
-     For each incident $e_k$ of the incident set $\bm{e}_j$, the corresponding consequence set $\bm{c}_k$ satisfies the following condition:
-     \[
-        \bm{c}'_j \subseteq \bm{c}_k\text{.}
-     \]
-     \vspace{-15pt}\\\pause
-     Therefore, the parent nodes of the auxiliary node $x_j$ are incident nodes $e_{i_1},e_{i_2},\cdots,e_{i_n}$.
+    \label{Dynamic Risk Assessment: Decouple of Incident Consequences Step 3}
+    For each $\bm{c}'_j \in \bm{C}'$, generate a corresponding auxiliary node $x_j$. According to the \textbf{traceability} of $\bm{C}'$
+    \[
+    \forall \bm{c}' \in \bm{C}', \exists \bm{c} \in \bm{C}, \bm{c}' \subseteq \bm{c}\text{,}
+    \]
+    \vspace{-15pt}\\
+    there must be a consequence set $\bm{c}_i \in \bm{C}$ , where $\bm{c}'_j \subseteq \bm{c}_i$. \pause So, for each $\bm{c}'_j \in \bm{C}'$, we can find the incident set
+    \[
+    \bm{e}_j = (e_{i_1},e_{i_2},\cdots,e_{i_n})\text{.}
+    \]
+    \vspace{-15pt}\\\pause
+    For each incident $e_k$ of the incident set $\bm{e}_j$, the corresponding consequence set $\bm{c}_k$ satisfies the following condition:
+    \[
+    \bm{c}'_j \subseteq \bm{c}_k\text{.}
+    \]
+    \vspace{-15pt}\\\pause
+    Therefore, the parent nodes of the auxiliary node $x_j$ are incident nodes $e_{i_1},e_{i_2},\cdots,e_{i_n}$.
 \end{frame}
 
 \begin{frame}{Decouple of Incident Consequences -- Step 4}
+    \label{Dynamic Risk Assessment: Decouple of Incident Consequences Step 4}
     For each auxiliary node $x_j$, generate a conditional probability table. A typical conditional probability table of auxiliary node $x_j$ is shown as following table.\\[-15pt]
     \extrarowsep = 0.7mm
     \begin{center}
@@ -72,6 +62,7 @@
 
 \subsection{Classification of Incident Consequences}
 \begin{frame}{Classification of Incident Consequences}
+    \label{Dynamic Risk Assessment: Classification of Incident Consequences}
     In this paper, there are three main kinds of incident consequences to be considered:
     \begin{itemize}
       \item \textbf{Harm to Humans:}\\[-5pt]
@@ -97,6 +88,7 @@
 
 \subsection{Quantification of Incident Consequences}
 \begin{frame}{Quantification of Incident Consequences}
+    \label{Dynamic Risk Assessment: Quantification of Incident Consequences}
     \begin{itemize}
       \item \textbf{Harm to Humans $Q_H$:}\\
       If the decision-maker would like to increase the cost of an investment by $\Delta c$ to reduce the  probability of a fatality by $\Delta p$,
@@ -115,21 +107,22 @@
 
 \subsection{Calculation of Dynamic Risk}
 \begin{frame}{Calculation of Dynamic Risk}
+    \label{Dynamic Risk Assessment: Calculation of Dynamic Risk}
     Due to the following two reasons:
     \begin{itemize}
       \item there is no overlapping between the consequences of any two auxiliary nodes $x_i$ and $x_j$, $i\neq j$,
       \item the auxiliary nodes contain all the consequences of incidents,
     \end{itemize}
-    
-    the dynamic cybersecurity risk can be defined as 
+
+    the dynamic cybersecurity risk can be defined as
     \[
         \risk = \sum_{i=1}^{m'}p(x_i)q(x_i)\text{,}
     \]
-    
+
     where
     \begin{itemize}
       \item $p(x_i)$ is the occurrence probability of the auxiliary node $x_i$,
       \item $q(x_i)$ is the monetary loss of the auxiliary node $x_i$.
     \end{itemize}
-     
+
 \end{frame} 

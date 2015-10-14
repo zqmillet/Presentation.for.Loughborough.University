@@ -43,23 +43,20 @@
                 \fbox{\includeslide[width = 0.45\textwidth]{#1}}
             \end{wrapfigure}\setlength{\parskip}{10pt}
             #2
-
-        \end{minipage}\vspace{10pt}\vfill
+        \end{minipage}
     }
     {
         \begin{minipage}{\textwidth}
-          \begin{minipage}[t]{0.45\textwidth}
-            \vspace{0pt}
-            \fbox{\includeslide[width = \textwidth]{#1}
-
-            }
-          \end{minipage}\hspace{10pt}
-          \begin{minipage}[t]{0.5\textwidth}\setlength{\parskip}{10pt}
-            \vspace{-10pt}
-            #2
-          \end{minipage}
-        \end{minipage}\vspace{10pt}\vfill
-    }    
+            \begin{minipage}[t]{0.45\textwidth}
+                \vspace{0pt}
+                \fbox{\includeslide[width = \textwidth]{#1}}
+            \end{minipage}\hspace{10pt}
+            \begin{minipage}[t]{0.5\textwidth}\setlength{\parskip}{10pt}
+                \vspace{-10pt}
+                #2
+            \end{minipage}
+        \end{minipage}
+    }\vspace{10pt}\vfill
 }
 
 \geometry{left=3.5cm,right=3.5cm, top= 3.5cm}

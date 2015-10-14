@@ -17,46 +17,47 @@
 
 \setmainfont{Times New Roman}
 
-\setlength\parindent{0pt}
+\setlength\parindent{1em}
 \linespread{1.2}
 
 \setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=0pt,leftmargin=\parindent}
 \setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=0pt,leftmargin=1em}
 \setdescription{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=0pt,leftmargin=\parindent}
 
-\newlength\foo
-
+\newlength\qiqiheight
+\setlength{\intextsep}{0pt}%
+\setlength{\columnsep}{11pt}%
+\setlength{\parskip}{10pt}
 
 \newcommand{\risk}{\mathscr{R}}
 
 \newcommand{\addnote}[2]{
-    \begin{adjustbox}{minipage=0.5\textwidth, gstore totalheight=\foo,gobble}\setlength{\parskip}{10pt}
-        \vspace{-10pt}#2
+    \begin{adjustbox}{minipage=0.5\textwidth, gstore totalheight=\qiqiheight, gobble}
+        \setlength{\parskip}{0pt}
+        \setlength\parindent{2em}
+        \vspace{0pt}
+        #2
     \end{adjustbox}
-    \ifthenelse{\lengthtest{\foo > 150pt}}
+    \ifthenelse{\lengthtest{\qiqiheight > 150pt}}
     {
-        \begin{minipage}[t]{\textwidth}
-            \setlength{\intextsep}{0pt}%
-            \setlength{\columnsep}{11pt}%
-            \begin{wrapfigure}{l}{0.45\textwidth}
-                \vspace{0pt}
-                \fbox{\includeslide[width = 0.45\textwidth]{#1}}
-            \end{wrapfigure}\setlength{\parskip}{10pt}
-            #2
-        \end{minipage}
+        \begin{wrapfigure}{l}{0.45\textwidth}
+            \vspace{0pt}
+            \fbox{\includeslide[width = 0.45\textwidth]{#1}}
+        \end{wrapfigure}\setlength{\parskip}{0pt}
+        #2
     }
     {
-        \begin{minipage}{\textwidth}
-            \begin{minipage}[t]{0.45\textwidth}
-                \vspace{0pt}
-                \fbox{\includeslide[width = \textwidth]{#1}}
-            \end{minipage}\hspace{10pt}
-            \begin{minipage}[t]{0.5\textwidth}\setlength{\parskip}{10pt}
-                \vspace{-10pt}
-                #2
-            \end{minipage}
+        \noindent\begin{minipage}[t]{0.45\textwidth}
+            \vspace{0pt}
+            \fbox{\includeslide[width = \textwidth]{#1}}
+        \end{minipage}\hspace{10pt}
+        \begin{minipage}[t]{0.5\textwidth}
+            \setlength{\parskip}{0pt}
+            \setlength\parindent{2em}
+            \vspace{0pt}
+            #2
         \end{minipage}
-    }\vspace{10pt}\vfill
+    }\rule{0pt}{0pt}\\\vfill
 }
 
 \geometry{left=3.5cm,right=3.5cm, top= 3.5cm}
@@ -125,10 +126,14 @@
      \[
         \risk = S(e_1) + p_1S(e_2) = S(e_1) + p_1S(e_1) = (1+p_1)S(e_1) \geq S(e_1)\text{.}
      \]
+     
+     It is obviously wrong, because the risk of system can't be larger than the total value of all assets.
 }
 
 \addnote{Introduction: Problem of Unknown Attacks}{
-
+    As continuous operation systems, the industrial control systems cannot tolerate frequent software patching or updates. This causes the database of attack signatures to lag far behind the rapid development of attacks. With this defect, several intrusion detection system based misuse detections would miss the unknown attacks.
+    
+    On the other hand, without the information about unknown attacks, such as purposes, consequences, and further steps, these unknown attacks and their consequences cannot be predicted accurately. As a result, the risk assessment module will generate erroneous risk value, which may lead to a wrong decision.
 }
 
 \addnote{Section: Architecture}{

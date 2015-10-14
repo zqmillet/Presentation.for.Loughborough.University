@@ -1,59 +1,73 @@
 \documentclass{article}
 \usepackage[noxcolor]{beamerarticle}
-\usepackage{tikz}
-\usepackage{tabu}
 \usepackage{pgfpages}
-\usepackage{wrapfig}
-\usepackage{lipsum}
 \usepackage{enumitem}
 \usepackage{geometry}
-\usepackage{picinpar}
+\usepackage{fontspec}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{mathtools}
+\usepackage{wrapfig}
+\usepackage{calc}
+\usepackage{adjustbox}
+\usepackage{xifthen}
 
 \setjobnamebeamerversion{main}
 
+\setmainfont{Times New Roman}
+
 \setlength\parindent{0pt}
+\linespread{1.2}
 
-\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt,leftmargin=\parindent}
-\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt,leftmargin=1em}
-\setdescription{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=5pt,leftmargin=\parindent}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=0pt,leftmargin=\parindent}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=0pt,leftmargin=1em}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=0pt,topsep=0pt,leftmargin=\parindent}
 
+\newlength\foo
+
+
+\newcommand{\risk}{\mathscr{R}}
 
 \newcommand{\addnote}[2]{
-%    \fbox{
-%    \begin{minipage}{\textwidth}
-%        \begin{wrapfigure}[122]{L}{0.5\textwidth}
-%            \centering
-%            \vspace{-\baselineskip}
-%            \includeslide[width = 0.5\textwidth]{#1}
-%        \end{wrapfigure}\setlength{\parskip}{10pt}
-%        #2\vfill
-%    \end{minipage}}
+    \begin{adjustbox}{minipage=0.5\textwidth, gstore totalheight=\foo,gobble}\setlength{\parskip}{10pt}
+        \vspace{-10pt}#2
+    \end{adjustbox}
+    \ifthenelse{\lengthtest{\foo > 150pt}}
+    {
+        \begin{minipage}[t]{\textwidth}
+            \setlength{\intextsep}{0pt}%
+            \setlength{\columnsep}{11pt}%
+            \begin{wrapfigure}{l}{0.45\textwidth}
+                \vspace{0pt}
+                \fbox{\includeslide[width = 0.45\textwidth]{#1}}
+            \end{wrapfigure}\setlength{\parskip}{10pt}
+            #2
 
-%    \begin{window}[0,l,{\includeslide[width = 0.5\textwidth]{#1}},{}]
-%        #2
-%    \end{window}\vfill
-    
-    \begin{minipage}{\textwidth}
-      \begin{minipage}[t]{0.45\textwidth}
-        \vspace{0pt}
-        \fbox{\includeslide[width = \textwidth]{#1}}
-      \end{minipage}\hspace{10pt}
-      \begin{minipage}[t]{0.5\textwidth}\setlength{\parskip}{10pt}
-        \vspace{-10pt}
-        #2
-      \end{minipage}
-    \end{minipage}\vfill
+        \end{minipage}\vspace{10pt}\vfill
+    }
+    {
+        \begin{minipage}{\textwidth}
+          \begin{minipage}[t]{0.45\textwidth}
+            \vspace{0pt}
+            \fbox{\includeslide[width = \textwidth]{#1}
+
+            }
+          \end{minipage}\hspace{10pt}
+          \begin{minipage}[t]{0.5\textwidth}\setlength{\parskip}{10pt}
+            \vspace{-10pt}
+            #2
+          \end{minipage}
+        \end{minipage}\vspace{10pt}\vfill
+    }    
 }
 
 \geometry{left=3.5cm,right=3.5cm, top= 3.5cm}
-
-
-
 \begin{document}
 
 \addnote{Title}{
     Hello everyone, my name is Zhang Qi, and I am the Ph.D student of Professor Zhou Chunjie. I am very glad to be invited by Professor Yang Shuanghuang to make a presentation about my recent research.
-    
+
 
     My research interests are related to risk assessment and decision-making for industrial control systems.     The title of my presentation is ``Multi-Model Based Incident Prediction and Risk Assessment in Dynamic Cybersecurity Protection for Industrial Control Systems''.
 }
@@ -75,30 +89,45 @@
 
 \addnote{Introduction: Development of ICSs}{
     There are four great changes in the development of industrial control systems:
-%    \begin{itemize}
-%      \item Machine Age
-%      \item Semi-automatic Age
-%      \item Automatic Age
-%      \item Intelligent Age
-%    \end{itemize}
+    \begin{itemize}
+      \item Machine Age
+      \item Semi-automatic Age
+      \item Automatic Age
+      \item Intelligent Age
+    \end{itemize}
 
-    The figure shows that with the development of industrial control systems, the degree of automation is increasing. 
+    From this figure, we can see that with the development of industrial control systems, the degree of automation is increasing. Intelligence and networking are the development trend of industrial control systems.
 }
 
 \addnote{Introduction: ICSs are Important}{
-123
+    Nowadays, the industrial control systems have been widely applied in various industry, and they are becoming more and more important for the national economy and our life.
+
+    As mentioned before, the industrial control systems are evolving towards intelligence and networking. The rapid development of the industrial control systems reduce the difficulty of the development and the cost of construction, on the other hand, it has also introduced the cybersecurity issues into the industrial control systems.
 }
 
 \addnote{Introduction: ICSs are under Attacks}{
+    For example, in 2010, the Stuxnet attacked Iran's nuclear power plants and ruined almost one-fifth of Iran's nuclear centrifuges. In 2013, Israel Haifa highway control system  was attacked by hackers, which caused massive traffic congestion in the city which lead great loss and serious subsequent problems.
 
+    According to the statistical data from ``Year in Review 2014'' published by the ICS-CERT which is short for ``Industrial Control Systems Cyber Emergency Response Team'', the number of attacks for industrial control systems increases year by year. In 2010, there were only 39 security incidents of industrial control systems, but in 2014, this number has grown to 245.
+
+    Unlike traditional IT systems, the security incidents of industrial control systems can cause irreparable harm to the physical systems being controlled and to the people dependent on them. Basically, protecting industrial control systems against cyber-attacks is vital to both the economy and stability of a nation. Therefore, the cybersecurity issue of industrial control systems must be taken seriously and solved as soon as possible.
 }
 
 \addnote{Introduction: Problem of Timeliness and Availability}{
-
+    In recent years, considerable researches have been undertaken to study cybersecurity risk assessment methods. However, the cybersecurity risk assessment in the IT domain is not entirely applicable to industrial control systems because industrial control systems are relatively different from traditional IT systems in some aspects.
+    
+    Firstly, the cybersecurity objectives are different. Traditional IT systems first require an ensuring of confidentiality, then integrity, and finally availability. For industrial control systems, in contrast, the priorities of these three security objectives are first availability, then integrity, and finally confidentiality, because the timeliness and availability are the primary concerns. The malicious attacks induce the cybersecurity risk to industrial control systems by demolishing the timeliness and availability. Therefore, the risk assessment of industrial control systems needs a novel risk propagation analysis approach.
 }
 
 \addnote{Introduction: Problem of Overlapping amongst Consequences}{
-
+    The majority of existing quantitative risk assessment approaches used this definition to calculate the risk, where $S(e_i)$ is the severity of the incident $e_i$ and $P(e_i)$ is the probability of the incident $e_i$.
+    
+     It is also worth noting that there is a problem when this definition is used in industrial control systems risk assessment. This is due to the fact that, for industrial control systems, different hazardous incidents may cause the same consequence; whereby, using this definition to assess risk will cause the severity of the same consequence to be accumulated multiple times. As a result, there is an error in the risk assessment, which cannot be ignored. Even worse, the decision-making may generate a wrong policy with this inaccurate risk value.
+     
+     For example, incident $e_1$ is the temperature anomaly of reactor, incident $e_2$ is the explosion of reactor, when $e_1$ or $e_2$ happens, the product will be damaged. Assume that $P(e_1) = 1$, so $P(e_2) = p_1$, then 
+     \[
+        \risk = S(e_1) + p_1S(e_2) = S(e_1) + p_1S(e_1) = (1+p_1)S(e_1) \geq S(e_1)\text{.}
+     \]
 }
 
 \addnote{Introduction: Problem of Unknown Attacks}{

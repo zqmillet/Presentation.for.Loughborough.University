@@ -164,47 +164,67 @@
 }
 
 \addnote{Hazardous Incident Prediction: Attack Level}{
+    In the proposed approach, the Bayesian network is used to model the relationship between attacks and resources.
     
+    The left figure shows a typical Bayesian network of multi-step attack. In this Bayesian network, the attack nodes, which are colored red, represent attack strategies. the resource nodes, which are color green, represent resources. The enforcement of an attack strategy need some conditions. Only the conditions of an attack strategy is satisfied, may this attack strategy be launched. One the other hands, the enforcement of an attack strategy may obtain another resources. So, using these two kinds of nodes, the Bayesian network can model the multi-step attack.
+    
+    The Bayesian network uses the conditional probability table to describe the reachable probability. For example, attack node $a_4$ has two conditions $r_1$ and $r_3$. The first column of the conditional probability table of node $a_4$ shows that when the attacker obtain the resources $r_1$ and $r_3$, the probability that he launches attack $a_4$ is $\ell_{a_4,1}$. Similarly, if he only has resource $r_1$, the probability is $\ell_{a_4,2}$.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree F1}{
-
+    Function Tree Analysis is widely used to analyze the stability of control system, a typical function tree is shown in following figure.
+    
+    If the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$ is uppercase $F_1$ equals $F_2F_3F_4F_5$. In this slide, there are two kinds of letter {\bf F}, where the lowercase $f$ represents the system function, the uppercase $F$ represents the status of system function $f$. For example, the uppercase $F_1$ equals \texttt{True} means that the corresponding system function lowercase $f_1$ is running normally, the uppercase $F_1$ equals \texttt{False} means that there is something wrong with the corresponding system function lowercase $f_1$. 
+    
+    Let's go back to the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$, if the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$ is uppercase $F_1$ equals $F_2F_3F_4F_5$. The function tree uses an and-gate to describe this relationship.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree F2}{
-
+    If the relationship amongst the functions lowercase $f_2$, $f_6$, $f_7$, $f_8$ and $f_9$ is uppercase $F_2$ equals $F_6F_7\overline{F}_8F_9$. The function tree will uses an appropriate logical gate to describe this kind of relationship. 
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree F5}{
-
+    Similarly, if the relationship amongst the functions lowercase $f_5$, $f_{10}$, $f_{11}$, $f_{12}$ and $f_{13}$ is uppercase $F_5$ equals $F_{10} + F_{11} + F_{12} + F_{13}$. The function tree will uses an or-gate to describe this kind of relationship.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree to Bayesian Network Gate 1}{
-
+    To simplify the inference, the function tree is converted into the Bayesian network, which is shown in following figure. 
+    
+    This and gate can be converted to a Bayesian network, in which $f_2$, $f_3$, $f_4$ and $f_5$ is the parent nodes of $f_1$. Of cause, a conditional probability table is needed, too.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree to Bayesian Network Gate 2}{
-
+    This kinds of gate can be also converted into a Bayesian network, but the conditional probability table is different. In fact, all kinds of logical gates can be converted into corresponding Bayesian networks.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree to Bayesian Network Gate 3}{
-
+    For example, the or-gate can be converted into the following Bayesian network.
 }
 
 \addnote{Hazardous Incident Prediction: Comparison of Fault Tree and Bayesian Network Question}{
-
+    Now, let me digress for a moment. There is a question: can the Bayesan network be converted into the function tree?
+    
+    The answer is YES, but not all the Bayesian networks can be converted into the corresponding function trees.
+    
+    For example, the following conditional probability table can't be converted into a function tree.
 }
 
 \addnote{Hazardous Incident Prediction: Comparison of Fault Tree and Bayesian Network Answer}{
-
+    Because the conditional probability table of the Bayesian network contains more information than the logical gate of the fault tree. In other words, the logical gate cannot always accurately describe the relationship amongst functions.
+    
+    the following conditional probability is an example.
 }
 
-\addnote{Hazardous Incident Prediction: Incident Level}{
-
+\addnote{Hazardous Incident Prediction: Incident Level}{    
+    The occurrence of one incident may cause another incidents, in the proposed approach, the Bayesian network is also used to model the causal relationship amongst the potential incidents. A typical Bayesian network of incident is shown in following figure.
+    
+    Like the attack level, the incident node also needs a conditional probability table to describe the relationship amongst it and its parent nodes.
 }
 
 \addnote{Hazardous Incident Prediction: Information Transfer from Attack to Function}{
-
+    The attack level, the function level and the incident level have been introduced. Now let's talk about the information transfer between levels.
+    
+    The cyber attacks can lead to system function failures, and the function failures may cause the industrial incidents. To analyze the risk propagation, an information transfer is necessary amongst the three aforementioned layers.
 }
 
 \addnote{Hazardous Incident Prediction: Information Transfer from Function to Incident}{

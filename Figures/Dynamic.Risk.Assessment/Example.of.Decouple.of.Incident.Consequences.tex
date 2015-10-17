@@ -1,16 +1,16 @@
 \begin{tikzpicture}[line width = \pgfdefaultlinewidth,
                     x = 0.625cm,
                     y = 0.625cm]
-                    
+
     \pgfmathsetmacro{\distance}{10}
-    
+
     \node at (3,0) {
-    $\bm{C} = (
-        \bm{c}_1, \pause
-        \bm{c}_2, \pause
+    $\bm{C} = (     \pause
+        \bm{c}_1,   \pause
+        \bm{c}_2,   \pause
         \bm{c}_3)$
     };
-    
+
     \uncover<2->{
         \fill[fill opacity=0.5] (2,    2) circle (1.6);
         \node at (2,    2) [text shadow={[align=center,text width=3cm] at (2,    2) {$\bm{c}_1$}}] {$\bm{c}_1$};
@@ -23,20 +23,20 @@
         \fill[fill opacity=0.5] (3,3.732) circle (1.6);
         \node at (3,3.732) [text shadow={[align=center,text width=3cm] at (3,3.732) {$\bm{c}_3$}}] {$\bm{c}_3$};
     }
-    
-    
+
+
     \uncover<5->{
     \path[draw=black!50,solid,line width=9mm,fill=black!50, preaction={-triangle 60,line width = 4mm,draw = black!50,shorten >=-10mm}] (3 + 3,2.577) -- (3 - 4.5 + \distance,2.577);
-    \node[text shadow={[align=center,text width=3cm] at (2.7    + 0.5*\distance,2.577) {Decouple}}] at (2.7    + 0.5*\distance,2.577) {Decouple};    
-    
-    \fill[fill = black!51] (2 + \distance,    2) circle (1.6);    
-    \fill[fill = black!51] (4 + \distance,    2) circle (1.6);    
+    \node[text shadow={[align=center,text width=3cm] at (2.7    + 0.5*\distance,2.577) {Decouple}}] at (2.7    + 0.5*\distance,2.577) {Decouple};
+
+    \fill[fill = black!51] (2 + \distance,    2) circle (1.6);
+    \fill[fill = black!51] (4 + \distance,    2) circle (1.6);
     \fill[fill = black!51] (3 + \distance,3.732) circle (1.6);
-    
+
     \draw[white, line width = 1pt] (2 + \distance,    2) circle (1.6);
     \draw[white, line width = 1pt] (4 + \distance,    2) circle (1.6);
     \draw[white, line width = 1pt] (3 + \distance,3.732) circle (1.6);
-    
+
     \node at (1.52 + \distance,1.72 ) [text shadow={[align=center,text width=3cm] at (1.52 + \distance,1.72 ) {$\bm{c}_1'$}}] {$\bm{c}_1'$};
     \node at (4.48 + \distance,1.72 ) [text shadow={[align=center,text width=3cm] at (4.48 + \distance,1.72 ) {$\bm{c}_2'$}}] {$\bm{c}_2'$};
     \node at (3    + \distance,4.29 ) [text shadow={[align=center,text width=3cm] at (3    + \distance,4.29 ) {$\bm{c}_3'$}}] {$\bm{c}_3'$};
@@ -44,9 +44,9 @@
     \node at (3    + \distance,1.447) [text shadow={[align=center,text width=3cm] at (3    + \distance,1.447) {$\bm{c}_5'$}}] {$\bm{c}_5'$};
     \node at (2.21 + \distance,3.03 ) [text shadow={[align=center,text width=3cm] at (2.21 + \distance,3.03 ) {$\bm{c}_6'$}}] {$\bm{c}_6'$};
     \node at (3.79 + \distance,3.03 ) [text shadow={[align=center,text width=3cm] at (3.79 + \distance,3.03 ) {$\bm{c}_7'$}}] {$\bm{c}_7'$};
-    
+
     \node at (3 + \distance,0) {$\bm{C}' = (\bm{c}'_1,\bm{c}'_2,\cdots,\bm{c}'_7)$};
     }
-    
+
     \onslide<1->
 \end{tikzpicture} 

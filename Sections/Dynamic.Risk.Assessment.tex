@@ -3,9 +3,9 @@
 \subsection{Decouple of Incident Consequences}
 \begin{frame}{Decouple of Incident Consequences -- Step 1}
     \label{Dynamic Risk Assessment: Decouple of Incident Consequences Step 1}
-    for each incident $e_i$, analyze its consequence and generate a consequence set
+    For each incident $e_i$, analyze its consequence and generate a consequence set
     \[
-    \bm{c}_i = (c_1, c_2, \cdots, c_n) \text{.}
+        \bm{c}_i = (c_1, c_2, \cdots, c_n) \text{.}
     \]
 
     The meaning of $\bm{c}_i$ is that the occurring of the incident $e_i$ will threaten the elements in consequence set $\bm{c}_i$.\\[10pt]
@@ -17,7 +17,21 @@
 \end{frame}
 
 \begin{frame}{Decouple of Incident Consequences -- Step 2}
-    \label{Dynamic Risk Assessment: Decouple of Incident Consequences Step 2}
+    \label<trans:1>{Dynamic Risk Assessment: Decouple of Incident Consequences Step 2 Conditions}
+    \label<trans:2>{Dynamic Risk Assessment: Decouple of Incident Consequences Step 2 Example}
+    Then, generate $\bm{C}' = (\bm{c}_1',\bm{c}_2',\cdots,\bm{c}_{m'}')$ based on $\bm{C} = (\bm{c}_1, \bm{c}_2, \cdots, \bm{c}_m)$. The following conditions must be met:
+    \begin{align}
+        \text{Completeness: } & \textstyle\bigcup_{i=1}^m \bm{c}_i= \bigcup_{i=1}^{m'} \bm{c}_i'\text{,}\notag\\
+        \text{Independence: } & \forall \bm{c}_i',\bm{c}_j' \in \bm{C}' \text{ : } \bm{c}_i' \cap \bm{c}_j' = \varnothing\text{,}\notag\\
+        \text{Traceability: } & \forall \bm{c}' \in \bm{C}', \exists \bm{c} \in \bm{C} \text{ : } \bm{c}' \subseteq \bm{c}\text{.}\notag
+    \end{align}
+    \vspace{-30pt}
+    \uncover<2-| trans:2>{
+        \begin{center}
+          \input{Figures/Dynamic.Risk.Assessment/Example.of.Decouple.of.Incident.Consequences.tex}
+        \end{center}
+    }
+
 \end{frame}
 
 \begin{frame}{Decouple of Incident Consequences -- Step 3}
@@ -63,7 +77,7 @@
 \subsection{Classification of Incident Consequences}
 \begin{frame}{Classification of Incident Consequences}
     \label{Dynamic Risk Assessment: Classification of Incident Consequences}
-    In this paper, there are three main kinds of incident consequences to be considered:
+    In the proposed approach, there are three main kinds of incident consequences to be considered:
     \begin{itemize}
       \item \textbf{Harm to Humans:}\\[-5pt]
       \begin{itemize}

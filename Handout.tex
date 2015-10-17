@@ -40,24 +40,28 @@
     \end{adjustbox}
     \ifthenelse{\lengthtest{\qiqiheight > 150pt}}
     {
-        \begin{wrapfigure}{l}{0.45\textwidth}
-            \vspace{0pt}
-            \fbox{\includeslide[width = 0.45\textwidth]{#1}}
-        \end{wrapfigure}\setlength{\parskip}{0pt}
-        #2
-    }
-    {
-        \noindent\begin{minipage}[t]{0.45\textwidth}
-            \vspace{0pt}
-            \fbox{\includeslide[width = \textwidth]{#1}}
-        \end{minipage}\hspace{10pt}
-        \begin{minipage}[t]{0.5\textwidth}
-            \setlength{\parskip}{0pt}
-            \setlength\parindent{1em}
-            \vspace{0pt}
+        \begin{minipage}{\textwidth}\setlength\parindent{1em}
+            \begin{wrapfigure}{l}{0.45\textwidth}
+                \vspace{0pt}
+                \fbox{\includeslide[width = 0.45\textwidth]{#1}}
+            \end{wrapfigure}\setlength{\parskip}{0pt}
             #2
         \end{minipage}
-    }\rule{0pt}{0pt}\\\vfill
+    }
+    {
+        \begin{minipage}{\textwidth}\setlength\parindent{1em}
+            \noindent\begin{minipage}[t]{0.45\textwidth}
+                \vspace{0pt}
+                \fbox{\includeslide[width = \textwidth]{#1}}
+            \end{minipage}\hspace{10pt}
+            \begin{minipage}[t]{0.5\textwidth}
+                \setlength{\parskip}{0pt}
+                \setlength\parindent{1em}
+                \vspace{0pt}
+                #2
+            \end{minipage}
+        \end{minipage}
+    }\rule{0pt}{0pt}\\[10pt]
 }
 
 \geometry{left=3.5cm,right=3.5cm, top= 3.5cm}
@@ -174,17 +178,17 @@
 \addnote{Hazardous Incident Prediction: Function Tree F1}{
     Function Tree Analysis is widely used to analyze the stability of control system, a typical function tree is shown in following figure.
 
-    If the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$ is uppercase $F_1$ equals $F_2F_3F_4F_5$. In this slide, there are two kinds of letter {\bf F}, where the lowercase $f$ represents the system function, the uppercase $F$ represents the status of system function $f$. For example, the uppercase $F_1$ equals \texttt{True} means that the corresponding system function lowercase $f_1$ is running normally, the uppercase $F_1$ equals \texttt{False} means that there is something wrong with the corresponding system function lowercase $f_1$.
+    If the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$ is capital $F_1$ is equal to $F_2F_3F_4F_5$. In this slide, there are two kinds of letter {\bf F}, where the lowercase $f$ represents the system function, the capital $F$ represents the status of system function $f$. For example, the capital $F_1$ is equal to \texttt{True} means that the corresponding system function lowercase $f_1$ is running normally, the capital $F_1$ is equal to \texttt{False} means that there is something wrong with the corresponding system function lowercase $f_1$.
 
-    Let's go back to the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$, if the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$ is uppercase $F_1$ equals $F_2F_3F_4F_5$. The function tree uses an and-gate to describe this relationship.
+    Let's go back to the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$, if the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$ is capital $F_1$ is equal to $F_2F_3F_4F_5$. The function tree uses an and-gate to describe this relationship.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree F2}{
-    If the relationship amongst the functions lowercase $f_2$, $f_6$, $f_7$, $f_8$ and $f_9$ is uppercase $F_2$ equals $F_6F_7\overline{F}_8F_9$. The function tree will uses an appropriate logical gate to describe this kind of relationship.
+    If the relationship amongst the functions lowercase $f_2$, $f_6$, $f_7$, $f_8$ and $f_9$ is capital $F_2$ is equal to $F_6F_7\overline{F}_8F_9$. The function tree will uses an appropriate logical gate to describe this kind of relationship.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree F5}{
-    Similarly, if the relationship amongst the functions lowercase $f_5$, $f_{10}$, $f_{11}$, $f_{12}$ and $f_{13}$ is uppercase $F_5$ equals $F_{10} + F_{11} + F_{12} + F_{13}$. The function tree will uses an or-gate to describe this kind of relationship.
+    Similarly, if the relationship amongst the functions lowercase $f_5$, $f_{10}$, $f_{11}$, $f_{12}$ and $f_{13}$ is capital $F_5$ is equal to $F_{10} + F_{11} + F_{12} + F_{13}$. The function tree will uses an or-gate to describe this kind of relationship.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree to Bayesian Network Gate 1}{
@@ -225,71 +229,147 @@
     The attack level, the function level and the incident level have been introduced. Now let's talk about the information transfer between levels.
 
     The cyber attacks can lead to system function failures, and the function failures may cause the industrial incidents. To analyze the risk propagation, an information transfer is necessary amongst the three aforementioned layers.
-    
+
     The following figures show the information transfer between attack level and function level.
+
+    We can see that the function failure can lead to another function failures, the launch of attack can also cause function failures. Therefore, we need add some parent nodes for function node $f$. Additional, the conditional probability table of function node $f$ need to be extended.
 }
 
 \addnote{Hazardous Incident Prediction: Information Transfer from Function to Incident}{
-    The following figures show the information transfer between function level and incident level.
+    Similarly, the information transfer between function level and incident level is shown in the following figure.
 }
 
 \addnote{Hazardous Incident Prediction: Collection of Evidence}{
+    There are two kind of evidence need to be collected attack evidence and anomaly evidence.
+    \begin{itemize}
+      \item The attack evidence contains the attack information, such as attack time, attack type, attack object, and so on. The attack evidence can be obtain by the intrusion detection systems.
+      \item The anomaly evidence, contains the information about the anomaly, such as function failure, function restoration, incident occurrence, and so on. The anomaly evidence can be obtained by the monitoring systems.
+    \end{itemize}
 
+    For each evidence, there exists a corresponding node in the multi-level Bayesian network. When the intrusion detection system or the monitoring system finds an evidence, the corresponding node will be marked in the multi-level Bayesian network.
 }
 
 \addnote{Hazardous Incident Prediction: Calculation of Incident Probability}{
+    The right figure shows a typical multi-level Bayesian network. We can see it has three levels: attack level colored red and green, function level colored blue, and incident level colored black.
 
+    Assuming that there are three evidences which are detected. They are $a_1$, $a_6$ and $f_1$. Then the nodes $a_1$, $a_6$ and $f_1$ are marked with red dashed circles.
+
+    Finally, the algorithm named Probability Propagation in Trees of Clusters (PPTC) can calculate the probabilities of all the hazardous incidents.
+
+    Now, all the potential hazardous incidences can be calculated. So in summary, first, we collect the evidences about the systems. The evidences contains attack evidences and anomaly evidences. Then we infer what gonna happen according the evidences and their relationship. We use the Bayesian network to model the relationship amongst the evidences.
 }
 
 \addnote{Section: Dynamic Risk Assessment}{
-
+    Now we have obtained the probability of all potential hazardous incidents. Let us talk about another problem, how to calculate the dynamic cybersecurity risk?
 }
 
 \addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 1}{
+    As mentioned before, there may exist overlapping amongst different incident consequences. And the overlapping will cause the error of the cybersecurity risk. So the first thing to do is the decouple of consequences.
+
+    For each incident $e_i$, analyze its consequence and generate a consequence set
+    \[
+        \bm{c}_i = (c_1, c_2, \cdots, c_n) \text{.}
+    \]
+
+    The meaning of $\bm{c}_i$ is that the occurring of the incident $e_i$ will threaten the elements in consequence set $\bm{c}_i$.
+
+    For example, the incident $e_i$ is an explosion of a reactor, which may cause worker casualties, air pollution, facilities damages, and products loss. The consequence set of $e_i$ is
+    \[
+    \bm{c}_i = (\text{workers}, \text{air}, \text{facilities}, \text{products})\text{.}
+    \]
+}
+
+\addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 2 Conditions}{
+    Step 2, generate C prime which is equal to c prime sub 1, c prime sub 2, dots, c prime sub m prime, based on C is equal to c sub 1, c sub 2, dots, c sub m.
+
+    It is noted that all letter C is in bold type, it means that they are all sets. the lowercase c is the set of consequences, the capital C is the set of lowercase c.
+
+    There are three conditions that set C prime must be met:
+
+    First, the completeness, the union of c sub 1 to c sub m is equal to c prime sub 1 to c prime sub m prime. Second, the independence, for each c prime i and c prime j in capital capital C prime, c prime i intersection c prime j is equal to empty set. Third, the traceability, for each set c prime in capital C prime, there must be a set c in capital C, which c prime is a subset of or equal to c.
 
 }
 
-\addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 2}{
+\addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 2 Example}{
+    For example, there are three hazardous incidents $e_1$, $e_2$, and $e_3$, and their consequences are $c_1$, $c_2$, and $c_3$. From the figure we can see that there are overlapping amongst these three consequences. The decoupled consequences are shown in the right figure.
 
+    Obviously, the set capital C prime satisfies these three conditions.
 }
 
 \addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 3}{
+    For each c prime sub j in capital C prime, generate a corresponding auxiliary node x sub j. According to the traceability of capital C prime, there must be a consequences set c sub i in capital C, where c prime sub j is a subset of or equal to c sub i. So, for each c prime sub j in capital prime, we can fine the incident set e sub j is equal to e sub i sub 1, e sub i sub 2, dots, e sub i sub n.
 
+    For each incident e sub k of the incident set e sub j , the corresponding consequence set c sub k satisfies the following condition: c prime j is a subset of or equal to c sub k, where c prime sub j is an element of capital C prime.
+
+    Therefore, the parent nodes of the auxiliary node x sub j are incident nodes e sub i sub 1, e sub i sub 2, dots, e sub i sub n.
 }
 
 \addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 4}{
+    The last step, For each auxiliary node x sub j , generate a conditional probability table. A typical conditional probability table of auxiliary node x sub j is shown as following table.
 
+    $H(x_j)$ is equal to 0 only when all its parent nodes are \texttt{False}. In other words, if an incident happens, the auxiliary node will be damaged.
+
+    Now, the consequences has been decoupled. The completeness of set $\bm{C}'$ ensures that there is no omission, and the independence of set $\bm{C}'$ ensures that there is no overlapping.
 }
 
 \addnote{Dynamic Risk Assessment: Classification of Incident Consequences}{
+    Next, we will talk about the quantification of incident consequences.
 
+    Before the quantification of incident consequences, the adverse effects of an incident may be classified, because different adverse effects need different quantification methods.
+
+    For industrial control systems, the adverse effects of an incident may be classified into three categories: harm to humans, environmental pollution, and property loss.
 }
 
 \addnote{Dynamic Risk Assessment: Quantification of Incident Consequences}{
+    Different loss of different incident consequences need to be accumulated into the cybersecurity risk, so the loss of incident need to be quantified into same unit. In the proposed approach, we quantify the different loss into monetary loss.
 
+    For the harm to humans, If the decision-maker would like to increase the cost of an investment by $\Delta c$ to reduce the probability of a fatality by $\Delta p$, the quantification of harm to humans is defined as $Q_H = \Delta c/\Delta p$ (Q sub H is equal Delta c over Delta p).
+
+    The monetary loss of environmental pollution is defined as the sum of penalty, compensation, and harness cost.
+    \begin{itemize}
+      \item  According to the environmental protection laws, if the occurrence of an incident causes environmental pollution, as the owner of industrial control system, the company must pay the penalty charge
+      \item When environmental pollution occurs, it tends to influence the living conditions of residents near the plant, the downstream agricultural production, etc. As the relevant liable person, the company has the obligation to pay for compensation.
+      \item To clear the polluted environment, as the polluter, the company must take action to improve the environment.
+    \end{itemize}
 }
 
 \addnote{Dynamic Risk Assessment: Calculation of Dynamic Risk}{
-
+    Due to the following two reasons:
+    \begin{itemize}
+      \item there is no overlapping between the consequences of any two auxiliary nodes $x_i$ and $x_j$, $i$ is not equal to $j$,
+      \item the auxiliary nodes contain all the consequences of incidents,
+    \end{itemize}
+    the dynamic cybersecurity risk can be defined as: the risk is equal to the sum from i equals one to m prime p x sub i multiplied by q x sub i, where
+    \begin{itemize}
+      \item p x sub i is the occurrence probability of the auxiliary node x sub i,
+      \item q x sub i is the monetary loss of the auxiliary node x sub i.
+    \end{itemize}
 }
 
 \addnote{Section: Simulation}{
-
+     To illustrate how our approach validly calculates the cybersecurity risk in real-time, a numerical simulation is carried out.
 }
 
 \addnote{Simulation: Control Structure of Chemical Reactor}{
-
+    A chemical reactor is a device for containing and controlling a chemical reaction and is widely used in the chemical industry. The representative structure of a chemical reactor control system is shown as the figure.
+    
+    In this figure, the Ethernet connects to the enterprise network via G1, which is not shown in this figure. Two CANBUS networks connect to the Ethernet via G2 and G3. In the Ethernet, there are an engineer station and a historical data server. The host in the enterprise network can access the historical data of HDS, but cannot access the ES. PLC1-6 are distributed into two CANBUS networks. The engineer station and the historical data server can obtain data from all of the PLCs, but only the ES can modify and configure PLCs.
 }
 
 \addnote{Simulation: Structure of Simulation Platform}{
-
+    This figure shows the structure of the simulation platform.
+    
+    The simulation platform is implemented in Matlab, which consists of three modules: an evidence generator, an incident prediction module, and a risk assessment module.
+    
+    The evidence generator is used to simulate the intrusion detection system and monitoring system. It uses an array to store an evidence list, which will be shown later. It has a time trigger. To the scheduled time, it will generate an evidence and send it to the incident prediction module.
 }
 
 \addnote{Simulation: Multi-Level Bayesian Network of Reactor}{
-
+    This figure shows the multi-Level Bayesian network of reactor.
 }
 
 \addnote{Simulation: Evidences List}{
+    This table shows the evidence list of the evidence generator.
 
 }
 

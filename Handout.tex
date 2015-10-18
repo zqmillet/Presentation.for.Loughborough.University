@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage[noxcolor]{beamerarticle}
 \usepackage{pgfpages}
+\usepackage{scrextend}
+\deffootnote[1.8em]{0pt}{1.6em}{\makebox[1.8em][l]{\thefootnotemark.}}
 \usepackage{enumitem}
 \usepackage{geometry}
 \usepackage{fontspec}
@@ -16,6 +18,8 @@
 \setjobnamebeamerversion{maintrans}
 
 \setmainfont{Times New Roman}
+\setmonofont{Courier New}
+\newfontfamily\pr{Arial}
 
 \setlength\parindent{1em}
 \linespread{1.2}
@@ -63,6 +67,11 @@
         \end{minipage}
     }\rule{0pt}{0pt}\\[10pt]
 }
+
+\newcommand{\pronunciation}[1]{
+    \footnote{\pr #1}
+}
+\renewcommand{\thempfootnote}{\Roman{mpfootnote}}
 
 \geometry{left=3.5cm,right=3.5cm, top= 3.5cm}
 \begin{document}
@@ -128,7 +137,7 @@
 
      For example, incident $e_1$ is the temperature anomaly of reactor, incident $e_2$ is the explosion of reactor, when $e_1$ or $e_2$ happens, the product will be damaged. Assume that $P(e_1) = 1$, so $P(e_2) = p_1$, then
      \[
-        \risk = S(e_1) + p_1S(e_2) = S(e_1) + p_1S(e_1) = (1+p_1)S(e_1) \geq S(e_1)\text{.}
+        \risk = S(e_1) + p_1S(e_2) = S(e_1) + p_1S(e_1) = (1+p_1)S(e_1) \geq S(e_1)\text{.}\pronunciation{the risk is equal to capital S e sub 1 plus p sub 1 multiplied by capital S e sub 2 is equal to capital S e sub 1 plus p sub 1 multiplied by capital S e sub 1 = 1 plus p sub 1 multiplied by capital S e sub 1}
      \]
 
      It is obviously wrong, because the risk of system can't be larger than the total value of all assets.
@@ -172,23 +181,23 @@
 
     The left figure shows a typical Bayesian network of multi-step attack. In this Bayesian network, the attack nodes, which are colored red, represent attack strategies. the resource nodes, which are color green, represent resources. The enforcement of an attack strategy need some conditions. Only the conditions of an attack strategy is satisfied, may this attack strategy be launched. One the other hands, the enforcement of an attack strategy may obtain another resources. So, using these two kinds of nodes, the Bayesian network can model the multi-step attack.
 
-    The Bayesian network uses the conditional probability table to describe the reachable probability. For example, attack node $a_4$ has two conditions $r_1$ and $r_3$. The first column of the conditional probability table of node $a_4$ shows that when the attacker obtain the resources $r_1$ and $r_3$, the probability that he launches attack $a_4$ is $\ell_{a_4,1}$. Similarly, if he only has resource $r_1$, the probability is $\ell_{a_4,2}$.
+    The Bayesian network uses the conditional probability table to describe the reachable probability. For example, attack node $a_4$ has two conditions $r_1$ and $r_3$. The first column of the conditional probability table of node $a_4$ shows that when the attacker obtain the resources $r_1$ and $r_3$, the probability that he launches attack $a_4$ is $\ell_{a_4,1}$.\pronunciation{the probability that he launches attack a sub 4 is l sub a sub 4 1} Similarly, if he only has resource $r_1$, the probability is $\ell_{a_4,2}$.\pronunciation{Similarly, if he only has resource r sub 1, the probability is l sub a sub 4 2}
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree F1}{
     Function Tree Analysis is widely used to analyze the stability of control system, a typical function tree is shown in following figure.
 
-    If the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$ is capital $F_1$ is equal to $F_2F_3F_4F_5$. In this slide, there are two kinds of letter {\bf F}, where the lowercase $f$ represents the system function, the capital $F$ represents the status of system function $f$. For example, the capital $F_1$ is equal to \texttt{True} means that the corresponding system function lowercase $f_1$ is running normally, the capital $F_1$ is equal to \texttt{False} means that there is something wrong with the corresponding system function lowercase $f_1$.
+    If the relationship amongst the functions $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$ is $F_1 = F_2F_3F_4F_5$.\pronunciation{If the relationship amongst the functions lowercase f sub 1, f sub 2, f sub 3, f sub 4 and f sub 5 is capital F sub 1 is equal to capital F sub 2 F sub 3 F sub 4 F sub 5} In this slide, there are two kinds of letter \texttt{F}, where the lowercase \texttt{f} represents the system function, the capital \texttt{F} represents the status of system function $f$. For example, the $F_1$ is equal to \texttt{True} means that the corresponding system function $f_1$ is running normally, the $F_1$ is equal to \texttt{False} means that there is something wrong with the corresponding system function $f_1$.
 
-    Let's go back to the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$, if the relationship amongst the functions lowercase $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$ is capital $F_1$ is equal to $F_2F_3F_4F_5$. The function tree uses an and-gate to describe this relationship.
+    Let's go back to the relationship amongst the functions $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$, if the relationship amongst the functions $f_1$, $f_2$, $f_3$, $f_4$ and $f_5$ is $F_1= F_2F_3F_4F_5$. The function tree uses an and-gate to describe this relationship.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree F2}{
-    If the relationship amongst the functions lowercase $f_2$, $f_6$, $f_7$, $f_8$ and $f_9$ is capital $F_2$ is equal to $F_6F_7\overline{F}_8F_9$. The function tree will uses an appropriate logical gate to describe this kind of relationship.
+    If the relationship amongst the functions $f_2$, $f_6$, $f_7$, $f_8$ and $f_9$ is $F_2 =F_6F_7\overline{F_8}F_9$.\pronunciation{If the relationship amongst the functions lowercase f sub 2, f sub 6, f sub 7, f sub 8 and f sub 9 is capital F sub 2 is equal to capital F sub 6 F sub 7 F sub 8 bar F sub 9} The function tree will uses an appropriate logical gate to describe this kind of relationship.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree F5}{
-    Similarly, if the relationship amongst the functions lowercase $f_5$, $f_{10}$, $f_{11}$, $f_{12}$ and $f_{13}$ is capital $F_5$ is equal to $F_{10} + F_{11} + F_{12} + F_{13}$. The function tree will uses an or-gate to describe this kind of relationship.
+    Similarly, if the relationship amongst the functions $f_5$, $f_{10}$, $f_{11}$, $f_{12}$ and $f_{13}$ is $F_5 = F_{10} + F_{11} + F_{12} + F_{13}$.\pronunciation{Similarly, if the relationship amongst the functions lowercase f sub 5, f sub 10, f sub 11, f sub 12 and f sub 13 is capital F sub 5 is equal to capital F sub 10 plus F sub 11 plus F sub 12 plus F sub 13} The function tree will uses an or-gate to describe this kind of relationship.
 }
 
 \addnote{Hazardous Incident Prediction: Function Tree to Bayesian Network Gate 1}{
@@ -268,40 +277,60 @@
 
     For each incident $e_i$, analyze its consequence and generate a consequence set
     \[
-        \bm{c}_i = (c_1, c_2, \cdots, c_n) \text{.}
+        \bm{c}_i = (c_1, c_2, \cdots, c_n) \text{.}\pronunciation{the set c sub i is equal to the set of c sub 1, c sub 2, dots, c sub n}
     \]
 
     The meaning of $\bm{c}_i$ is that the occurring of the incident $e_i$ will threaten the elements in consequence set $\bm{c}_i$.
 
     For example, the incident $e_i$ is an explosion of a reactor, which may cause worker casualties, air pollution, facilities damages, and products loss. The consequence set of $e_i$ is
     \[
-    \bm{c}_i = (\text{workers}, \text{air}, \text{facilities}, \text{products})\text{.}
+    \bm{c}_i = (\text{workers}, \text{air}, \text{facilities}, \text{products})\text{.}\pronunciation{c sub i is equal to the set of workers, air, facilities and products}
     \]
 }
 
 \addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 2 Conditions}{
-    Step 2, generate C prime which is equal to c prime sub 1, c prime sub 2, dots, c prime sub m prime, based on C is equal to c sub 1, c sub 2, dots, c sub m.
+    Step 2, generate $\bm{C}' = (\bm{c}'_1, \bm{c}'_2, \cdots, \bm{c}'_{m'})$ based on $\bm{C} = (\bm{c}_1, \bm{c}_2, \cdots, \bm{c}_{m'})$.\pronunciation{Step 2, generate set C prime which is equal to set c prime sub 1, set c prime sub 2, dots, set c prime sub m prime, based on set C is equal to set c sub 1, set c sub 2, dots, set c sub m}
 
-    It is noted that all letter C is in bold type, it means that they are all sets. the lowercase c is the set of consequences, the capital C is the set of lowercase c.
+    It is noted that all letter \texttt{C} is in bold type, it means that they are all sets. the lowercase \texttt{c} is the set of consequences, the capital \texttt{C} is the set of lowercase \texttt{c}.
 
-    There are three conditions that set C prime must be met:
+    When we generate the set $\bm{C}'$, there are three conditions that set $\bm{C}'$ must be met:
 
-    First, the completeness, the union of c sub 1 to c sub m is equal to c prime sub 1 to c prime sub m prime. Second, the independence, for each c prime i and c prime j in capital capital C prime, c prime i intersection c prime j is equal to empty set. Third, the traceability, for each set c prime in capital C prime, there must be a set c in capital C, which c prime is a subset of or equal to c.
+    First, the completeness:
+    \[
+        \textstyle\bigcup_{i=1}^m\bm{c}_i = \textstyle\bigcup_{i=1}^{m'}\bm{c}'_i\text{.}\pronunciation{First, the completeness, the union of c sub 1 to c sub m is equal to c prime sub 1 to c prime sub m prime}
+    \]
+    
+    Second, the independence:
+    \[
+        \forall \bm{c}_i',\bm{c}_j' \in \bm{C}' \text{ : } \bm{c}_i' \cap \bm{c}_j' = \varnothing\text{.}\pronunciation{Second, the independence, for each c prime i and c prime j in capital capital C prime, c prime i intersection c prime j is equal to empty set}
+    \]
+    
+    Third, the traceability:
+    \[
+        \forall \bm{c}' \in \bm{C}', \exists \bm{c} \in \bm{C} \text{ : } \bm{c}' \subseteq \bm{c}\text{.}\pronunciation{Third, the traceability, for each set c prime in capital C prime, there must be a set c in capital C, which c prime is a subset of or equal to c}
+    \]
 
 }
 
 \addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 2 Example}{
     For example, there are three hazardous incidents $e_1$, $e_2$, and $e_3$, and their consequences are $c_1$, $c_2$, and $c_3$. From the figure we can see that there are overlapping amongst these three consequences. The decoupled consequences are shown in the right figure.
 
-    Obviously, the set capital C prime satisfies these three conditions.
+    Obviously, the set $\bm{C}'$ satisfies these three conditions.
 }
 
 \addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 3}{
-    For each c prime sub j in capital C prime, generate a corresponding auxiliary node x sub j. According to the traceability of capital C prime, there must be a consequences set c sub i in capital C, where c prime sub j is a subset of or equal to c sub i. So, for each c prime sub j in capital prime, we can fine the incident set e sub j is equal to e sub i sub 1, e sub i sub 2, dots, e sub i sub n.
+    For each $\bm{c}'_j \in \bm{C}'$, we generate a corresponding auxiliary node $x_j$.\pronunciation{For each c prime sub j in capital C prime, we can generate a corresponding auxiliary node x sub j}
+    
+    According to the traceability of $\bm{C}'$, there must be a consequence set $\bm{c}_i \in \bm{C}$, where $\bm{c}'_j \subseteq \bm{c}_i$.\pronunciation{According to the traceability of capital C prime, there must be a consequences set c sub i in capital C, where c prime sub j is a subset of or equal to c sub i.}
 
-    For each incident e sub k of the incident set e sub j , the corresponding consequence set c sub k satisfies the following condition: c prime j is a subset of or equal to c sub k, where c prime sub j is an element of capital C prime.
-
-    Therefore, the parent nodes of the auxiliary node x sub j are incident nodes e sub i sub 1, e sub i sub 2, dots, e sub i sub n.
+    So, for each $\bm{c}'_j \in \bm{C}'$, we can find the incident set
+    \[
+    \bm{e}_j = (e_{i_1},e_{i_2},\cdots,e_{i_n})\text{.}\pronunciation{So, for each c prime sub j in capital prime, we can fine the incident set e sub j is equal to e sub i sub 1, e sub i sub 2, dots, e sub i sub n}
+    \]
+    
+    For each incident $e_k$ of the incident set $\bm{e}_j$, the corresponding consequence set $\bm{c}_k$ satisfies the following condition: $\bm{c}'_j \subseteq \bm{c}_k$.\pronunciation{For each incident e sub k of the incident set e sub j , the corresponding consequence set c sub k satisfies the following condition: c prime j is a subset of or equal to c sub k, where c prime sub j is an element of capital C prime}
+    
+    Therefore, the parent nodes of the auxiliary node $x_j$ are incident nodes $e_{i_1},e_{i_2},\cdots,e_{i_n}$.\pronunciation{Therefore, the parent nodes of the auxiliary node x sub j are incident nodes e sub i sub 1, e sub i sub 2, dots, e sub i sub n}
 }
 
 \addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 4}{
@@ -323,7 +352,7 @@
 \addnote{Dynamic Risk Assessment: Quantification of Incident Consequences}{
     Different loss of different incident consequences need to be accumulated into the cybersecurity risk, so the loss of incident need to be quantified into same unit. In the proposed approach, we quantify the different loss into monetary loss.
 
-    For the harm to humans, If the decision-maker would like to increase the cost of an investment by $\Delta c$ to reduce the probability of a fatality by $\Delta p$, the quantification of harm to humans is defined as $Q_H = \Delta c/\Delta p$ (Q sub H is equal Delta c over Delta p).
+    For the harm to humans, if the decision-maker would like to increase the cost of an investment by $\Delta c$ to reduce the probability of a fatality by $\Delta p$, in proposed approach, the quantification of harm to humans is defined as $Q_H = \Delta c/\Delta p$.\pronunciation{For the harm to humans, if the decision-maker would like to increase the cost of an investment by Delta c to reduce the probability of a fatality by Delta p, in proposed approach, the quantification of harm to humans is defined as Q sub H is equal Delta c over Delta p}
 
     The monetary loss of environmental pollution is defined as the sum of penalty, compensation, and harness cost.
     \begin{itemize}
@@ -331,18 +360,23 @@
       \item When environmental pollution occurs, it tends to influence the living conditions of residents near the plant, the downstream agricultural production, etc. As the relevant liable person, the company has the obligation to pay for compensation.
       \item To clear the polluted environment, as the polluter, the company must take action to improve the environment.
     \end{itemize}
+    The monetary loss of property is defined as the cost of replacement.
 }
 
 \addnote{Dynamic Risk Assessment: Calculation of Dynamic Risk}{
     Due to the following two reasons:
     \begin{itemize}
-      \item there is no overlapping between the consequences of any two auxiliary nodes $x_i$ and $x_j$, $i$ is not equal to $j$,
+      \item there is no overlapping between the consequences of any two auxiliary nodes $x_i$ and $x_j$, $i\neq j$, \pronunciation{i is not equal to j}
       \item the auxiliary nodes contain all the consequences of incidents,
     \end{itemize}
-    the dynamic cybersecurity risk can be defined as: the risk is equal to the sum from i equals one to m prime p x sub i multiplied by q x sub i, where
+    the dynamic cybersecurity risk can be defined as the following formula:
+    \[
+        \risk = \sum_{i=1}^{m'}p(x_i)q(x_i)\text{,}\pronunciation{the risk is equal to the sum from i equals one to m prime p x sub i multiplied by q x sub i}
+    \]
+    where
     \begin{itemize}
-      \item p x sub i is the occurrence probability of the auxiliary node x sub i,
-      \item q x sub i is the monetary loss of the auxiliary node x sub i.
+      \item $p(x_i)$ is the occurrence probability of the auxiliary node $x_i$,\pronunciation{p x sub i is the occurrence probability of the auxiliary node x sub i}
+      \item $q(x_i)$ is the monetary loss of the auxiliary node $x_i$.\pronunciation{q x sub i is the monetary loss of the auxiliary node x sub i}
     \end{itemize}
 }
 
@@ -352,15 +386,15 @@
 
 \addnote{Simulation: Control Structure of Chemical Reactor}{
     A chemical reactor is a device for containing and controlling a chemical reaction and is widely used in the chemical industry. The representative structure of a chemical reactor control system is shown as the figure.
-    
-    In this figure, the Ethernet connects to the enterprise network via G1, which is not shown in this figure. Two CANBUS networks connect to the Ethernet via G2 and G3. In the Ethernet, there are an engineer station and a historical data server. The host in the enterprise network can access the historical data of HDS, but cannot access the ES. PLC1-6 are distributed into two CANBUS networks. The engineer station and the historical data server can obtain data from all of the PLCs, but only the ES can modify and configure PLCs.
+
+    In this figure, the Ethernet connects to the enterprise network via gateway 1, which is not shown in this figure. Two CANBUS networks connect to the Ethernet via gateway 2 and gateway 3. In the Ethernet, there are an engineer station and a historical data server. The host in the enterprise network can access the historical data of the historical data server, but cannot access the engineer station. PLC1-6 are distributed into two CANBUS networks. The engineer station and the historical data server can obtain data from all of the PLCs, but only the engineer station can modify and configure PLCs.
 }
 
 \addnote{Simulation: Structure of Simulation Platform}{
     This figure shows the structure of the simulation platform.
-    
+
     The simulation platform is implemented in Matlab, which consists of three modules: an evidence generator, an incident prediction module, and a risk assessment module.
-    
+
     The evidence generator is used to simulate the intrusion detection system and monitoring system. It uses an array to store an evidence list, which will be shown later. It has a time trigger. To the scheduled time, it will generate an evidence and send it to the incident prediction module.
 }
 
@@ -370,15 +404,14 @@
 
 \addnote{Simulation: Evidences List}{
     This table shows the evidence list of the evidence generator.
-
 }
 
 \addnote{Simulation: Quantification of Consequences}{
-
+    This table shows the quantifications of different consequences.
 }
 
 \addnote{Simulation: Curvers of Cybersecurity Risk and Incident Probability}{
-
+    
 }
 
 \addnote{Simulation: Ability to Deal with the Unknown Attacks}{

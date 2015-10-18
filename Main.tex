@@ -1,5 +1,9 @@
 \usepackage{Theme/BeamerTheme}
 \usefonttheme[onlymath]{serif}
+\usepackage{hyperref}
+\hypersetup{
+    pdfpagemode=FullScreen
+}
 \usepackage{mathrsfs}
 \usepackage{amsmath}
 \usepackage{bm}
@@ -19,7 +23,6 @@
 \usepackage{pgfplots}
 \usepgfplotslibrary{groupplots}
 \usepgfplotslibrary{fillbetween}
-%\usetkzobj{all}
 
 \tikzset{
     text shadow/.code args={[#1]#2at#3(#4)#5}{
@@ -44,30 +47,51 @@
 \DeclareMathSizes{5}{5}{3}{3}
 
 \newcommand{\pgfdefaultlinewidth}{0.75pt}
-
-\title{Multi-Model Based Incident Prediction and Risk Assessment in Dynamic Cybersecurity Protection for Industrial Control Systems}
-\subtitle{}
-\date{\today}
-\author[Zhang Qi] % optional, use only with lots of authors
-{
-  Zhang Qi\\
-  \href{mailto:qiqi@hust.edu.cn}{{\tt qiqi@hust.edu.cn}}
-}
-\institute{Automation School,\\Huazhong University of Science and Technology,\\Wuhan.}
-\pgfdeclareimage[width=1.5cm]{HUSTLogo}{Logo/HUSTLogoWithoutSubline}
-\logo{\pgfuseimage{HUSTLogo}}
-
 \newcommand{\risk}{\mathscr{R}}
 
 
 \begin{document}
 
 % Cover
-\maketitle
+% \maketitle
+\begin{frame}[plain, noframenumbering]\label{Title}
+    \vfill
+    \centering
+    \usebeamerfont{title}\large
+    Multi-Model Based Incident Prediction and Risk Assessment in Dynamic Cybersecurity Protection for Industrial Control Systems(ICSs)\\
+    \begin{tikzpicture}\draw[mLightBrown, line width = 1pt] (0, 0) -- (\textwidth, 0);\end{tikzpicture}\vspace{15pt}\\
+    \begin{minipage}[m]{3cm}
+        \Bold \small Zhang Qi,\\[2pt]
+        Zhou Chunjie,
+    \end{minipage}\hspace{-15pt}
+    \begin{minipage}[m]{1.5cm}
+        \centering
+        \includegraphics[height=0.8cm]{Logos/HUSTLogoWithoutSubline.pdf}
+    \end{minipage}
+    \begin{minipage}[m]{0.55\textwidth}
+        \Normal \scriptsize School of Automation,\\Huazhong University of Science and Technology,\\Wuhan, China.
+    \end{minipage}\\[10pt]
+    \begin{minipage}[m]{3cm}
+        \Bold \small Yang Shuanghua.
+    \end{minipage}\hspace{-15pt}
+    \begin{minipage}[m]{1.5cm}
+        \centering
+        \includegraphics[height=0.8cm]{Logos/LULogoWithoutSubline.pdf}
+    \end{minipage}
+    \begin{minipage}[m]{0.55\textwidth}
+        \Normal \scriptsize Department of Computer Science,\\
+        Loughborough University,\\
+        Loughborough Leicestershire, United Kingdom.
+    \end{minipage}\hfill
+    \vfill
+    \centering
+    \usebeamerfont{date}\usebeamercolor[fg]{date}\today
+\end{frame}
 
 % Outlines
 \begin{frame}[noframenumbering]{Outlines}\label{Outlines}
-    \scriptsize
+    \setcounter{tocdepth}{1}
+    \Bold
     \tableofcontents % [pausesections]
 \end{frame}
 
@@ -89,10 +113,21 @@
 
 \setbeamercolor{background canvas}{bg=white}
 
-\begin{frame}{Thank You!}
-    \label{Thank You: Thank You}
+\begin{frame}{Contact Us}
+    \label{Thank You: Contact Us}
+    Zhang Qi\\
+    \href{mailto:qiqi@hust.edu.cn}{\textcolor{blue}{\tt \small qiqi@hust.edu.cn}}\\[10pt]
+
+    Zhou Chunjie\\
+    \href{mailto:cjiezhou@hust.edu.cn}{\textcolor{blue}{\tt \small cjiezhou@hust.edu.cn}}\\[10pt]
+
+    Yang Shuanghua\\
+    \href{mailto:S.H.Yang@lboro.ac.uk}{\textcolor{blue}{\tt \small S.H.Yang@lboro.ac.uk}}\\[20pt]
+
+    \pause
+
     You can obtain this slide from my Github:\\
-    \href{https://github.com/zqmillet/Presentation.for.Loughborough.University}{\tt \small \textcolor{blue}{zqmillet@github.com:Presentation.for.Loughborough.University}}\\[15pt]
+    \href{https://github.com/zqmillet/Presentation.for.Loughborough.University}{\tt \small \textcolor{blue}{zqmillet@github.com:Presentation.for.Loughborough.University}}\\[10pt]
 
     \pause
     And I have pushed the code of the simulation to my Github, too.\\

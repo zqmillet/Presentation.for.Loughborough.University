@@ -80,7 +80,11 @@
     Hello everyone, my name is Zhang Qi, and I am the Ph.D student of Professor Zhou Chunjie. I am very glad to be invited by Professor Yang Shuanghuang to make a presentation about my recent research.
 
 
-    My research interests are related to risk assessment and decision-making for industrial control systems.     The title of my presentation is ``Multi-Model Based Incident Prediction and Risk Assessment in Dynamic Cybersecurity Protection for Industrial Control Systems''.
+    My research interests are related to risk assessment and decision-making for industrial control systems.     The topic of my presentation is ``Multi-Model Based Incident Prediction and Risk Assessment in Dynamic Cybersecurity Protection for Industrial Control Systems''.
+
+    The purpose of my presentation is to introduce my research, and I hope I can get your good advices.
+
+    I shall take about 20 minutes of your time. If you have any questions, please feel free to interrupt.
 }
 
 \addnote{Outlines}{
@@ -137,7 +141,7 @@
 
      For example, incident $e_1$ is the temperature anomaly of reactor, incident $e_2$ is the explosion of reactor, when $e_1$ or $e_2$ happens, the product will be damaged. Assume that $P(e_1) = 1$, so $P(e_2) = p_1$, then
      \[
-        \risk = S(e_1) + p_1S(e_2) = S(e_1) + p_1S(e_1) = (1+p_1)S(e_1) \geq S(e_1)\text{.}\pronunciation{the risk is equal to capital S e sub 1 plus p sub 1 multiplied by capital S e sub 2 is equal to capital S e sub 1 plus p sub 1 multiplied by capital S e sub 1 = 1 plus p sub 1 multiplied by capital S e sub 1}
+        \risk = S(e_1) + p_1S(e_2) = S(e_1) + p_1S(e_1) = (1+p_1)S(e_1) \geq S(e_1)\text{.}\pronunciation{the risk is equal to capital S e sub 1 plus p sub 1 multiplied by capital S e sub 2 is equal to capital S e sub 1 plus p sub 1 multiplied by capital S e sub 1 is equal to 1 plus p sub 1 multiplied by capital S e sub 1}
      \]
 
      It is obviously wrong, because the risk of system can't be larger than the total value of all assets.
@@ -299,12 +303,12 @@
     \[
         \textstyle\bigcup_{i=1}^m\bm{c}_i = \textstyle\bigcup_{i=1}^{m'}\bm{c}'_i\text{.}\pronunciation{First, the completeness, the union of c sub 1 to c sub m is equal to c prime sub 1 to c prime sub m prime}
     \]
-    
+
     Second, the independence:
     \[
         \forall \bm{c}_i',\bm{c}_j' \in \bm{C}' \text{ : } \bm{c}_i' \cap \bm{c}_j' = \varnothing\text{.}\pronunciation{Second, the independence, for each c prime i and c prime j in capital capital C prime, c prime i intersection c prime j is equal to empty set}
     \]
-    
+
     Third, the traceability:
     \[
         \forall \bm{c}' \in \bm{C}', \exists \bm{c} \in \bm{C} \text{ : } \bm{c}' \subseteq \bm{c}\text{.}\pronunciation{Third, the traceability, for each set c prime in capital C prime, there must be a set c in capital C, which c prime is a subset of or equal to c}
@@ -320,16 +324,16 @@
 
 \addnote{Dynamic Risk Assessment: Decouple of Incident Consequences Step 3}{
     For each $\bm{c}'_j \in \bm{C}'$, we generate a corresponding auxiliary node $x_j$.\pronunciation{For each c prime sub j in capital C prime, we can generate a corresponding auxiliary node x sub j}
-    
+
     According to the traceability of $\bm{C}'$, there must be a consequence set $\bm{c}_i \in \bm{C}$, where $\bm{c}'_j \subseteq \bm{c}_i$.\pronunciation{According to the traceability of capital C prime, there must be a consequences set c sub i in capital C, where c prime sub j is a subset of or equal to c sub i.}
 
     So, for each $\bm{c}'_j \in \bm{C}'$, we can find the incident set
     \[
     \bm{e}_j = (e_{i_1},e_{i_2},\cdots,e_{i_n})\text{.}\pronunciation{So, for each c prime sub j in capital prime, we can fine the incident set e sub j is equal to e sub i sub 1, e sub i sub 2, dots, e sub i sub n}
     \]
-    
+
     For each incident $e_k$ of the incident set $\bm{e}_j$, the corresponding consequence set $\bm{c}_k$ satisfies the following condition: $\bm{c}'_j \subseteq \bm{c}_k$.\pronunciation{For each incident e sub k of the incident set e sub j , the corresponding consequence set c sub k satisfies the following condition: c prime j is a subset of or equal to c sub k, where c prime sub j is an element of capital C prime}
-    
+
     Therefore, the parent nodes of the auxiliary node $x_j$ are incident nodes $e_{i_1},e_{i_2},\cdots,e_{i_n}$.\pronunciation{Therefore, the parent nodes of the auxiliary node x sub j are incident nodes e sub i sub 1, e sub i sub 2, dots, e sub i sub n}
 }
 
@@ -411,39 +415,95 @@
 }
 
 \addnote{Simulation: Curvers of Cybersecurity Risk and Incident Probability}{
-    
+    The first simulation.
+
+    A multi-step attack is launched on the chemical reactor control system. The evidences are collected and the cybersecurity risk is calculated every minute. Then the curves of the cybersecurity risk and probabilities of incidents $x_1, x_2, \cdots, x_8$ in the multi-level Bayesian network are shown in these two figure.
+
+    From these two figures, we can see:
+    \begin{itemize}
+      \item with the infiltration of multi-step attacks, the cybersecurity risk of the chemical reactor control system is increasing,
+      \item when attack is aborted, the cybersecurity risk of the chemical reactor control system is decreasing,
+      \item the curves of probabilities of incidents is in line with the trend of the curve of cybersecurity risk.
+    \end{itemize}
 }
 
-\addnote{Simulation: Ability to Deal with the Unknown Attacks}{
+\addnote{Simulation: Ability to Deal with the Unknown Attacks Step 1}{
+    The second simulation.
 
+    In the previous simulation, the curve of the cybersecurity risk is shown as the red line in the following figure.
 }
 
-\addnote{Simulation: Curve of Execution Time Distribution}{
-
+\addnote{Simulation: Ability to Deal with the Unknown Attacks Step 2}{
+    To illustrate the ability to deal with unknown attacks, the attack nodes $a_6$ and $a_9$ are removed from the multi-level Bayesian network. Thus, the incident prediction module does not know that an attacker can get the administrator authority of the engineer station through a DoS attack and an IP spoofing attack. In other words, $a_6$ and $a_9$ are unknown attacks to the incident prediction module. Additionally, the conditional probability table of the resource node $r_9$ also needs to be modified.
 }
 
-\addnote{Simulation: Curves of Risk Assessment Algorithm Scalability}{
+\addnote{Simulation: Ability to Deal with the Unknown Attacks Step 3}{
+    The same multi-step attack is launched to the chemical reactor control system again. Since there is no knowledge of attacks $a_6$ and $a_9$, the evidences of $a_6$ and $a_9$ must be removed from the evidence list. The cybersecurity risk value is recorded every minute, the new cybersecurity risk curve is shown the dashed line in the following figure.
 
+    This figure shows that, before the 120th minute, the risk of the second simulation is slightly below that of the first simulation. The reason is that, without the knowledge of $a_6$ and $a_9$, the probability of an attack obtaining the resource $r_9$ is lower in view of the incident prediction module. After the 120th minute and before the 259th minute, there is a difference between two of the risk curves. Since there is no evidences of $a_6$ and $a_9$, the risk of the second simulation in this range remains unchanged. After the 259th minute, we can see the risk curves of two simulations that have overlapped. This comparison shows that, without the knowledge of several atom attacks, there is no comparatively large deviation in the result of the risk assessment. Therefore, if there are a few unknown atom attacks in a multi-step attack, our approach can still generate a relatively accurate risk value.
+}
+
+\addnote{Simulation: Curve of Execution Time Distribution Step 1}{
+    The third simulation.
+
+    We repeat the first simulation 5,000 times, and the execution time of 5,000 calculations is recorded. This simulation is run on a machine with Intel Pentium processor G3220 (3M Cache, 3.00GHz) and 4GB DDR3 memory. The following figure shows the distribution of the 5,000 execution times.
+}
+
+\addnote{Simulation: Curve of Execution Time Distribution Step 2}{
+    Some parameters of the following figure:
+    \begin{itemize}
+      \item The average execution time of a risk assessment is 94.1ms.
+      \item The minimum execution time of a risk assessment is 89.9ms.
+      \item The maximum execution time of a risk assessment is 131.6ms.
+    \end{itemize}
+}
+
+\addnote{Simulation: Curves of Risk Assessment Algorithm Scalability Step 1}{
+    The final simulation.
+
+    25 multi-level Bayesian networks with different node sizes are adopted to show the possible upper/lower bounds and the scalability of our approach. The minimum node size is 10, and the maximum node size is 490, which can model extremely complicated control systems. For each multi-level Bayesian network, the risk assessment is repeated 200 times and all the execution time is recorded. The following figure shows the possible upper/lower bounds and the scalability of the proposed risk assessment approach.
+}
+
+\addnote{Simulation: Curves of Risk Assessment Algorithm Scalability Step 2}{
+    In this figure, a fitting line $y = 0.0019x - 0.0175$ matches well with the correlation coefficient $r = 0.9987$.
+}
+
+\addnote{Simulation: Curves of Risk Assessment Algorithm Scalability Step 3}{
+    This means that the execution time of the risk assessment scales linearly with the increase of the node size of the multi-level Bayesian network.
 }
 
 \addnote{Section: Conclusion and Prospect}{
-
+    Conclusion and prospect.
 }
 
 \addnote{Conclusion and Prospect: Conclusion}{
+    Now, let me make a conclusion for my presentation.
 
+    First, by considering the characteristics of ICSs, a novel multi-level Bayesian network was proposed, which integrated a knowledge of attack, system function, and hazardous incident.
+
+    Second, the attack knowledge and system knowledge were combined to analyze the potential impact of attacks, so the proposed approach had the ability of assessing the risk caused by unknown attacks.
+
+    Third, a unified quantification approach for a variety of consequences of industrial accidents was introduced. Furthermore, the proposed approach could eliminate the error of risk caused by the overlapping amongst hazardous incidents.
+
+    At last, by using a simplified chemical reactor control system in Matlab environment, the designed dynamic risk assessment approach was verified.
 }
 
 \addnote{Conclusion and Prospect: Prospect}{
+    However, there are some shortcomings of the proposed risk assessment approach need to be improved.
+    \begin{itemize}
+      \item Current research work has no ability for self-learning.
+      \item The sub-second computation time cannot meet some hard real-time systems requirements.
+    \end{itemize}
 
+    In the future, a dynamic cybersecurity risk assessment, which can automatically adjust the conditional probability and structure of the multi-level Bayesian network by analyzing the real-time data, will be researched, and several approximate inference methods will be attempted in the risk assessment.
 }
 
 \addnote{Section: Thank You}{
-
+    Thank you for your listening!
 }
 
-\addnote{Thank You: Thank You}{
-
+\addnote{Thank You: Contact Us}{
+    
 }
 
 \addnote{Section: Questions}{

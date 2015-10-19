@@ -49,7 +49,8 @@
 
 \begin{frame}{Problems -- Timeliness and Availability}\label{Introduction: Problem of Timeliness and Availability}
     ICSs have rigorous requirements on timeliness and availability. The cybersecurity risks of ICSs are primarily from the potential loss caused by the cyber-attacks which demolish the timeliness and availability of the control system.
-
+    
+    \pause
     In order to achieve the destructive purpose, attackers generally need to follow part or all of these three steps:
     \begin{enumerate}
       \item infiltrate into the field network,
@@ -57,6 +58,7 @@
       \item cause the hazardous incidents.
     \end{enumerate}
 
+    \pause
     Therefore, the cybersecurity risk assessment of ICSs needs  a novel and targeted risk model to analyze the risk propagation.
 \end{frame}
 
@@ -65,7 +67,9 @@
     \[
         \risk = \sum_i S(e_i)P(e_i)
     \]
-    However, the overlapping amongst difference consequences may cause the error of risk value. For example,
+    
+    \pause
+    However, the overlapping amongst difference consequences may cause the error of risk value. \pause For example,
     \vspace{10pt}\\
     \begin{minipage}[l]{0.2\textwidth}
       \input{Figures/Introduction/Example.of.Overlapping.tex}
@@ -73,7 +77,7 @@
     \begin{minipage}[l]{0.8\textwidth}
         incident $e_1$ is the temperature anomaly of reactor, incident $e_2$ is the explosion of reactor, when $e_1$ or $e_2$ happens, the product will be damaged.
     \end{minipage}
-    \vspace{10pt}\\
+    \vspace{10pt}\\\pause
     Assume that $P(e_1) = 1$, so $P(e_2) = p_1$, then
     \[
         \risk = S(e_1) + p_1S(e_2) = S(e_1) + p_1S(e_1) = (1+p_1)S(e_1) \geq S(e_1)\text{.}
@@ -82,8 +86,10 @@
 
 \begin{frame}{Problems -- Unknown Attacks}\label{Introduction: Problem of Unknown Attacks}
     Many ICSs run 24/7/365, and therefore the updates must be planned and scheduled days or weeks in advance. After the updates, exhaustive testing is necessary to ensure the high availability of the ICS.
-
+    
+    \pause
     This leads to inability of the attack knowledge of ICSs to be updated in time. Several attack knowledge-based risk assessments cannot work well on ICSs.
 
+    \pause
     Therefore, the risk assessment should have the ability of assessing the risk caused by unknown attacks without the corresponding attack knowledge.
 \end{frame} 

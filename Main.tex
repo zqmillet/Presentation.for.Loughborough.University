@@ -1,14 +1,13 @@
 \usepackage{Theme/BeamerTheme}
 \usefonttheme[onlymath]{serif}
 \usepackage{hyperref}
-\hypersetup{
-    pdfpagemode=FullScreen
-}
+\hypersetup{pdfpagemode=FullScreen}
 \usepackage{mathrsfs}
 \usepackage{amsmath}
 \usepackage{bm}
 \usepackage{mathtools}
 \usepackage{booktabs}
+\usepackage{multirow}
 \usepackage{ragged2e}
 \justifying
 \let\raggedright\justifying
@@ -91,7 +90,6 @@
 % Outlines
 \begin{frame}[noframenumbering]{Outlines}\label{Outlines}
     \setcounter{tocdepth}{1}
-    \Bold
     \tableofcontents % [pausesections]
 \end{frame}
 
@@ -102,47 +100,6 @@
 \input{Sections/Dynamic.Risk.Assessment}
 \input{Sections/Simulation}
 \input{Sections/Conclusion.and.Prospect}
-
-% Thank You!
-\setbeamercolor{background canvas}{bg=mDarkTeal}
-\begin{frame}{}
-    \label{Section: Thank You}
-    \centering
-    \vfill\vspace{1em}\usebeamerfont{section title}\textcolor{white}{\scshape Thank You!}\vfill
-\end{frame}
-
-\setbeamercolor{background canvas}{bg=white}
-
-\begin{frame}{Contact Us}
-    \label{Thank You: Contact Us}
-    Zhang Qi\\
-    \href{mailto:qiqi@hust.edu.cn}{\textcolor{blue}{\tt \small qiqi@hust.edu.cn}}\\[10pt]
-
-    Zhou Chunjie\\
-    \href{mailto:cjiezhou@hust.edu.cn}{\textcolor{blue}{\tt \small cjiezhou@hust.edu.cn}}\\[10pt]
-
-    Yang Shuanghua\\
-    \href{mailto:S.H.Yang@lboro.ac.uk}{\textcolor{blue}{\tt \small S.H.Yang@lboro.ac.uk}}\\[20pt]
-
-    \pause
-
-    You can obtain this slide from my Github:\\
-    \href{https://github.com/zqmillet/Presentation.for.Loughborough.University}{\tt \small \textcolor{blue}{zqmillet@github.com:Presentation.for.Loughborough.University}}\\[10pt]
-
-    \pause
-    And I have pushed the code of the simulation to my Github, too.\\
-    \href{https://github.com/zqmillet/Multi-level.Bayesian.Network}{\tt \small \textcolor{blue}{zqmillet@github.com:Multi-level.Bayesian.Network}}\\[15pt]
-
-\end{frame}
-
-% Questions
-\setbeamercolor{background canvas}{bg=mDarkTeal}
-\begin{frame}{}
-    \label{Section: Questions}
-    \centering
-    \vfill\vspace{1em}\usebeamerfont{section title}\textcolor{white}{\scshape Any Questions?}\vfill
-\end{frame}
-
-
+\input{Sections/Thank.You}
 
 \end{document}

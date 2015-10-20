@@ -1,0 +1,1384 @@
+SyncTeX Version:1
+Input:1:D:/iSlide/Presentation.for.Loughborough.University/./MainBeamer.tex
+Input:2:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamer.cls
+Input:3:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasercs.sty
+Input:4:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
+Input:5:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
+Input:6:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Input:7:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
+Input:8:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Input:9:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Input:10:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Input:11:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Input:12:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/base/size10.clo
+Input:13:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+Input:14:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Input:15:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Input:16:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Input:17:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+Input:18:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/xelatex/xetex-def/xetex.def
+Input:19:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Input:20:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Input:21:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+Input:22:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+Input:23:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+Input:24:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex
+Input:25:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+Input:26:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/ms/everyshi.sty
+Input:27:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Input:28:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Input:29:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+Input:30:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+Input:31:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+Input:32:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+Input:33:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+Input:34:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+Input:35:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+Input:36:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+Input:37:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+Input:38:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+Input:39:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Input:40:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+Input:41:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+Input:42:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+Input:43:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+Input:44:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+Input:45:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+Input:46:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+Input:47:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+Input:48:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+Input:49:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+Input:50:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+Input:51:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+Input:52:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+Input:53:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+Input:54:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+Input:55:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+Input:56:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+Input:57:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+Input:58:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+Input:59:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+Input:60:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+Input:61:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+Input:62:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+Input:63:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+Input:64:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+Input:65:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+Input:66:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+Input:67:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+Input:68:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+Input:69:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+Input:70:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
+Input:71:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Input:72:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+Input:73:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Input:74:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Input:75:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Input:76:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Input:77:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
+Input:78:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+Input:79:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/url/url.sty
+Input:80:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/hyperref/hxetex.def
+Input:81:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/hyperref/puenc.def
+Input:82:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Input:83:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Input:84:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+Input:85:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
+Input:86:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty
+Input:87:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasefont.sty
+Input:88:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Input:89:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Input:90:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
+Input:91:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/filehook/filehook.sty
+Input:92:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
+Input:93:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/translator/translator.sty
+Input:94:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex
+Input:95:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasemisc.sty
+Input:96:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty
+Input:97:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+Input:98:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasetitle.sty
+Input:99:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+Input:100:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+Input:101:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+Input:102:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
+Input:103:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
+Input:104:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasecolor.sty
+Input:105:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+Input:106:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasetoc.sty
+Input:107:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
+Input:108:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
+Input:109:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+Input:110:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
+Input:111:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tools/enumerate.sty
+Input:112:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+Input:113:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
+Input:114:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Input:115:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Input:116:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+Input:117:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Input:118:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Input:119:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty
+Input:120:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/beamerbasethemes.sty
+Input:121:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/themes/theme/beamerthemedefault.sty
+Input:122:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/themes/font/beamerfontthemedefault.sty
+Input:123:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemedefault.sty
+Input:124:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemedefault.sty
+Input:125:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemedefault.sty
+Input:126:D:/iSlide/Presentation.for.Loughborough.University/./Main.tex
+Input:127:D:/iSlide/Presentation.for.Loughborough.University/./Theme/BeamerTheme.sty
+Input:128:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec.sty
+Input:129:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
+Input:130:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Input:131:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
+Input:132:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+Input:133:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Input:134:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+Input:135:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Input:136:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+Input:137:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/euenc/eu1enc.def
+Input:138:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmr.fd
+Input:139:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+Input:140:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tipa/t3enc.def
+Input:141:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmss.fd
+Input:142:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec.cfg
+Input:143:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Input:144:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+Input:145:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Input:146:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+Input:147:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+Input:148:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Input:149:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Input:150:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+Input:151:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+Input:152:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+Input:153:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+Input:154:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+Input:155:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Input:156:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+Input:157:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Input:158:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+Input:159:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+Input:160:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+Input:161:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+Input:162:D:/iSlide/Presentation.for.Loughborough.University/./Theme/ColorTheme.sty
+Input:163:D:/iSlide/Presentation.for.Loughborough.University/./Theme/FontTheme.sty
+Input:164:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/themes/font/beamerfontthemeserif.sty
+Input:165:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Input:166:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tools/bm.sty
+Input:167:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
+Input:168:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+Input:169:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Input:170:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
+Input:171:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
+Input:172:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
+Input:173:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/ms/everysel.sty
+Input:174:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty
+Input:175:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-base/tkz-base.sty
+Input:176:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/etex-pkg/etex.sty
+Input:177:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+Input:178:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+Input:179:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+Input:180:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+Input:181:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+Input:182:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+Input:183:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+Input:184:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+Input:185:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex
+Input:186:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+Input:187:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex
+Input:188:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex
+Input:189:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex
+Input:190:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex
+Input:191:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+Input:192:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+Input:193:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/numprint/numprint.sty
+Input:194:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+Input:195:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp.sty
+Input:196:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/defpattern.sty
+Input:197:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp-basic.sty
+Input:198:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp-addons.sty
+Input:199:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp-snap.sty
+Input:200:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp-exp.sty
+Input:201:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp-trigo.sty
+Input:202:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp-pas.sty
+Input:203:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp-random.sty
+Input:204:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp-eqn.sty
+Input:205:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp-upn.sty
+Input:206:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/fp/fp-eval.sty
+Input:207:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-base/tkz-tools-utilities.tex
+Input:208:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-base/tkz-tools-arith.tex
+Input:209:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-base/tkz-tools-base.tex
+Input:210:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-base/tkz-tools-misc.tex
+Input:211:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-base/tkz-tools-math.tex
+Input:212:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-base/tkz-obj-points.tex
+Input:213:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-base/tkz-obj-segments.tex
+Input:214:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-base/tkz-obj-marks.tex
+Input:215:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-euclide/tkz-tools-intersections.tex
+Input:216:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-euclide/tkz-tools-transformations.tex
+Input:217:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-euclide/tkz-obj-lines.tex
+Input:218:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-euclide/tkz-lib-symbols.tex
+Input:219:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-euclide/tkz-obj-circles.tex
+Input:220:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tkz-euclide/tkz-obj-addpoints.tex
+Input:221:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.text.code.tex
+Input:222:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.text.code.tex
+Input:223:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
+Input:224:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
+Input:225:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+Input:226:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+Input:227:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+Input:228:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+Input:229:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+Input:230:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+Input:231:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+Input:232:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+Input:233:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex
+Input:234:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex
+Input:235:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+Input:236:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+Input:237:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.logic.CDH.code.tex
+Input:238:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.logic.US.code.tex
+Input:239:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.logic.code.tex
+Input:240:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.code.tex
+Input:241:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflibraryshapes.gates.logic.US.code.tex
+Input:242:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflibraryshapes.gates.logic.code.tex
+Input:243:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+Input:244:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
+Input:245:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex
+Input:246:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+Input:247:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex
+Input:248:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+Input:249:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+Input:250:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex
+Input:251:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex
+Input:252:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex
+Input:253:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+Input:254:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+Input:255:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex
+Input:256:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex
+Input:257:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+Input:258:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex
+Input:259:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+Input:260:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex
+Input:261:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+Input:262:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex
+Input:263:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex
+Input:264:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+Input:265:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-xetex.def
+Input:266:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-dvipdfmx.def
+Input:267:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+Input:268:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+Input:269:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex
+Input:270:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+Input:271:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex
+Input:272:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex
+Input:273:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex
+Input:274:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+Input:275:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+Input:276:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+Input:277:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex
+Input:278:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.groupplots.code.tex
+Input:279:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.fillbetween.code.tex
+Input:280:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillbetween.code.tex
+Input:281:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryintersections.code.tex
+Input:282:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.tex
+Input:283:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecorations.softclip.code.tex
+Input:284:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbetween.code.tex
+Input:285:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.decorations.softclip.code.tex
+Input:286:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tabu/tabu.sty
+Input:287:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
+Input:288:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/colortbl/colortbl.sty
+Input:289:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx.sty
+Input:290:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Input:291:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/soul/soul.sty
+Input:292:D:/iSlide/Presentation.for.Loughborough.University/./MainBeamer.aux
+Input:293:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
+Input:294:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+Input:295:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Input:296:D:/iSlide/Presentation.for.Loughborough.University/./MainBeamer.out
+Input:297:D:/iSlide/Presentation.for.Loughborough.University/./MainBeamer.out
+Input:298:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+Input:299:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-bibliography-dictionary/translator-bibliography-dictionary-English.dict
+Input:300:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-environment-dictionary/translator-environment-dictionary-English.dict
+Input:301:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-months-dictionary/translator-months-dictionary-English.dict
+Input:302:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-numbers-dictionary/translator-numbers-dictionary-English.dict
+Input:303:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict
+Input:304:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+Input:305:D:/iSlide/Presentation.for.Loughborough.University/./MainBeamer.nav
+Input:306:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+Input:307:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+Input:308:c:/Program Files (x86)/texlive/2015/texmf-dist/tex/latex/jknapltx/ursfs.fd
+Output:pdf
+Magnification:1000
+Unit:1
+X Offset:0
+Y Offset:0
+Content:
+!31953
+{1
+[126,88:4736287,17900938:17266942,13164651,0
+(126,88:4736287,4736287:0,0,0
+g225,17:4736287,4736287
+g225,21:4736287,4736287
+g225,25:4736287,4736287
+g225,29:4736287,4736287
+g225,31:4736287,4736287
+(225,31:4736287,4736287:0,0,0
+(225,31:4736287,4736287:6578176,6578176,0
+[225,31:4736287,4736287:0,6578176,0
+]
+k225,31:11314463,4736287:6578176
+)
+)
+g225,32:4736287,4736287
+(225,32:4736287,4736287:0,0,0
+(225,32:4736287,4736287:6578176,6578176,0
+[225,32:4736287,4736287:0,6578176,0
+]
+k225,32:11314463,4736287:6578176
+)
+)
+g225,33:4736287,4736287
+(225,33:4736287,4736287:0,0,0
+(225,33:4736287,4736287:6578176,6578176,0
+[225,33:4736287,4736287:0,6578176,0
+]
+k225,33:11314463,4736287:6578176
+)
+)
+g225,34:4736287,4736287
+(225,34:4736287,4736287:0,0,0
+(225,34:4736287,4736287:6578176,6578176,0
+[225,34:4736287,4736287:0,6578176,0
+]
+k225,34:11314463,4736287:6578176
+)
+)
+g225,41:4736287,4736287
+g225,42:4736287,4736287
+(225,42:4736287,4736287:0,0,0
+(225,42:4736287,4736287:6578176,6578176,0
+[225,42:4736287,4736287:0,6578176,0
+]
+k225,42:11314463,4736287:6578176
+)
+)
+g225,46:4736287,4736287
+g225,47:4736287,4736287
+(225,47:4736287,4736287:0,0,0
+(225,47:4736287,4736287:6578176,6578176,0
+[225,47:4736287,4736287:0,6578176,0
+]
+k225,47:11314463,4736287:6578176
+)
+)
+g225,51:4736287,4736287
+g225,52:4736287,4736287
+(225,52:4736287,4736287:0,0,0
+(225,52:4736287,4736287:6578176,6578176,0
+[225,52:4736287,4736287:0,6578176,0
+]
+k225,52:11314463,4736287:6578176
+)
+)
+g225,56:4736287,4736287
+g225,57:4736287,4736287
+(225,57:4736287,4736287:0,0,0
+(225,57:4736287,4736287:6578176,6578176,0
+[225,57:4736287,4736287:0,6578176,0
+]
+k225,57:11314463,4736287:6578176
+)
+)
+)
+h126,88:4736287,4736287:0,0,0
+[126,88:4736287,4736287:0,0,0
+(126,88:4736287,-65780:0,0,0
+k126,88:4736287,-65780:2937388
+)
+]
+[126,88:4736287,17900938:17266942,13164651,0
+[126,88:4736287,17900938:17266942,13164651,0
+[126,88:1864680,17900938:20138549,17900937,0
+[126,88:1864680,1:20138549,0,0
+(126,88:1864680,1:20138549,0,0
+(126,88:1864680,1:20138549,0,0
+[126,88:1864680,1:20138549,0,0
+(126,88:1864680,1:-1864679,0,0
+g126,88:1,1
+(126,88:1,1:0,0,0
+(126,88:1,17900938:23867907,17900937,0
+(126,88:1,17900938:23867907,17900937,0
+r126,88:23867908,17900938:23867907,17900937,0
+)
+)
+)
+(126,88:1,1:0,0,0
+(126,88:1,1:0,0,0
+(126,88:1,1:0,0,0
+)
+)
+)
+)
+(126,88:1864680,1:20138549,0,0
+h126,88:1864680,1:0,0,0
+k126,88:22003229,1:20138549
+g126,88:22003229,1
+)
+]
+)
+)
+]
+[126,88:1864680,16926584:20138549,16926583,0
+[126,88:1864680,16926584:20138549,16926583,0
+v126,88:1864680,1:0,0,0
+v126,88:1864680,1383156:0,0,0
+[126,88:1864680,1383156:0,0,0
+]
+(126,88:1864680,4476795:20138549,611058,6290
+k126,88:2441326,4476795:576646
+h126,88:2441326,4476795:0,0,0
+g126,88:7608971,4476795
+g126,88:10200265,4476795
+g126,88:13680227,4476795
+g126,88:18033915,4476795
+g126,88:19737327,4476795
+k126,88:22003229,4476795:576646
+)
+(126,88:1864680,5531919:20138549,611058,208403
+k126,88:2324934,5531919:460254
+g126,88:7084421,5531919
+g126,88:8088695,5531919
+g126,88:11758187,5531919
+g126,88:17392973,5531919
+k126,88:22003229,5531919:460254
+)
+(126,88:1864680,6587043:20138549,611058,208403
+k126,88:4865897,6587043:3001217
+g126,88:6249231,6587043
+g126,88:10325308,6587043
+g126,88:13571700,6587043
+g126,88:19002013,6587043
+k126,88:22003229,6587043:3001216
+)
+(126,88:1864680,7642167:20138549,65536,0
+g126,88:1864680,7642167
+h126,88:1864680,7642167:0,0,0
+(126,88:1864680,7642167:20204085,65536,0
+g126,88:1897448,7642167
+(126,88:1897448,7609399:0,0,0
+(126,88:1897448,7609399:0,0,0
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+g126,88:1897448,7609399
+)
+g126,88:1897448,7609399
+)
+)
+g126,88:22068765,7642167
+g126,88:22068765,7642167
+)
+(126,88:1864680,9680331:20138549,1010332,617116
+k126,88:2459030,9680331:594350
+h126,88:2459030,9680331:0,0,0
+$126,88:2459030,9680331
+[126,88:2459030,9680331:5594039,975403,582186
+(126,88:2459030,9145527:5594039,440599,161021
+h126,88:2459030,9145527:0,0,0
+g126,88:4310488,9145527
+k126,88:8053069,9145527:2857845
+g126,88:8053069,9145527
+)
+(126,88:2459030,10105625:5594039,440599,156892
+g126,88:4048016,10105625
+k126,88:8053069,10105625:1645757
+g126,88:8053069,10105625
+)
+]
+$126,88:8053069,9680331
+g126,88:7070029,9680331
+g126,88:7302813,9680331
+$126,88:7302813,9680331
+[126,88:7302813,9680331:2797019,942483,549266
+(126,88:7302813,10229597:2797019,1491749,0
+k126,88:7664553,10229597:361740
+h126,88:7664553,10229597:0,0,0
+(126,88:7664553,10229597:2073539,1491749,0
+(126,88:7664553,10229597:2073544,1491790,0
+(126,88:7664553,10229597:2073544,1491790,0
+(126,88:7664553,10229597:0,2295784,0
+(126,88:7664553,10229597:3191073,2295784,0
+)
+k126,88:7664553,10229597:-3191073
+)
+)
+)
+)
+g126,88:9738092,10229597
+k126,88:10099832,10229597:361740
+)
+]
+$126,88:10099832,9680331
+g126,88:10332616,9680331
+$126,88:10332616,9680331
+[126,88:10332616,9680331:11076263,1010332,617116
+(126,88:10332616,9007182:11076263,337183,84409
+h126,88:10332616,9007182:0,0,0
+g126,88:11900172,9007182
+g126,88:12447922,9007182
+k126,88:21408879,9007182:6348823
+g126,88:21408879,9007182
+)
+(126,88:10332616,9610110:11076263,337183,126615
+g126,88:12639221,9610110
+g126,88:14894905,9610110
+g126,88:15442655,9610110
+g126,88:17189124,9610110
+g126,88:18093783,9610110
+k126,88:21408879,9610110:727735
+g126,88:21408879,9610110
+)
+(126,88:10332616,10213038:11076263,336265,84409
+g126,88:12091012,10213038
+k126,88:21408879,10213038:7954456
+g126,88:21408879,10213038
+)
+]
+$126,88:21408879,9680331
+g126,88:21408879,9680331
+k126,88:22003229,9680331:594350
+)
+(126,88:1864680,12049778:20138549,1031435,638219
+k126,88:2459030,12049778:594350
+h126,88:2459030,12049778:0,0,0
+$126,88:2459030,12049778
+[126,88:2459030,12049778:5594039,494174,100957
+(126,88:2459030,11989714:5594039,434110,161021
+h126,88:2459030,11989714:0,0,0
+g126,88:3950105,11989714
+k126,88:8053069,11989714:858932
+g126,88:8053069,11989714
+)
+]
+$126,88:8053069,12049778
+g126,88:7070029,12049778
+g126,88:7302813,12049778
+$126,88:7302813,12049778
+[126,88:7302813,12049778:2797019,942483,549266
+(126,88:7302813,12599044:2797019,1491749,0
+k126,88:8077513,12599044:774700
+h126,88:8077513,12599044:0,0,0
+(126,88:8077513,12599044:1247620,1491749,0
+(126,88:8077513,12599044:1247624,1491797,0
+(126,88:8077513,12599044:1247624,1491797,0
+(126,88:8077513,12599044:0,2640480,0
+(126,88:8077513,12599044:2208294,2640480,0
+)
+k126,88:8077513,12599044:-2208294
+)
+)
+)
+)
+g126,88:9325133,12599044
+k126,88:10099832,12599044:774699
+)
+]
+$126,88:10099832,12049778
+g126,88:10332616,12049778
+$126,88:10332616,12049778
+[126,88:10332616,12049778:11076263,1031435,638219
+(126,88:10332616,11355526:11076263,337183,122486
+h126,88:10332616,11355526:0,0,0
+g126,88:12996130,11355526
+g126,88:13543880,11355526
+g126,88:15824795,11355526
+k126,88:21408879,11355526:3837615
+g126,88:21408879,11355526
+)
+(126,88:10332616,11958454:11076263,336265,126615
+g126,88:13607647,11958454
+k126,88:21408879,11958454:5545548
+g126,88:21408879,11958454
+)
+(126,88:10332616,12561382:11076263,336265,126615
+g126,88:13607647,12561382
+g126,88:16768448,12561382
+g126,88:18336004,12561382
+k126,88:21408879,12561382:1046567
+g126,88:21408879,12561382
+)
+]
+$126,88:21408879,12049778
+g126,88:21408879,12049778
+k126,88:22003229,12049778:594350
+)
+(126,88:1864680,15226158:20138549,434110,108527
+k126,88:9525114,15226158:7660434
+h126,88:9525114,15226158:0,0,0
+g126,88:12524369,15226158
+g126,88:13163148,15226158
+g126,88:14342796,15226158
+k126,88:22003229,15226158:7660433
+)
+]
+]
+(126,88:1864680,17900938:20138549,0,0
+(126,88:1864680,17900938:20138549,0,0
+k126,88:23736836,17900938:21872156
+(126,88:23736836,17900938:-1733607,0,0
+g126,88:21872157,17900938
+g126,88:22003229,17900938
+)
+)
+)
+]
+]
+]
+]
+!7846
+}1
+Input:309:D:/iSlide/Presentation.for.Loughborough.University/./MainBeamer.toc
+!87
+{2
+[126,94:4736287,17900938:17266942,13164651,0
+(126,94:4736287,4736287:0,0,0
+)
+[126,94:4736287,4736287:0,0,0
+(126,94:4736287,-65780:0,0,0
+k126,94:4736287,-65780:2937388
+)
+]
+[126,94:4736287,17900938:17266942,13164651,0
+[126,94:4736287,17900938:17266942,13164651,0
+[126,94:1864680,17900938:20138549,17900937,0
+[126,94:1864680,1:20138549,0,0
+(126,94:1864680,1:20138549,0,0
+(126,94:1864680,1:20138549,0,0
+[126,94:1864680,1:20138549,0,0
+(126,94:1864680,1:-1864679,0,0
+g126,94:1,1
+(126,94:1,1:0,0,0
+(126,94:1,17900938:23867907,17900937,0
+(126,94:1,17900938:23867907,17900937,0
+r126,94:23867908,17900938:23867907,17900937,0
+)
+)
+)
+(126,94:1,1:0,0,0
+(126,94:1,1:0,0,0
+(126,94:1,1:0,0,0
+)
+)
+)
+)
+(126,94:1864680,1:-3729358,0,0
+(126,94:1864680,1:0,0,0
+(126,94:1864680,17188728:-1864679,17188727,0
+(126,94:1864680,17188728:-1864679,17188727,0
+g126,94:1,17188728
+(126,94:1,17188728:0,0,0
+[126,94:1,17188728:0,17188727,0
+]
+)
+[126,94:1,17188728:0,17188727,0
+]
+)
+)
+)
+(126,94:1864680,1:0,0,0
+(126,94:1864680,17188728:22003228,17188727,0
+(126,94:1864680,17188728:22003228,17188727,0
+g126,94:22003229,17188728
+g126,94:23867908,17188728
+(126,94:23867908,17188728:0,0,0
+[126,94:23867908,17188728:0,17188727,0
+]
+)
+[126,94:23867908,17188728:0,17188727,0
+(126,94:23867908,17057656:0,0,0
+k126,94:23681429,17057656:-186479
+g126,94:23867908,17057656
+)
+]
+)
+)
+)
+(126,94:1864680,1:-3729358,0,0
+g126,94:1,1
+(126,94:1,1:0,0,0
+[126,94:1,1:0,0,0
+]
+)
+g126,94:-1864678,1
+)
+g126,94:-1864678,1
+)
+(126,94:1864680,1:20138549,0,0
+h126,94:1864680,1:0,0,0
+k126,94:22003229,1:20138549
+g126,94:22003229,1
+)
+]
+)
+)
+]
+[126,94:1864680,16926584:20138549,16926583,0
+[126,94:1864680,16926584:20138549,16926583,0
+v126,94:1864680,1:0,0,0
+v126,94:1864680,1:0,0,0
+(126,94:1864680,1030226:20138549,1030225,618135
+k126,94:1,1030226:-1864679
+(126,94:1,1030226:23867907,1030225,618135
+[126,94:1,1030226:23867907,1030225,618135
+(126,94:1,1030226:23867907,1030225,618135
+h126,94:1,1030226:0,0,0
+g126,94:1,1030226
+(126,94:1,1030226:0,1030225,618135
+r126,94:23867908,1030226:23867907,1648360,618135
+k126,94:1,1030226:-23867907
+)
+(126,94:1,1030226:23867907,1030225,618135
+g126,94:1,1030226
+(126,94:1,1030226:23867907,1030225,618135
+(126,94:1,1030226:23867907,1030225,618135
+[126,94:1,1030226:23867907,611058,7077
+(126,94:1,1030226:23867907,611058,7077
+g126,94:559410,1030226
+h126,94:559410,1030226:0,0,0
+k126,94:23308499,1030226:19386306
+g126,94:23867908,1030226
+)
+]
+)
+)
+g126,94:23867908,1030226
+)
+g126,94:23867908,1030226
+g126,94:23867908,1030226
+)
+]
+)
+k126,94:22003229,1030226:-1864679
+)
+v126,94:1864680,2540048:0,0,0
+[126,94:1864680,2540048:0,0,0
+]
+(309,2:1864680,4172287:20138549,808059,12451
+[309,2:1864680,4172287:20138549,808059,12451
+(309,2:1864680,4172287:20138549,480379,12451
+h309,2:1864680,4172287:0,0,0
+k309,2:22003229,4172287:16316489
+g309,2:22003229,4172287
+)
+]
+)
+(309,3:1864680,6132206:20138549,808059,11795
+[309,3:1864680,6132206:20138549,808059,11795
+(309,3:1864680,6132206:20138549,480379,11795
+h309,3:1864680,6132206:0,0,0
+k309,3:22003229,6132206:16387924
+g309,3:22003229,6132206
+)
+]
+)
+(309,4:1864680,8092124:20138549,808059,12451
+[309,4:1864680,8092124:20138549,808059,12451
+(309,4:1864680,8092124:20138549,480379,12451
+h309,4:1864680,8092124:0,0,0
+g309,4:5268620,8092124
+g309,4:7944455,8092124
+k309,4:22003229,8092124:10963509
+g309,4:22003229,8092124
+)
+]
+)
+(309,7:1864680,10052043:20138549,808059,171703
+[309,7:1864680,10052043:20138549,808059,171703
+(309,7:1864680,10052043:20138549,480379,171703
+h309,7:1864680,10052043:0,0,0
+g309,7:4686660,10052043
+g309,7:6088475,10052043
+k309,7:22003229,10052043:12383674
+g309,7:22003229,10052043
+)
+]
+)
+(309,12:1864680,12152868:20138549,808059,12451
+[309,12:1864680,12152868:20138549,808059,12451
+(309,12:1864680,12152868:20138549,480379,12451
+h309,12:1864680,12152868:0,0,0
+k309,12:22003229,12152868:16897794
+g309,12:22003229,12152868
+)
+]
+)
+(309,15:1864680,14112787:20138549,808059,174980
+[309,15:1864680,14112787:20138549,808059,174980
+(309,15:1864680,14112787:20138549,480379,174980
+h309,15:1864680,14112787:0,0,0
+g309,15:5486855,14112787
+g309,15:6779225,14112787
+k309,15:22003229,14112787:12602564
+g309,15:22003229,14112787
+)
+]
+)
+]
+]
+(126,94:1864680,17900938:20138549,712210,0
+(126,94:1864680,17900938:20138549,712210,0
+[126,94:1864680,17900938:20138549,712210,0
+(126,94:1864680,17663535:20138549,474807,237403
+(126,94:1864680,17663535:20138549,474807,237403
+g126,94:1,17663535
+(126,94:1,17663535:23867907,474807,237403
+[126,94:1,17663535:23867907,474807,237403
+(126,94:1,17663535:23867907,474807,237403
+[126,94:1,17663535:23867907,221839,5897
+(126,94:1,17663535:23867907,221839,5897
+g126,94:559410,17663535
+h126,94:559410,17663535:0,0,0
+k126,94:23144659,17663535:22585249
+g126,94:23308499,17663535
+g126,94:23867908,17663535
+)
+]
+)
+]
+)
+g126,94:22003229,17663535
+)
+g126,94:22003229,17663535
+g126,94:22003229,17663535
+)
+h126,94:1864680,17900938:0,0,0
+]
+g126,94:22003229,17900938
+)
+)
+]
+]
+]
+]
+!4891
+}2
+Input:310:D:/iSlide/Presentation.for.Loughborough.University/./Sections/Introduction.tex
+!98
+{3
+[310,2:4736287,17900938:17266942,13164651,0
+(310,2:4736287,4736287:0,0,0
+)
+[310,2:4736287,4736287:0,0,0
+(310,2:4736287,-65780:0,0,0
+k310,2:4736287,-65780:2937388
+)
+]
+[310,2:4736287,17900938:17266942,13164651,0
+[310,2:4736287,17900938:17266942,13164651,0
+[310,2:1864680,17900938:20138549,17900937,0
+[310,2:1864680,1:20138549,0,0
+(310,2:1864680,1:20138549,0,0
+(310,2:1864680,1:20138549,0,0
+[310,2:1864680,1:20138549,0,0
+(310,2:1864680,1:-1864679,0,0
+g310,2:1,1
+(310,2:1,1:0,0,0
+(310,2:1,17900938:23867907,17900937,0
+(310,2:1,17900938:23867907,17900937,0
+r310,2:23867908,17900938:23867907,17900937,0
+)
+)
+)
+(310,2:1,1:0,0,0
+(310,2:1,1:0,0,0
+(310,2:1,1:0,0,0
+)
+)
+)
+)
+(310,2:1864680,1:20138549,0,0
+h310,2:1864680,1:0,0,0
+k310,2:22003229,1:20138549
+g310,2:22003229,1
+)
+]
+)
+)
+]
+[310,2:1864680,16926584:20138549,16926583,0
+[310,2:1864680,16926584:20138549,16926583,0
+v310,2:1864680,1:0,0,0
+[310,2:1864680,6033618:0,0,0
+]
+v310,2:1864680,5705938:0,0,0
+(310,2:1864680,8850512:20138549,1506174,0
+h310,2:1864680,8850512:0,0,0
+(310,2:1864680,8850512:20138549,1506174,0
+g310,2:2199889,8850512
+(310,2:2199889,8850512:18481072,1506174,0
+g310,2:2186782,8850512
+(310,2:2186782,7788829:0,0,0
+(310,2:2186782,7788829:0,0,0
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+(310,2:2186782,7788829:0,0,0
+(310,2:2186782,7788829:0,0,0
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+(310,2:2186782,7788829:0,0,0
+(310,2:2186782,7788829:7170750,879923,9059
+)
+)
+)
+)
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+g310,2:2186782,7788829
+)
+g310,2:2186782,7788829
+)
+)
+k310,2:22003229,8850512:1322268
+)
+g310,2:22003229,8850512
+g310,2:22003229,8850512
+)
+]
+]
+(310,2:1864680,17900938:20138549,0,0
+(310,2:1864680,17900938:20138549,0,0
+k310,2:23736836,17900938:21872156
+(310,2:23736836,17900938:-1733607,0,0
+g310,2:21872157,17900938
+g310,2:22003229,17900938
+)
+)
+)
+]
+]
+]
+]
+!2178
+}3
+Input:311:D:/iSlide/Presentation.for.Loughborough.University/./Figures/Introduction/Development.of.ICSs.tex
+!117
+{4
+[310,9:4736287,17900938:17266942,13164651,0
+(310,9:4736287,4736287:0,0,0
+)
+[310,9:4736287,4736287:0,0,0
+(310,9:4736287,-65780:0,0,0
+k310,9:4736287,-65780:2937388
+)
+]
+[310,9:4736287,17900938:17266942,13164651,0
+[310,9:4736287,17900938:17266942,13164651,0
+[310,9:1864680,17900938:20138549,17900937,0
+[310,9:1864680,1:20138549,0,0
+(310,9:1864680,1:20138549,0,0
+(310,9:1864680,1:20138549,0,0
+[310,9:1864680,1:20138549,0,0
+(310,9:1864680,1:-1864679,0,0
+g310,9:1,1
+(310,9:1,1:0,0,0
+(310,9:1,17900938:23867907,17900937,0
+(310,9:1,17900938:23867907,17900937,0
+r310,9:23867908,17900938:23867907,17900937,0
+)
+)
+)
+(310,9:1,1:0,0,0
+(310,9:1,1:0,0,0
+(310,9:1,1:0,0,0
+)
+)
+)
+)
+(310,9:1864680,1:-3729358,0,0
+(310,9:1864680,1:0,0,0
+(310,9:1864680,17188728:-1864679,17188727,0
+(310,9:1864680,17188728:-1864679,17188727,0
+g310,9:1,17188728
+(310,9:1,17188728:0,0,0
+[310,9:1,17188728:0,17188727,0
+]
+)
+[310,9:1,17188728:0,17188727,0
+]
+)
+)
+)
+(310,9:1864680,1:0,0,0
+(310,9:1864680,17188728:22003228,17188727,0
+(310,9:1864680,17188728:22003228,17188727,0
+g310,9:22003229,17188728
+g310,9:23867908,17188728
+(310,9:23867908,17188728:0,0,0
+[310,9:23867908,17188728:0,17188727,0
+]
+)
+[310,9:23867908,17188728:0,17188727,0
+(310,9:23867908,17057656:0,0,0
+k310,9:23681429,17057656:-186479
+g310,9:23867908,17057656
+)
+]
+)
+)
+)
+(310,9:1864680,1:-3729358,0,0
+g310,9:1,1
+(310,9:1,1:0,0,0
+[310,9:1,1:0,0,0
+]
+)
+g310,9:-1864678,1
+)
+g310,9:-1864678,1
+)
+(310,9:1864680,1:20138549,0,0
+h310,9:1864680,1:0,0,0
+k310,9:22003229,1:20138549
+g310,9:22003229,1
+)
+]
+)
+)
+]
+[310,9:1864680,16926584:20138549,16926583,0
+[310,9:1864680,16926584:20138549,16926583,0
+v310,9:1864680,1:0,0,0
+v310,9:1864680,1:0,0,0
+(310,9:1864680,1030226:20138549,1030225,618135
+k310,9:1,1030226:-1864679
+(310,9:1,1030226:23867907,1030225,618135
+[310,9:1,1030226:23867907,1030225,618135
+(310,9:1,1030226:23867907,1030225,618135
+h310,9:1,1030226:0,0,0
+g310,9:1,1030226
+(310,9:1,1030226:0,1030225,618135
+r310,9:23867908,1030226:23867907,1648360,618135
+k310,9:1,1030226:-23867907
+)
+(310,9:1,1030226:23867907,1030225,618135
+g310,9:1,1030226
+(310,9:1,1030226:23867907,1030225,618135
+(310,9:1,1030226:23867907,1030225,618135
+[310,9:1,1030226:23867907,597688,208403
+(310,9:1,1030226:23867907,597688,208403
+g310,9:559410,1030226
+h310,9:559410,1030226:0,0,0
+k310,9:23308499,1030226:17986457
+g310,9:23867908,1030226
+)
+]
+)
+)
+g310,9:23867908,1030226
+)
+g310,9:23867908,1030226
+g310,9:23867908,1030226
+)
+]
+)
+k310,9:22003229,1030226:-1864679
+)
+v310,9:1864680,1484521:0,0,0
+[310,9:1864680,1484521:0,0,0
+]
+(310,9:1864680,2716593:20138549,480379,180878
+h310,9:1864680,2716593:0,0,0
+k310,9:4020389,2716593:116229
+k310,9:4864723,2716593:116229
+k310,9:7930071,2716593:116228
+k310,9:11605908,2716593:125752
+k310,9:16455146,2716593:116228
+k310,9:19957620,2716593:116229
+k310,9:21202379,2716593:116229
+k310,9:22003229,2716593:0
+)
+(310,9:1864680,3620985:20138549,480379,180878
+k310,9:4791574,3620985:159309
+k310,9:8501874,3620985:160215
+k310,9:11536903,3620985:159309
+k310,9:14026017,3620985:159309
+k310,9:16624576,3620985:159309
+k310,9:18567120,3620985:159309
+k310,9:21166334,3620985:159309
+k310,9:22003229,3620985:0
+)
+(310,9:1864680,4525377:20138549,481690,12451
+g310,9:3812410,4525377
+g310,9:4959290,4525377
+g310,9:7854015,4525377
+g310,9:8636515,4525377
+g310,9:14189381,4525377
+g310,9:15481751,4525377
+k310,9:22003229,4525377:3844988
+g310,9:22003229,4525377
+)
+(310,9:1864680,16777100:20138549,11583912,0
+k310,9:2036270,16777100:171590
+(310,9:2036270,16777100:0,0,0
+g310,9:2036270,16777100
+g310,9:2036270,16777100
+g310,9:1708590,16777100
+(310,9:1708590,16777100:0,0,0
+)
+g310,9:2036270,16777100
+)
+(311,32:2036270,16777100:19795370,11583912,0
+g311,32:3160274,16777100
+(311,32:3160274,15846428:0,0,0
+(311,32:3160274,15846428:0,0,0
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,2:3160274,15846428
+g311,4:3160274,15846428
+g311,4:3160274,15846428
+g311,4:3160274,15846428
+g311,4:3160274,15846428
+g311,4:3160274,15846428
+g311,4:3160274,15846428
+g311,4:3160274,15846428
+g311,4:3160274,15846428
+g311,4:3160274,15846428
+g311,4:3160274,15846428
+(311,4:3160274,15846428:0,0,0
+(311,4:3160274,15846428:0,0,0
+g311,4:3160274,15846428
+g311,4:3160274,15846428
+(311,4:3160274,15846428:0,0,0
+(311,4:3160274,15846428:1493566,457441,11795
+)
+)
+)
+)
+g311,5:3160274,15846428
+g311,5:3160274,15846428
+g311,5:3160274,15846428
+(311,5:3160274,15846428:0,0,0
+(311,5:3160274,15846428:0,0,0
+g311,5:3160274,15846428
+g311,5:3160274,15846428
+g311,5:3160274,15846428
+g311,5:3160274,15846428
+(311,5:3160274,15846428:0,0,0
+(311,5:3160274,15846428:6736446,481690,180878
+g311,5:5546440,15846428
+g311,5:6328940,15846428
+)
+)
+)
+)
+g311,7:3160274,15846428
+(311,7:3160274,15846428:0,0,0
+(311,7:3160274,15846428:0,0,0
+g311,7:3160274,15846428
+)
+)
+g311,8:3160274,15846428
+(311,8:3160274,15846428:0,0,0
+(311,8:3160274,15846428:0,0,0
+g311,8:3160274,15846428
+)
+)
+g311,9:3160274,15846428
+(311,9:3160274,15846428:0,0,0
+(311,9:3160274,15846428:0,0,0
+g311,9:3160274,15846428
+)
+)
+g311,10:3160274,15846428
+(311,10:3160274,15846428:0,0,0
+(311,10:3160274,15846428:0,0,0
+g311,10:3160274,15846428
+)
+)
+g311,13:3160274,15846428
+g311,13:3160274,15846428
+(311,13:3160274,15846428:0,0,0
+(311,13:3160274,15846428:0,0,0
+g311,13:3160274,15846428
+g311,13:3160274,15846428
+g311,13:3160274,15846428
+g311,13:3160274,15846428
+(311,13:3160274,15846428:0,0,0
+(311,13:3160274,15846428:5830934,1005174,126615
+[311,13:3160274,15846428:5830934,1005174,126615
+(311,13:3160274,15243500:5830934,402246,8715
+g311,13:3160274,15243500
+(311,13:3160274,15243500:5830934,402246,8715
+(311,13:3160274,15243500:5830934,402246,8715
+g311,13:4065392,15243500
+$311,13:4294768,15243500
+(311,13:4294768,15045726:287375,204472,6225
+)
+$311,13:4582143,15243500
+g311,13:4696831,15243500
+g311,13:6799291,15243500
+)
+g311,13:8991208,15243500
+)
+g311,13:8991208,15243500
+)
+(311,13:3160274,15846428:5830934,336265,126615
+g311,13:3160274,15846428
+(311,13:3160274,15846428:5830934,336265,126615
+g311,13:5110429,15846428
+k311,13:8991208,15846428:3064659
+)
+g311,13:8991208,15846428
+)
+]
+)
+)
+)
+)
+g311,15:3160274,15846428
+g311,15:3160274,15846428
+(311,15:3160274,15846428:0,0,0
+(311,15:3160274,15846428:0,0,0
+g311,15:3160274,15846428
+g311,15:3160274,15846428
+g311,15:3160274,15846428
+g311,15:3160274,15846428
+(311,15:3160274,15846428:0,0,0
+(311,15:3160274,15846428:5976752,1040891,126615
+[311,15:3160274,15846428:5976752,1040891,126615
+(311,15:3160274,15243500:5976752,437963,8715
+g311,15:3160274,15243500
+(311,15:3160274,15243500:5976752,437963,8715
+(311,15:3160274,15243500:5976752,437963,8715
+g311,15:4065392,15243500
+$311,15:4294768,15243500
+(311,15:4294768,15045726:433193,240189,6225
+)
+$311,15:4727961,15243500
+g311,15:4842649,15243500
+g311,15:6945109,15243500
+)
+g311,15:9137026,15243500
+)
+g311,15:9137026,15243500
+)
+(311,15:3160274,15846428:5976752,320209,126615
+g311,15:3160274,15846428
+(311,15:3160274,15846428:5976752,320209,126615
+g311,15:6562838,15846428
+k311,15:9137026,15846428:1758068
+)
+g311,15:9137026,15846428
+)
+]
+)
+)
+)
+)
+g311,18:3160274,15846428
+g311,18:3160274,15846428
+(311,18:3160274,15846428:0,0,0
+(311,18:3160274,15846428:0,0,0
+g311,18:3160274,15846428
+g311,18:3160274,15846428
+g311,18:3160274,15846428
+g311,18:3160274,15846428
+(311,18:3160274,15846428:0,0,0
+(311,18:3160274,15846428:5904007,1040891,126615
+[311,18:3160274,15846428:5904007,1040891,126615
+(311,18:3160274,15243500:5904007,437963,8715
+g311,18:3160274,15243500
+(311,18:3160274,15243500:5904007,437963,8715
+(311,18:3160274,15243500:5904007,437963,8715
+g311,18:4065392,15243500
+$311,18:4294768,15243500
+(311,18:4294768,15045726:360448,240189,6225
+)
+$311,18:4655216,15243500
+g311,18:4769904,15243500
+g311,18:6872364,15243500
+)
+g311,18:9064281,15243500
+)
+g311,18:9064281,15243500
+)
+(311,18:3160274,15846428:5904007,320209,126615
+g311,18:3160274,15846428
+(311,18:3160274,15846428:5904007,320209,126615
+g311,18:5441189,15846428
+k311,18:9064281,15846428:2806972
+)
+g311,18:9064281,15846428
+)
+]
+)
+)
+)
+)
+g311,21:3160274,15846428
+g311,21:3160274,15846428
+(311,21:3160274,15846428:0,0,0
+(311,21:3160274,15846428:0,0,0
+g311,21:3160274,15846428
+g311,21:3160274,15846428
+g311,21:3160274,15846428
+g311,21:3160274,15846428
+(311,21:3160274,15846428:0,0,0
+(311,21:3160274,15846428:5885657,1040891,126615
+[311,21:3160274,15846428:5885657,1040891,126615
+(311,21:3160274,15243500:5885657,437963,8715
+g311,21:3160274,15243500
+(311,21:3160274,15243500:5885657,437963,8715
+(311,21:3160274,15243500:5885657,437963,8715
+g311,21:4065392,15243500
+$311,21:4294768,15243500
+(311,21:4294768,15045726:342098,240189,4587
+)
+$311,21:4636866,15243500
+g311,21:4751554,15243500
+g311,21:6854014,15243500
+)
+g311,21:9045931,15243500
+)
+g311,21:9045931,15243500
+)
+(311,21:3160274,15846428:5885657,336265,126615
+g311,21:3160274,15846428
+(311,21:3160274,15846428:5885657,336265,126615
+g311,21:5441648,15846428

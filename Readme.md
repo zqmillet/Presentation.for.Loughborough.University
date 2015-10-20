@@ -19,10 +19,9 @@ In the root, there are 6 folders:
 ## Thanks
 Thanks for the supports from Huazhong University of Science & Technology, and the invitation of Loughborough University.
 
-| | |
+|<img src = "\Figures\Readme\HUSTLogoWithoutSubline.png" height = 50px>|Huazhong University of Science & Technology|
 |:---:|:---|
-|1|Huazhong University of Science & Technology|
-|2|Loughborough University|
+|<img src = "\Figures\Readme\LULogoWithoutSubline.png" height = 50px>|Loughborough University|
 
 Thank to [matze] and his beamer template [mtheme].
 

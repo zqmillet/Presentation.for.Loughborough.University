@@ -26,6 +26,8 @@ There is only one difference between `MainBeamer.tex` and `MainTrans.tex`. `Main
 
 If you want modify the slide, you are suggested to modify the file `Main.tex`, then compile the `MainBeamer.tex` and `MainTrans.tex` to generate two `.pdf` files `MainBeamer.pdf` and `MainTrans.pdf`. At last, the file `Handout.tex` show be modified and compiled to generate the file `Handout.pdf`.
 
+If your OS is Windows, there is a easier way to obtain the `.pdf` files. When you finish the modification of `.tex` files, run `Compile.bat`.
+
 ## Thanks
 Thanks for the supports from Huazhong University of Science & Technology, and the invitation of Loughborough University.
 

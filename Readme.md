@@ -24,9 +24,9 @@ In the root, there are 4 `.tex` files:
 
 There is only one difference between `MainBeamer.tex` and `MainTrans.tex`. `MainBeamer.tex` has `pause` and `MainTrans.tex` does not have. Beyond that, they are totally same. Because, `MainBeamer.pdf` is used to play, and `MainTrans.pdf` is used to generate the `Handout.pdf`. `Main.tex` contains all frames of this slide.
 
-If you want modify the slide, you are suggested to modify the file `Main.tex`, then compile the `MainBeamer.tex` and `MainTrans.tex` to generate two `.pdf` files `MainBeamer.pdf` and `MainTrans.pdf`. At last, the file `Handout.tex` show be modified and compiled to generate the file `Handout.pdf`.
+If you want modify the slide, you are suggested to modify the file `Main.tex`, then compile the `MainBeamer.tex` and `MainTrans.tex` to generate two `.pdf` files `MainBeamer.pdf` and `MainTrans.pdf`. At last, the file `Handout.tex` should be modified and compiled to generate the file `Handout.pdf`.
 
-If your OS is Windows, there is a easier way to obtain the `.pdf` files. When you finish the modification of `.tex` files, run `Compile.bat`.
+If your OS is Windows, there is an easier way to obtain the `.pdf` files. When you finish the modification of `.tex` files, run `Compile.bat`.
 
 ## Thanks
 Thanks for the supports from Huazhong University of Science & Technology, and the invitation of Loughborough University.
